@@ -1,0 +1,16 @@
+# Config A: DIET-sparse (kelime + karakter n-gram)
+# Proposal 4: yalnızca sparse özellikler. A/B/C arasında tek fark özellik kaynağı.
+# Seed ve fallback bu şablonda yok; make_configs.py her (veri seti, seed) için üretir.
+recipe: default.v1
+language: tr
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+    random_seed: 42
+    batch_size: [64, 128]   # GPU belleği (4 GB): varsayılan [64,256] OOM veriyor; A/B/C aynı

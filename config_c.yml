@@ -1,0 +1,14 @@
+# Config C (ablasyon, Proposal 7): B'den karakter n-gram çıkarıldı.
+# Kelime CountVectors + dondurulmuş BERTurk. BERTurk ile char n-gram gereksiz mi (redundant)?
+recipe: default.v1
+language: tr
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: CountVectorsFeaturizer
+  - name: LanguageModelFeaturizer
+    model_name: bert
+    model_weights: dbmdz/bert-base-turkish-cased
+  - name: DIETClassifier
+    epochs: 100
+    random_seed: 42
+    batch_size: [64, 128]   # GPU belleği (4 GB): varsayılan [64,256] OOM veriyor; A/B/C aynı

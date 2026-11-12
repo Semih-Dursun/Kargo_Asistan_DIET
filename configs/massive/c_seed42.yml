@@ -1,0 +1,14 @@
+recipe: default.v1
+language: tr
+pipeline:
+- name: WhitespaceTokenizer
+- name: CountVectorsFeaturizer
+- name: LanguageModelFeaturizer
+  model_name: bert
+  model_weights: dbmdz/bert-base-turkish-cased
+- name: DIETClassifier
+  epochs: 100
+  random_seed: 42
+  batch_size:
+  - 64
+  - 128

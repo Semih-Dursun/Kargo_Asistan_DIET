@@ -1,0 +1,11 @@
+{
+  "name": "reg0.01",
+  "overrides": {
+    "regularization_constant": 0.01
+  },
+  "seed": 42,
+  "dev": {
+    "macro_f1": 0.7893589432422413,
+    "accuracy": 0.8111165764879489
+  }
+}

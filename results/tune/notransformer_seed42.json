@@ -1,0 +1,11 @@
+{
+  "name": "notransformer",
+  "overrides": {
+    "number_of_transformer_layers": 0
+  },
+  "seed": 42,
+  "dev": {
+    "macro_f1": 0.8064421604065015,
+    "accuracy": 0.8086571569109691
+  }
+}

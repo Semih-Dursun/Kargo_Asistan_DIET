@@ -1,0 +1,56 @@
+version: "3.1"
+# Boundary examples from docs/cargo_schema.md (DRAFT, drafted with Claude, to be reviewed).
+# These are NOT the training set. The team's own utterances go in train.yml.
+nlu:
+- intent: kargo_takip
+  examples: |
+    - [TR123456789](takip_no) nerede
+    - kargom şu an hangi aşamada
+- intent: teslimat_tarihi_sor
+  examples: |
+    - kargom ne zaman gelir
+    - [Trendyol](eticaret_sitesi) siparişim hangi gün teslim edilecek
+- intent: kayip_kargo
+  examples: |
+    - kargom kayboldu
+    - teslim edildi yazıyor ama elime ulaşmadı
+- intent: iade_talebi
+  examples: |
+    - aldığım ürünü iade etmek istiyorum
+    - [Hepsiburada](eticaret_sitesi) siparişimi geri göndermem lazım
+- intent: adres_degistir
+  examples: |
+    - kargonun adresini değiştirmek istiyorum
+    - teslimat adresi yanlış girilmiş, [Kadıköy](konum)'e yönlendirir misiniz
+- intent: hasarli_kargo
+  examples: |
+    - kargom hasarlı geldi
+    - paket ezilmiş, ürün kırık çıktı
+- intent: kargo_ucreti_sor
+  examples: |
+    - [5 desi](desi) kargo ne kadar tutar
+    - [Ankara](konum)'dan [İzmir](konum)'e kargo ücreti nedir
+- intent: sube_bul
+  examples: |
+    - [Kadıköy](konum)'de [Aras Kargo](kargo_firmasi) şubesi nerede
+    - en yakın kargo şubesini öğrenmek istiyorum
+- intent: teslimat_randevu
+  examples: |
+    - kargoyu cumartesi teslim eder misiniz
+    - evde olmayacağım, teslimatı yarına alabilir miyiz
+- intent: kargo_iptal
+  examples: |
+    - gönderdiğim kargoyu iptal etmek istiyorum
+    - kargo çıkmadan siparişi iptal edebilir miyim
+- intent: gonderi_olustur
+  examples: |
+    - kargo göndermek istiyorum
+    - adresimden kurye çağırabilir miyim
+- intent: kargo_gecikme_sikayet
+  examples: |
+    - kargom çok gecikti
+    - [Yurtiçi Kargo](kargo_firmasi) üç gündür getirmedi
+- intent: temsilci_talep
+  examples: |
+    - müşteri temsilcisine bağlanmak istiyorum
+    - yetkili biriyle konuşabilir miyim

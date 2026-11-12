@@ -1,0 +1,11 @@
+{
+  "name": "epochs50",
+  "overrides": {
+    "epochs": 50
+  },
+  "seed": 42,
+  "dev": {
+    "macro_f1": 0.7706824981942706,
+    "accuracy": 0.8042302016724053
+  }
+}

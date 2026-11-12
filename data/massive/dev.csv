@@ -1,0 +1,2034 @@
+id,text,intent
+11,ışıkları kapat lütfen,iot_hue_lightoff
+17,koridordaki ışıkları kıs,iot_hue_lightdim
+24,odayı daha karanlık yap,iot_hue_lightdim
+26,daireyi temizle,iot_cleaning
+30,temizlik iyidir toz çok kötü şimdi sihrini yap halımı temizle,iot_cleaning
+42,benim uygun anılarımda durum sağla,general_quirky
+53,çin yemeği için en fazla yıldızlı teslimat seçeneklerini listele,takeaway_query
+58,migrostan benim ıspanaklı börek paketimi bul,takeaway_query
+67,büyük ev ablukada'dan arayan bulur dinlemek istiyorum,play_music
+68,bana metin arolat'tan dert değil çal,play_music
+74,grup şimdi ne çalıyor,music_query
+90,akşam yemeği siparişimde neler var,takeaway_query
+99,haftanın hava tahmini nasıl,weather_query
+107,direniyorum u çal,play_music
+109,güle güle şekerim i çal,play_music
+112,biraz zeki müren çal,play_music
+113,bu şarkıyı döngüye al,music_settings
+115,sesi düşüğe ayarla,audio_volume_down
+127,bugün günlerden ne,datetime_query
+138,şu hangi şarkı,music_query
+147,caz dinlemek istiyorum,play_music
+148,olly caz dinlemek istiyorum,play_music
+167,hey,general_greet
+173,yarın sabah altıya alarm kur,alarm_set
+188,sesi aç,audio_volume_up
+217,dışarıda yağmur var mı,weather_query
+229,aydın da saat kaç,datetime_query
+230,bayburt'ta saat kaç,datetime_query
+232,sabah altıya alarm kur,alarm_set
+237,sabah uyanmak için alarm kurdum mu,alarm_query
+242,amerika'da neler oluyor,news_query
+251,olly şimdi de death metal,play_music
+271,şimdi istanbulda saat kaç,datetime_query
+295,bugünkü gazete başlıklarını söyle,news_query
+298,harun kolçak çal,play_music
+311,bu yıl cumhuriyet bayramı hangi gün,datetime_query
+312,içerisi çok karanlık,iot_hue_lighton
+318,yarın yağmur yağacak mı,weather_query
+331,daha yumuşak,audio_volume_down
+345,yarın dışarısı kaç derece olacak,weather_query
+346,yarınki hava için tahminler ne,weather_query
+353,yirmi iki mart haftanın hangi günüdür,datetime_query
+365,bugün pazartesi mi,datetime_query
+368,tekirdağ'da hava nasıl,weather_query
+375,şu an gaziantep güneşli mi,weather_query
+387,brexit hakkında daha fazla haber olur olmaz bana haber ver,news_query
+388,akıllı prizi kapat,iot_wemo_off
+392,benim favorilerimden bir şarkı çal,play_music
+406,pop müzik dinlemek istiyorum lütfen,play_music
+415,benim ışıklarımı değiştir böylece iyi bir uyku çekebileyim,iot_hue_lightchange
+431,cuma günü hava nasıl,weather_query
+434,bugün günlerden ne,datetime_query
+439,bugün mont giymeli miyim,weather_query
+444,karıştırmayı devre dışı bırak,music_settings
+465,tarih ne,datetime_query
+476,hangi şeyleri yapamazsın,general_quirky
+480,saati söyle,datetime_query
+490,dışarısı sıcak mı,weather_query
+510,kurulu alarmım var mı,alarm_query
+511,doğru formül ile,weather_query
+516,bir sonraki saat boyunca sessize al lütfen,audio_volume_mute
+517,benim en sevdiğim şarkıyı çal,play_music
+523,çok mu tehlikeli,weather_query
+532,lütfen bana uluslararası haberleri var,news_query
+534,sabah saat on için bir uyandırma çağrısı ayarla,alarm_set
+536,öğleden sonra üç için alarm kur,alarm_set
+538,öğleden sonra bire alarm kur,alarm_set
+541,şarkıyı hemen aç,play_music
+552,bana bu şarkının sözlerini mail at,music_query
+562,sabah sekiz alarmımdan kurtul,alarm_remove
+582,yarın yağmur yağacak mı,weather_query
+595,sezen aksu 'dan sen ağlama dinlemek istiyorum lütfen,play_music
+601,alarmı başlat,alarm_set
+610,yarın sabah altıda uyanmak istiyorum lütfen,alarm_set
+616,olly benim çalma listemden şarkılar çal,play_music
+617,ramazan bayramı haftanın hangi gününe geliyor,datetime_query
+626,lütfen bana pırlantayı dinlet,play_music
+638,bana bir hayvan fıkrası anlatır mısın,general_joke
+657,anlık hava durumu nasıl,weather_query
+658,kaliforniya'da şu an saat kaç,datetime_query
+676,zaman dilimini ayarla,datetime_convert
+678,ben eve gelince t. v. prizi aç,iot_wemo_on
+682,hilary e-posta meselesi ile ilgili gelecek te haberleri takip et,news_query
+689,sesi ayarını düşür,audio_volume_down
+691,duyamıyorum sesi artır,audio_volume_up
+697,ışıkları biraz daha parlaklaştırır mısın lütfen,iot_hue_lightup
+707,şimdi fazıl say dinlemek istiyorum,play_music
+708,formula bir yarışına şu an kim liderlik ediyor,news_query
+710,kahve hazırla,iot_coffee
+711,cumhuriyet gazetesinden başlıkları oku,news_query
+718,c. n. n. türkten son dakika haberlerini öğrenmek istiyorum,news_query
+737,lütfen sesi kısabilir misin,audio_volume_down
+741,rb ve soul türü parçalar çal,play_music
+756,wemo prizi kapatabilir misin,iot_wemo_off
+762,bu hafta hava nasıl görünüyor,weather_query
+763,bu hafta hava nasıl olacak,weather_query
+776,dünyada bir deprem olursa bana haber ver,news_query
+778,reynmen 'den hevesim yok 'u çal,play_music
+803,hey olly hoparlörlerin sesini kapat,audio_volume_mute
+806,hoparlörlerdeki tüm sesi kıs lütfen,audio_volume_down
+807,şimdi kahve yap,iot_coffee
+817,ok google biraz müzik çal,play_music
+835,hollywood'daki son dedikodu ne,news_query
+851,ışıkları parlaklaştır,iot_hue_lightup
+885,sabah sekiz için alarm kur,alarm_set
+895,çarşamba için sabah altı alarmını kapat,alarm_remove
+896,cumadan sonra sabah alarmlarını kapat,alarm_remove
+906,benim için gelecek hafta için hava durumuna bak lütfen,weather_query
+921,benim favori sanatçılarımdan müzik aç,play_music
+925,lütfen ışıkları biraz daha kıs,iot_hue_lightdim
+937,telefonlar,alarm_remove
+943,doğu yakası için saat akşam sekiz ise meriç edirne de saat kaç,datetime_convert
+966,quick china paket servis siparişi alıyor mu,takeaway_query
+975,bana istanbul daki zamanı söyler misin,datetime_query
+984,c. n. n. için mevcut haberler,news_query
+1012,beni türk telekom web sitesine götür,social_post
+1015,manşetleri çıkar lütfen,news_query
+1016,new york times'ın manşetleri neler,news_query
+1023,birbiçer kebabın paket servisi almama uygun olup olmadığını bul,takeaway_query
+1027,bugünün tarihini alabilir miyim,datetime_query
+1038,okul alarmım kurulu mu,alarm_query
+1051,dışarısı ne kadar sıcak,weather_query
+1058,bugün öğleden sonra birde robot süpürgeyi çalıştır,iot_cleaning
+1085,iyi asistanlar,news_query
+1094,bana gün için mevcut haberleri gönder,news_query
+1122,şimdi sefo 'dan bonita 'yı çal,play_music
+1125,bugünün tarihi,datetime_query
+1177,gülşen 'den ne kavgam bitti ne sevdam şarkısının sözleri neler,music_query
+1179,bana hiç country müzik çalma,music_dislikeness
+1189,hatay da gece on ise içel de saat kaç,datetime_convert
+1192,ayna 'dan gittiğin yağmurla gel dinlemek istiyorum şimdi,play_music
+1196,bugün hava durumu nasıl,weather_query
+1197,yağmur yağacak mı,weather_query
+1201,antalya daki mevcut saat ne,datetime_query
+1209,akşam yemeği için sağlıklı yemekler önerir misin,cooking_recipe
+1210,hoş bir restoran dan yemek sipariş et,takeaway_order
+1211,girne saatini istanbul saatine çevir,datetime_convert
+1215,olly oturma odasını mavi yap,iot_hue_lightchange
+1216,oturma odasını mavi yap,iot_hue_lightchange
+1222,lütfen arsız gönül 'ü çal,play_music
+1223,salı günü için güncel hava durumu nedir,weather_query
+1224,pazartesi öğlen için en son hava durumu nasıl,weather_query
+1225,on beş mart hangi gün olacak,datetime_query
+1227,bu ayın son pazartesi gününün tarihini istiyorum,datetime_query
+1234,amerikada öğlen on iki iken hindistanda saat kaç,datetime_convert
+1241,bana saatin kaç olduğunu söyle,datetime_query
+1257,bana internetteki en iyi tık tık şakasını bul,general_joke
+1259,bu hafta pazartesi hava nasıl olacak,weather_query
+1268,biftek tarifin harikuladeydi,cooking_recipe
+1271,bugün dünyada neler oluyor,news_query
+1272,beş aralık hangi gün,datetime_query
+1277,hey,general_greet
+1295,akademi ödülleri hakkındaki haberleri istiyorum,news_query
+1312,bana bakü saatini söyle,datetime_query
+1327,bugün hava nasıl,weather_query
+1333,bugün sıcak değil mi,weather_query
+1334,bugün çok sıcak değil mi,weather_query
+1346,yüz bin iki yüz on yedinci,datetime_query
+1349,bu hafta hava nasıl olacak,weather_query
+1357,gece lambası ayarlarına geç,iot_hue_lightchange
+1365,sesi sadece biraz daha aç,audio_volume_up
+1380,banadura'dan teslim almak üzere sipariş verebilir miyim,takeaway_query
+1416,paket yemek sipariş et,takeaway_order
+1430,tarkan ın tüm sıradaki şarkılarını bul ve karıştırma olmadan çal,play_music
+1446,kibariye 'nin tüm şarkılarından bir çalma listesi yap ve karmada çal,play_music
+1466,bu hafta kar yağacak mı,weather_query
+1468,müzik aç,play_music
+1478,yeni fıkra araştır,general_joke
+1525,hafif rock dinlemek istiyorum,play_music
+1544,neşeli bir müzik dinlemek istiyorum,play_music
+1545,sezen aksu dan sen ağlama çal,play_music
+1548,kendi bölgem için on günlük hava durumunu alabilir miyim,weather_query
+1557,bu haftanın hava durumunu al lütfen,weather_query
+1558,pop bir şeyler çal bana,play_music
+1566,playlist ten müzik çal,play_music
+1569,bir espresso alabilir miyim lütfen,iot_coffee
+1576,olly elektrikli süpürgeyi çalıştır,iot_cleaning
+1599,robot süpürgeyi çalıştırabilir misin,iot_cleaning
+1615,bana politikadaki herhangi yeni bir konu hakkında bildirim gönder,news_query
+1621,değerlendirme,music_likeness
+1625,öğleden önce mi sonra mı,alarm_query
+1637,son yahoo haber makaleleri nedir,news_query
+1664,bana son altı saat ten çok temiz bir haber bul,news_query
+1678,şu anda doksan dokuz çalıyor bu hangi müzik,music_query
+1680,müziğin sesini doksana çıkar,audio_volume_up
+1687,yarınki hava sıcak olacak evet mi hayır mı,weather_query
+1688,bu haftanın hava tahmini nedir,weather_query
+1696,şu an çalan şarkının sanatçısı kim,music_query
+1698,o şarkıyı sevmiyorum kapat,music_dislikeness
+1702,her gün sabah on ile onbir arası elektrikli süpürgemi çalıştır,iot_cleaning
+1726,önümüzdeki hafta en yüksek sıcaklık kaç derece olacak,weather_query
+1732,bugün sabah ona alarm kurulu mu kontrol et,alarm_query
+1770,enrique çal,play_music
+1771,tarkan çal,play_music
+1791,bana müziğimin like larını vermen mümkün mü,music_query
+1793,suriye'den son haberler neler,news_query
+1805,biraz daha fazla ışık lazım,iot_hue_lightup
+1818,mevcut saati ver,datetime_query
+1823,benim favori şarkıcım shakira,music_likeness
+1827,samsun'da neler oluyor,news_query
+1834,benim en çok dinlediğim şarkıları çal,play_music
+1839,youtube a git ve en güzel dans şarkıları kolleksiyonunu çal,play_music
+1858,bana en son teknoloji haberlerini getir,news_query
+1871,o şarkıyı en iyi on favori listeme ekle,music_likeness
+1877,bu şarkı harikaydı tekrar çalabilir misin,music_likeness
+1888,bana mutfakta loş ışık ver,iot_hue_lightdim
+1894,o şarkıyı ve benim fikrimi kaydet,music_likeness
+1901,seçim sonuçları ile ilgili beni güncel tut,news_query
+1902,analistler yeni göçmen politikaları hakkında ne dyor,news_query
+1910,restoran sipariş durumu,takeaway_query
+1914,beş saat içinde beni uyar,alarm_set
+1925,robot süpürgemi çalıştır,iot_cleaning
+1928,müzik çal,play_music
+1934,mevcut tarih saat grubu hangisi,datetime_query
+1943,ev temizliğine başla,iot_cleaning
+1945,ışığı kapat,iot_hue_lightoff
+1948,komik espri,general_joke
+1953,şua nda hangi şarkı çalıyor,music_query
+1971,bu şarkıda apple music tarafından sağlanan bilgiyi kaydet,music_likeness
+1988,hey alexa dairemde disko ışıklarını aç ve parti başlasın,iot_hue_lighton
+2003,lütfen kapat,audio_volume_mute
+2006,lütfen rap çal,play_music
+2009,bu hafta hava durumu ne olacak,weather_query
+2040,ne güneşli bir gün,weather_query
+2042,toplantı yarına planlandımı,calendar_query
+2058,bugün bulutlu,weather_query
+2069,sessiz tuşuna dokun,audio_volume_mute
+2073,bana son aranjmanların hepsini çal,play_music
+2088,amerikadan olmayan batıya ait amerikan folk müziği dinleyelim,play_music
+2092,şu anda çalan müziğin adını kontrol et,music_query
+2095,saklı bahçe teslimat yapıyor mu,takeaway_query
+2103,benim en son kullanılmış playlistimi aç,play_music
+2112,bana ankaradaki saati söyle,datetime_query
+2115,pop çal,play_music
+2118,modu ayarla lütfen,iot_hue_lightchange
+2120,ışıkları maviye çevir,iot_hue_lightchange
+2122,oturma odası ışıklarını kırmızıya çevir,iot_hue_lightchange
+2125,bana antalya konyaaltı havasını söyle olly,weather_query
+2140,siri dışarıda hava nasıl,weather_query
+2144,doğum günüm hangi gün,datetime_query
+2149,çalan şarkının adı ne,music_query
+2154,bana saatin kaç olduğunu söyler misin,datetime_query
+2157,pazartesi hava durumu,weather_query
+2158,salı günü hava,weather_query
+2161,şarkıyı tekrarla,music_settings
+2179,bana mevcut hava durumunu söyler misin,weather_query
+2187,yatak odamın ışığını kapatabilir misin lütfen,iot_hue_lightoff
+2196,hey beni mutlu edecek bir fıkra paylaş,general_joke
+2200,noel e kaç hafta kaldı,datetime_query
+2211,haber siteleri nden hiç haberin var mı,news_query
+2221,gülek yaylasında hava nasıl,weather_query
+2227,lütfen öğleden önce dokuz u erzincan dan sinop a çevir,datetime_convert
+2246,gardırop ışığını kapat,iot_hue_lightoff
+2259,barikat 'ı aç,play_music
+2272,en iyi değerlendirilmiş pop şarkılarımı çal lütfen,play_music
+2282,evimdeki bütün ışıkları mavi renge ayarla,iot_hue_lightchange
+2303,mahvettim hip hop,music_likeness
+2312,olly ışıkları yediye indir,iot_hue_lightdim
+2313,ışıklar yediye insin,iot_hue_lightdim
+2318,ışığın gücünü en aza indir,iot_hue_lightdim
+2321,yedisinde hava nasıl olacak,weather_query
+2323,hoparlörü sessize al lütfen,audio_volume_mute
+2353,şu an çalan müziğin adı ne,music_query
+2360,sesi aç,audio_volume_up
+2364,bu şarkı hangisi,music_query
+2392,iltimas ı dinlemek istiyorum,play_music
+2417,mevcut şarkı albümlerini karıştır,music_settings
+2419,haber bülteni den hangi haber güncellemeleri var,news_query
+2420,news express de yeni ne var,news_query
+2421,news express de neler oluyor,news_query
+2425,saatin kaç olduğunu söyle bana,datetime_query
+2428,türkiye deki saati öğrenmek istiyorum,datetime_query
+2431,yaklaşan alarmlar hangileri,alarm_query
+2464,olly ışıkları kapat,iot_hue_lightoff
+2467,erdoğan hakkındaki son dakika haberlerini almanın bir yolu var mı,news_query
+2470,ışıkları aç,iot_hue_lighton
+2478,paket iste,takeaway_order
+2483,tüm ışıkları kısacak mısın,iot_hue_lightdim
+2495,bana haberleri ver,news_query
+2499,ışıkları kıs,iot_hue_lightdim
+2514,bu haftanın hava durumu nasıl,weather_query
+2515,bu hafta için hava durumunu göster,weather_query
+2518,robot süpürgeyi nasıl başlatabilirim,iot_cleaning
+2520,lütfen robot süpürgeyi açmamda bana yardım et,iot_cleaning
+2526,biraz modern rock dinlemek istiyorum,play_music
+2538,son siparişimin durumu nedir,takeaway_query
+2544,dışarıda hava nasıl,weather_query
+2553,sevgililer günü haftanın hangi günü,datetime_query
+2558,miami florida hava durumunu söyle,weather_query
+2562,biraz müzik istiyorum antrenman çalma listemi çalmaya ne dersin,play_music
+2563,yarın sabah sekize alarm kur,alarm_set
+2576,lütfen yatak odasındaki ışıkları kıs,iot_hue_lightdim
+2582,bana sanatçının adını söyle,music_query
+2583,şarkının adı ne,music_query
+2590,bugün dünya haberlerinde neler oluyor,news_query
+2598,en son uluslararası haberler nelerdir,news_query
+2599,şimdi kahve alabilirim,iot_coffee
+2600,başucu lambamı kapat lütfen,iot_hue_lightoff
+2620,lütfen elektrik süpürgesini çalıştır,iot_cleaning
+2621,elektrik süpürgesini çalıştır şimdi,iot_cleaning
+2622,tüm yanıtları şimdi sessize al,audio_volume_mute
+2623,konuşma lütfen,audio_volume_mute
+2625,yeni sağlayıcı dan herhangi güncel bir şey aldık mı,news_query
+2641,blank hakkında yeni ne var,news_query
+2643,adele çal,play_music
+2649,izmir için hava tahmini nasıl,weather_query
+2654,gelecek hafta kar yağacak mı,weather_query
+2665,istanbul il konseyi evsizlik ile ilgili ne yapıyor,news_query
+2668,b. b. c. news den haberleri getir,news_query
+2672,sabah altı ve dokuz arası kaç tane alarm kurdum,alarm_query
+2675,çalma listesini aç,play_music
+2687,siparişi onayla,takeaway_order
+2693,benim için bir fincan kahve yap,iot_coffee
+2699,rock dinlemek istiyorum,play_music
+2701,ok google rock müzik çal,play_music
+2710,akımı kapat,iot_hue_lightoff
+2720,beş buçuğa alarm kur,alarm_set
+2740,bu restoran dan paket sipariş edebiliyor muyum,takeaway_query
+2741,benim favorim lokanta teslimat yapıyor mu,takeaway_query
+2742,paket servis hizmetleri var mı,takeaway_query
+2749,kahve makinesini başlat,iot_coffee
+2757,siyasette son haberler,news_query
+2763,bana saati göster,datetime_query
+2769,jazz türü bir müzik çal,play_music
+2783,önümüzdeki cumartesi ayın kaçı,datetime_query
+2790,yankees geçen gece kazandı mı,news_query
+2797,hoparlörlerden gelen sesi kapat,audio_volume_mute
+2810,oturma odasındaki ışıkların parlaklığını arttır,iot_hue_lightup
+2814,kahve demle,iot_coffee
+2821,ışık renklerini maviden beyaza çevir,iot_hue_lightchange
+2822,evdeki ışıkları kırmızı yap,iot_hue_lightchange
+2825,on altı nisan hangi güne denk geliyor,datetime_query
+2834,elektrik süpürgesini bir saat çalıştır,iot_cleaning
+2835,bana bugünün tarihini söyle,datetime_query
+2841,oturma odasındaki ışıkları kırmızı ayarla,iot_hue_lightchange
+2844,restoranın teslimat durumu nasıl gidiyor,takeaway_query
+2846,bu şarkıyı dinle,music_query
+2851,tadım pizza da paket servis var mı,takeaway_query
+2863,ışık rengini maviye çevir,iot_hue_lightchange
+2869,alarmlarımı bana söyle,alarm_query
+2879,lütfen kurduğum herhangi alarmları kaldır,alarm_remove
+2886,lütfen sabah haberlerinde oturan köpekle ilgili makaleyi aç,news_query
+2889,burada hava nasıl,weather_query
+2901,salcılar dürüm paket iste,takeaway_order
+2919,hürriyet için youtube da hiç yeni video var mı,news_query
+2932,ardından yalan 'ı çal,play_music
+2935,benim country çalma listesi ni çal,play_music
+2936,ikinci çalma listesi ni çal,play_music
+2943,bugünün tarihi ne,datetime_query
+2946,alexa büyük yatak odasındaki klimayı kapat,iot_wemo_off
+2949,lütfen mevcut şarkıyı favorilerime ekle,music_likeness
+2955,hip hop'u seviyorum,music_likeness
+2963,lütfen bruno mars 'dan benim en sevdiğim şarkıyı çal,play_music
+2971,lütfen kahveyi başlat,iot_coffee
+2978,ışıkları kıs,iot_hue_lightdim
+2979,gece zamanı modu,iot_hue_lightdim
+2991,trend teknoloji haberleri,news_query
+2992,günümüz teknoloji haberleri,news_query
+2993,bir sonraki şarkıyı çal,play_music
+3004,şarkı hangi yılda yazılmış,music_query
+3018,yemeğimi bul,takeaway_query
+3028,olly sivas ta kar kalınlığı tahminleri,weather_query
+3041,olly trend olmuş popüler başlıklar,news_query
+3045,sonraki alarm,alarm_query
+3046,canım cidden çok çin yemeği istiyor şu anda lütfen bir paket siparişi oluştur,takeaway_order
+3056,bugün siyaset için haberler nelerdir erdoğan haberlerini filtreler misin,news_query
+3082,iki sucuklu pizza ihtiyacım var,takeaway_order
+3088,bir şarkı çal,play_music
+3094,ışığı kapat,iot_hue_lightoff
+3121,güneyde hava güneşli mi,weather_query
+3123,bana biraz müzik çal,play_music
+3134,en yakın nerelerden paket servisi yapabilirim ben,takeaway_order
+3139,sesini alçalt lütfen,audio_volume_down
+3148,kalkış alarmımı kaça kurdun,alarm_query
+3149,yarın sabah için hiç alarmım var mı,alarm_query
+3151,önceki alarmlarımı sil,alarm_remove
+3160,classical chamber müzik playlisti çal,play_music
+3166,bu şarkıyı bir dahakine koy,play_music
+3177,bu gruptaki solistin adı ne,music_query
+3183,güç kapama açık,iot_wemo_off
+3194,siri benim pop oynatma listemi çal,play_music
+3200,o konuda hiç yeni haber var mı söyle,news_query
+3202,biliyorsun ki caz seviyorum,music_likeness
+3203,lütfen çalma listemi kontrol et,music_likeness
+3242,alarmı bir buçuğa kurabilir misin,alarm_set
+3248,yarın için alarmı iptal et,alarm_remove
+3261,mevcut merkezi saat ne,datetime_query
+3270,yarın için ayarlanmış alarmları kaldır,alarm_remove
+3281,olly ışıkları azalt lütfen,iot_hue_lightdim
+3285,yarın mersin'de yağmur yağacak mı,weather_query
+3287,ankarada saat kaç,datetime_query
+3293,doğu ve pasifik zaman farkı ne kadardır,datetime_convert
+3296,en yakın çin lokantası teslimat yapıyor mu,takeaway_query
+3309,los angeles de hava nasıl,weather_query
+3340,ok google hava nasıl,weather_query
+3377,aydınlatmayı azalt,iot_hue_lightdim
+3394,lütfen wemo prizi aç,iot_wemo_on
+3402,gelecek hafta hava nasıl olacak,weather_query
+3404,şarkı nasıl tekrar edilir,music_query
+3421,o hangi müzik,music_query
+3437,ışıkları artır lütfen,iot_hue_lightup
+3439,romantik playlist aç,play_music
+3443,bu ay yirmi ikinci günü hangi güne denk geliyor,datetime_query
+3454,uyu,audio_volume_mute
+3463,yarın sabah yedide bir uyandırma alarmı istiyorum,alarm_set
+3464,lütfen tüm dış ışıkları aç,iot_hue_lighton
+3466,sesi artır lütfen,audio_volume_up
+3471,resmi kapanma ile ilgili mevcut haberleri getir,news_query
+3496,bandista müziğini aç,play_music
+3511,gece vakti,general_quirky
+3528,bana paket servisi yemek al,takeaway_order
+3530,romantik bir şeyler çal,play_music
+3547,cuma plajda hava güzel olacak mı,weather_query
+3551,sezen aksu nun dördüncü albümünü çal,play_music
+3563,lütfen bana kahve yap,iot_coffee
+3588,bu hafta hangi gün yağmurlu olacak,weather_query
+3589,bu hafta hava nasıl,weather_query
+3599,öğleden sonra bir için çalar saat kur,alarm_set
+3602,türkiyede seçim hakkında en son haberler nelerdir,news_query
+3609,lütfen benim için bir kahve yap,iot_coffee
+3613,bugün güneşli bir gün mü,weather_query
+3620,şu an amasya'da hava nasıl,weather_query
+3632,playlist imi dinlemek istiyorum onu benim için çalar mısın,play_music
+3637,olly tarkan dan ölürüm sana çal,play_music
+3649,antalya'da hava ne kadar sıcak,weather_query
+3651,trabzon'da saat kaç,datetime_query
+3652,izmir de saat kaç,datetime_query
+3665,pazar günü hava elbise giymek için fazla mı soğuk olacak,weather_query
+3676,biraz irem derici dinleyebilir miyim,play_music
+3701,çok parlak,iot_hue_lightdim
+3704,dominoes dan iki pizza ve acılı kanat parçaları sipariş et,takeaway_order
+3705,bugün için tarih ve saat ne,datetime_query
+3712,benim mevcut top çalma listemi çal,play_music
+3713,benim en sevdiğim country şarkılarını çal,play_music
+3720,şu anda zimbabve de saat kaç,datetime_query
+3721,olly şu anda türkiyede saat kaç,datetime_query
+3724,lütfen tarkanın ölürüm sana sını çal,play_music
+3744,bana zamanı bildir,datetime_query
+3754,en son koşu yarışı haberi nedir,news_query
+3758,bundan sonra sevdanın son vuruşunu çal,play_music
+3768,biraz jazz dinlemek istiyorum,play_music
+3801,bana bir haftalık ankara hava durumunu göster,weather_query
+3803,lütfen akıllı prizi kapat,iot_wemo_off
+3804,akıllı prizi aç,iot_wemo_on
+3811,hoparlör sesini azalt,audio_volume_down
+3840,robot süpürgeyi çalıştır,iot_cleaning
+3843,bana çin yemeği sipariş et,takeaway_order
+3863,radyodaki şarkıyı kim yaptı,music_query
+3865,şu anki iki adet şampiyonlar ligi maçı için skorlar nedir,news_query
+3868,yeni asır başlığı nedir,news_query
+3875,haftanın kalanında hava nasıl görünüyor,weather_query
+3876,ani hava değişikliği bekleniyor mu,weather_query
+3880,şimdi hava nasıl,weather_query
+3895,lütfen ışığı artırın,iot_hue_lightup
+3898,önümüzdeki hafta kar olacak mı,weather_query
+3904,lütfen çarşamba akşamı alarmını sil,alarm_remove
+3926,bugün itibariyle maine ne kadar kar aldı,weather_query
+3940,bu şarkıların türünü benim için kaydet,music_likeness
+3941,bu şarkıyı sevdiğimi hatırlamanı istiyorum,music_likeness
+3954,bu şarkıdan sonra yarınım yok u çal,play_music
+3956,üç saat sonra beni uyar,alarm_set
+3968,athena,play_music
+3970,hava şu anda nasıl,weather_query
+3972,bana avrupa siyasetinde neler olduğunu anlat bana,news_query
+3973,şu anda ingiltere premiyer ligin zirvesinde kimin olduğunu öğrenmek istiyorum,news_query
+3997,alexa bölgemdeki haberler neler,news_query
+4003,biraz tarkan dinlemek istiyorum,play_music
+4008,tekrarı aç,music_settings
+4012,süpürgeyi aç,iot_cleaning
+4033,gelecek hafta pizza ya gitme için en iyi gün hangisi,datetime_query
+4046,bugün nasıl bir hava beklemeliyim,weather_query
+4065,istanbul'da saat kaç,datetime_query
+4094,lütfen sabah sekize bir alarm kur,alarm_set
+4114,çalma listesine fikret kızılok barış manço ve tarkan ekle,play_music
+4117,bana biraz dans müziği çalabilir misin,play_music
+4127,çalma listesinden şarkılar çal,play_music
+4129,şuan hangi alarmlarım kurulu,alarm_query
+4131,bugün çeşme izmir için sıcaklık kaç derece olacak,weather_query
+4134,spotify yükle,play_music
+4156,hey olly bana bir fıkra anlat,general_joke
+4161,bu akşam adrese teslim çin yemeği sipariş etmek istiyorum,takeaway_order
+4175,hey siri mevcut ışık ayarlarını değiştir,iot_hue_lightchange
+4191,bu riffi daha önce de duymuştum bu riffi hangi şarkı çalmıştı tıpatıp aynısı,music_query
+4198,gece saat dört için ayarlanmış alarmı kaldır,alarm_remove
+4228,yarın hava otuz derecenin üzerinde olacak mı,weather_query
+4233,geçen yıldan benim favori şarkımı çal,play_music
+4243,lütfen cevap verme,audio_volume_mute
+4277,masa lambamı kapatır mısın,iot_hue_lightoff
+4278,birinci masa lambası kapansın,iot_hue_lightoff
+4287,ışık aç,iot_hue_lightup
+4291,ben bugün işe şemsiye getirmeli miyim,weather_query
+4292,bugün alışveriş yaparken şort giyebilir miyim,weather_query
+4301,teoman dan müzik çal,play_music
+4302,sezen aksu 'nun en yeni albümünü çal,play_music
+4317,yarın sabah saat on için alarm kur,alarm_set
+4318,beni saat onda uyandır,alarm_set
+4326,emre aydın 'dan afilli yalnızlık çal,play_music
+4338,bana yakın adrese teslimat göster,takeaway_order
+4339,interneti aç,takeaway_order
+4359,bana biraz müzik dinlet,play_music
+4360,harika müzik dinlemek istiyorum,play_music
+4387,lambanın ışığını arttır,iot_hue_lightup
+4398,lütfen sesi en yüksek ayara getir,audio_volume_up
+4421,sesi kapat,audio_volume_mute
+4422,sesi durdur,audio_volume_mute
+4424,bu hafta hiç yağmur yağacak mı,weather_query
+4440,tüm iç mekan ışıklarını karart,iot_hue_lightdim
+4481,ben bugün şort ile çıkabilir miyim,weather_query
+4483,bugün kat kat mı giyinmeliyim,weather_query
+4494,ışıklarımı herhangi bir renge çevir,iot_hue_lightchange
+4495,bana en yeni cumhuriyet gazetesini aç,news_query
+4497,ayarları sessize al,audio_volume_mute
+4501,bu hafta kar yağacak mı,weather_query
+4515,ışıkların rengini değiştir,iot_hue_lightchange
+4519,yirmi iki nisan da gün,datetime_query
+4532,ne kadar sonra yağmur beklemeliyiz,weather_query
+4538,bana verdiğin hava durumu tahminleri yanlış şehir için bulunduğum yerin sıcaklığını bilmek istiyorum,weather_query
+4545,duble pastırmalı çizburger pastırma ve amerikan peyniri sipariş et,takeaway_order
+4546,erkin koray 'dan çal,play_music
+4551,hayvanlarla ilgili güncel haberler,news_query
+4558,bu hafta yakınlarımda hava nasıl,weather_query
+4573,buradaki ışıkları daha yükselt lütfen,iot_hue_lightup
+4579,lütfen hoparlör sesini aç,audio_volume_up
+4582,ordu için saat farkı ne,datetime_query
+4600,bana hangi catering paket servislerinin uygun olduğunu söyle,takeaway_query
+4603,hava bulutlu olacak mı,weather_query
+4604,benim pizza hut siparişim yolda mı bir bakıver,takeaway_query
+4619,yeni akıllı soketi çalıştır,iot_wemo_on
+4622,ışıkları iki seviye karart,iot_hue_lightdim
+4623,bu haftanın hava durumu tahmini nedir,weather_query
+4632,yatak odası ışıklarını kapat lütfen,iot_hue_lightoff
+4645,taco bell ne zaman gelecek,takeaway_query
+4664,bu müzik grubunun adı ne,music_query
+4674,trump'ın bir sonraki basın toplantısı ne zaman,news_query
+4675,turkcell için güncel hisse senedi fiyatları nelerdir,qa_stock
+4681,golf maçımda yağmurdan dolayı erteleme olur mu,weather_query
+4687,şikago'da hava nasıl,weather_query
+4693,sabah beşe alarm kur,alarm_set
+4694,lütfen saat akşam ona alarm kur,alarm_set
+4696,yarın hava nasıl olacak,weather_query
+4697,yarın hava güzel olacak mı,weather_query
+4705,bölgemde bugün hava nasıl,weather_query
+4723,farklı alarmımı listele,alarm_query
+4728,borsadaki tüm haberler için bildirim aç,qa_stock
+4729,beni borsadaki en son gelişmelerden haberdar et,qa_stock
+4730,benim müziğimi aç,play_music
+4741,bana son dakika haberlerinin neler olduğunu söyle,news_query
+4745,inek şakası istiyorum,general_joke
+4752,bugün şort giymeli miyim,weather_query
+4775,bana güzel bir fıkra anlatır mısın,general_joke
+4778,son şarkıyı yeniden tekrar et,music_settings
+4779,bu yıl yirmi yedi haziran hangi gün,datetime_query
+4786,ısınmaya ihtiyacım olacak mı,weather_query
+4791,bugün ne var,datetime_query
+4796,yatak odasındaki ışıkları kapat,iot_hue_lightoff
+4810,zaman dilimini değiştir,datetime_convert
+4814,başka bir şehirde saat kaç,datetime_query
+4822,gün batımı ne zaman,qa_factoid
+4823,on günlük hava tahmini,weather_query
+4827,ışıklar yeşile değiştirilebilir mi,iot_hue_lightchange
+4835,bana hürriyet haberlerini göster,news_query
+4836,hiç haber var mı,news_query
+4840,mustafa sandal 'dan araba şarkısını çal,play_music
+4850,beş dakika sonrasına alarm kur,alarm_set
+4853,lütfen alarmımı kur,alarm_set
+4867,pf chang's i ara ve egg foo young iste,takeaway_order
+4872,anlık sıcaklık kaç derece,weather_query
+4892,biraz müzik çal,play_music
+4899,bu şarkı sözlerinden haberin var mı,music_query
+4900,bunu kim söyledi,music_query
+4908,bazı havalı fıkralar aç,general_joke
+4911,bana fıkra anlat,general_joke
+4939,ışıkları söndür,iot_hue_lightoff
+4941,son güncel kasırga haberlerini ver bana,news_query
+4942,bugünün borsa güncellemelerini gönder,qa_stock
+4967,dün gece kazanan powerball numaraları nelerdi,news_query
+4971,şebnem'in yatak zamanı alarmını kaldır,alarm_remove
+4979,benimle daha sessiz konuş lütfen,audio_volume_down
+5004,doğu zaman dilimine göre saat kaç,datetime_query
+5015,lütfen bana eyalet teki seçim senaryosu hakkında en son haberleri söyleyin,news_query
+5021,rb'u seviyorum,music_likeness
+5025,bize kırmızı göster,iot_hue_lightchange
+5028,nisanın yirmi üçü cumartesi mi,datetime_query
+5034,bugün hangi gün,datetime_query
+5035,memleket havası nasıl,weather_query
+5057,bu playlist ten müzik aç,play_music
+5060,yerel haberlerimden yeni haber geldiğinde söyle,news_query
+5063,rengin opaklığını değiştir,iot_hue_lightchange
+5064,rengi açıktan koyuya döndür,iot_hue_lightchange
+5069,wemoyu aç,iot_wemo_on
+5084,sabah altıya alarm kur,alarm_set
+5094,burası karanlık,iot_hue_lighton
+5099,olly alarmları iptal et,alarm_remove
+5100,siri yoga alarmlarını iptal et,alarm_remove
+5105,olly sesi aç,audio_volume_up
+5107,karıştırma çalma listesini googleda ara,music_settings
+5108,sonraki ölürüm sana 'yı çal,play_music
+5113,sonraki gün hava nasıl olacak,weather_query
+5126,u.m.d guam uyuşturucu kullanımının artışta olduğunu bildirdi,news_query
+5142,bana bu hafta için hava tahminini söyler misin,weather_query
+5150,kahve makinesini çalışacak şekilde ayarlar mısın,iot_coffee
+5154,burası çok aydınlık bir ışığı kapatabilir misin,iot_hue_lightoff
+5175,bu hafta hava nasıl olacak,weather_query
+5180,lütfen bu şarkıyı benim çalma listesi favorilerime ekle,music_likeness
+5181,yine bu şarkıyı çal lütfen,play_music
+5182,perşembe rüzgarlı mı olacak,weather_query
+5183,bir fıkra anlat,general_joke
+5184,olly bana donald trump ile ilgili haberleri ver,news_query
+5186,olly başkanlık seçimi hakkında mevcut haber var mı,news_query
+5189,bugün benim buralarda havanın nasıl olma ihtimal i var,weather_query
+5202,salondaki ışıkları kapat,iot_hue_lightoff
+5216,beni en sonki haberlere götür,news_query
+5232,cheteshwar pujara dün kaç koşu attı,news_query
+5236,egzersiz çalma listemi çal,play_music
+5242,banyodaki ışıkları kapat lütfen,iot_hue_lightoff
+5249,olly bugün eldiven giymem gerekiyor mu,weather_query
+5251,dışarı çıkarken şemsiye almam gerekli mi,weather_query
+5267,en son eklenen çalma listesini çalmaya başla,play_music
+5280,b. b. c. den mevcut haberleri göster,news_query
+5282,fox t. v. haberleri göster,news_query
+5290,dışarısı nasıl,weather_query
+5322,bugün miami florida'da hava nasıl,weather_query
+5336,bana ayarladığın alarm zamanlarını söyle,alarm_query
+5342,wayne ilçe şerifleri için yerel haberleri verebilir misin,news_query
+5352,benim çalma listemi çal,play_music
+5359,doğu zaman dilimine çevir,datetime_convert
+5362,gelecek hafta ayın yirmi dördü ne zamana geliyor,datetime_query
+5372,itunesda yeni neler var,music_query
+5376,lütfen bir ocak iki bin yirmi iki için hava durumunu göster bana,weather_query
+5382,irlanda'da haberler nasıl,news_query
+5386,çalan şarkı hangisi,music_query
+5393,sesi aç,audio_volume_up
+5404,mutfağı temizlemek için robot süpürgeyi getir,iot_cleaning
+5408,bana cevapsız çınlama ile ilgili bilgileri ver,music_query
+5436,akşam beş alarmından kurtul,alarm_remove
+5449,türk halk müziği çal,play_music
+5453,sabah saat ondan sonra monta ihtiyacım var mı yok mu,weather_query
+5456,trt haberlerini okumak istiyorum,news_query
+5461,bu gece eldiven getirmem gerekiyor mu,weather_query
+5462,bugün cekete ihtiyacım var mı,weather_query
+5471,olly ışıkların parlaklığını arttır,iot_hue_lightup
+5476,ışıkların rengini değiştir,iot_hue_lightchange
+5478,ışık rengini aktifleştir,iot_hue_lightchange
+5479,farklı bir ışık rengini etkinleştir,iot_hue_lightchange
+5494,kamuoyunun başkan trump'a bakışı hakkındaki son anket nedir,news_query
+5516,bu müziği favori yap,music_likeness
+5518,oda ışığını kapat,iot_hue_lightoff
+5520,mayısın yirmi ikisi hangi gün,datetime_query
+5526,aksi söyleyene kadar sessize ayarla,audio_volume_mute
+5536,şu anki çalan şarkıyı tekrar oynat lütfen,music_settings
+5541,lütfen bana hafta içi sabah alarm bilgisi ver,alarm_query
+5546,fotoğraflar için ayşeye teşekkürler,general_quirky
+5556,biraz eski okul rapi çal,play_music
+5561,bana günün haberlerini oku,news_query
+5565,bedri ile jale tekrar barıştı mı,news_query
+5567,alarmı yirmi beş mayıs saat akşam beşe kur,alarm_set
+5569,benim müziğimi aç lütfen,play_music
+5581,asistan bütün kitaplığı karıştır,play_music
+5596,en yakın altın kebap,takeaway_order
+5604,mavi çalma listesini karıştır ve çal,play_music
+5609,alarm ayarlarını bildir,alarm_query
+5621,anlık sıcaklık,weather_query
+5632,tarkanın tüm şarkılarını karıştır ve çal,play_music
+5636,bu hafta sonu güneş kremine ihtiyacım olur mu,weather_query
+5638,mağaza dan kar tuzu almam gerekiyor mu,weather_query
+5651,wemo prizini aç,iot_wemo_on
+5653,akıllı soketimi aç,iot_wemo_on
+5655,bana bugün hangi gün olduğunu söyle,datetime_query
+5666,anlık hava durumu ya meteoroloji genel müdürlüğü veya accuweather dan güncelleniyor her ikisi de benim sistemde zayıf,weather_query
+5667,başlat'a dokunun ve ardından ayarları seçin,alarm_query
+5672,ankara türkiye de saat kaç,datetime_query
+5684,parti şarkıları oynat,play_music
+5690,sezen aksu,play_music
+5696,ev temizliği başlat,iot_cleaning
+5699,işe giderken ceket giymeli miyim,weather_query
+5726,daha yüksek sesle konuşur musun,audio_volume_up
+5728,odadaki her ışığın şiddetini arttır,iot_hue_lightup
+5735,bana bir ajda pekkan şarkısı çal yine,play_music
+5741,orevana ses kaydedicisi bana şarkı kaydetmek için sistem sayfasını bul,play_music
+5743,iklim,weather_query
+5744,doğum günüm gelecek yıl hangi güne denk geliyor,datetime_query
+5746,on ikisi hangi gün,datetime_query
+5755,ses açık,audio_volume_up
+5763,sanatçı çal,play_music
+5770,hosta restoran paket servis yapıyor mu,takeaway_query
+5782,gün batımından sonra sis olacak mı,weather_query
+5788,dışarısı soğuk,weather_query
+5792,çalar saat,datetime_query
+5793,bu akşam saat beşe alarm kur etiket taksi,alarm_set
+5816,memlekette hava durumu,weather_query
+5824,bu şarkıdan sonra aynı albümden dördüncü şarkıyı çal,play_music
+5832,alexa classic rock aç,play_music
+5854,robot süpürgeyi etkinleştir,iot_cleaning
+5862,bu aydın için en sıcak gün mü,weather_query
+5867,alarm saatlerini bana söyle,alarm_query
+5882,belli bir kelimenin anlamı,general_quirky
+5884,müzik dinlet,play_music
+5937,bana bir akşam yağmurluğu lazım,weather_query
+5943,uluslar arası ticaret ve iş piyasası,news_query
+5957,lütfen bir süre kendini sessize alır mısın,audio_volume_mute
+5968,yemek sipariş istiyorum,takeaway_order
+5982,benim için kaça alarm kurdun,alarm_query
+5989,şimdi kahve istiyorum,iot_coffee
+5990,sabah kahvemi hazırla,iot_coffee
+6001,kahve zamanı,iot_coffee
+6008,tadım pizza daki siparişim hazır mı,takeaway_query
+6009,çin yemeği mi ne zaman alabilirim,takeaway_query
+6035,saati aç,alarm_set
+6044,bir sonraki seçili şarkı,play_music
+6052,alexa ışık parlaklık arttır aşağıda görmek zor,iot_hue_lightup
+6071,siparişim şimdi almaya hazır mı,takeaway_query
+6079,alarm,alarm_set
+6089,bu öğleden sonra yanıma şemsiye almalı mıyım,weather_query
+6096,mor ve ötesi den şarkı çal,play_music
+6104,bugün mersin pozcu'da yağmur yağacak mı,weather_query
+6105,hey olly bodrum muğla'da hava nasıl,weather_query
+6107,can bonomo 'dan ben yağmurum 'u çal,play_music
+6111,hey olly çin yemeği dükkanından iki tavuk kanadı ve patates kızartması sipariş et,takeaway_order
+6115,hey olly ekstra peynirli pizza iste,takeaway_order
+6120,hey olly antakya hatayda saat kaç,datetime_query
+6131,benim yeni çalma listemden bir şeyler çal,play_music
+6132,olly en güncel çalma listemden bana herhangi bir şey çal,play_music
+6135,şu an çalmakta olan şarkı ile ilgili bilgi ver,music_query
+6136,benim için komik ol,general_joke
+6140,olly eldivenlerimi giymeli mi giymemeli miyim,weather_query
+6144,önümüzdeki ayın hava durumunu söyle,weather_query
+6158,elektrik süpürgesini aç,iot_cleaning
+6164,bugün bir ara üstüme bir kat daha giymem gerekecek mi,weather_query
+6169,bu haftanın hava raporunu bak,weather_query
+6170,bana bir haftalık hava tahmini göster,weather_query
+6176,buradan teslimat alabiliyor muyum,takeaway_query
+6183,bugün metro çok yoğundu,general_quirky
+6187,bana günümden bahset,general_quirky
+6188,ayşe dünyanda tuhaf bir şey fark ettin mi,general_quirky
+6193,bugün ne olduğunu duymak ister misin,general_quirky
+6198,beni nasıl tanıyorsun,general_quirky
+6209,şehir merkezinde açılan bu yeni restoran da bir akşam yemeği yemek harika olurdu,general_quirky
+6236,olly nasıl gidiyor,general_quirky
+6240,bugün ödüller aldım olly,general_quirky
+6246,bugün bir sürü toplantım vardı,general_quirky
+6249,nerelisin,general_quirky
+6259,hava bugün güneşli,general_quirky
+6262,hey google bir milyon dolar piyango kazandım,general_quirky
+6265,bana bugünün önemli haberlerini söyle,news_query
+6271,bugün gün nasıl,general_quirky
+6303,sepet sepet yumurta sakın beni unutma,general_quirky
+6314,neler oluyor,general_quirky
+6317,bugün haberlerde ilginç herhangi bir şey var mı,news_query
+6356,cumartesi günü bar daveti aldım,general_quirky
+6361,bana güzel bir alkollü içecek söyle,general_quirky
+6364,bana türkiye hakkında bir şeyler söyle,general_quirky
+6367,spor,general_quirky
+6381,hey yakında çıkacak güzel filmler hangileri,general_quirky
+6389,kişisel verilerimle ne yapıyorsun,general_quirky
+6404,not almasını istediğimde,general_quirky
+6414,haftalık planım,calendar_query
+6420,tırı vırı,general_quirky
+6422,wikipedia konuları,general_quirky
+6425,naber,general_quirky
+6452,en hipoalerjenik olan köpek ırkları,general_quirky
+6482,olly bugün bir enkaza girdim,general_quirky
+6483,bugün boynere gittim,general_quirky
+6490,kinayeli espriler,general_joke
+6493,eğlence haberleri,news_query
+6499,cep telefonu,general_quirky
+6502,yağmurda sırılsıklam oldum,general_quirky
+6513,moda,general_quirky
+6520,program,calendar_query
+6522,bana cevaplar bul,general_quirky
+6540,bugünün kaçamak günü olarak işaretlenmesi gerekiyor,calendar_set
+6548,bugün yorucu bir gündü,general_quirky
+6558,kız arkadaşımı beğendin mi,general_quirky
+6570,bana hadiseden bahset,general_quirky
+6571,istanbul'da neler oluyor,recommendation_events
+6595,bu defa ne yaptım,general_quirky
+6597,günün nasıldı,general_quirky
+6599,kozmoz,general_quirky
+6603,apartmanda ne zaman ısıtma seviyesi,general_quirky
+6607,espriler,general_joke
+6613,pişirmek,cooking_query
+6628,tahmini kurlar,general_quirky
+6638,arabalar,general_quirky
+6640,çok yoğun,general_quirky
+6642,google arama motoru ile ilgili güncel tavsiyeler,general_quirky
+6648,günün şakası,general_joke
+6655,süpermarkette gerekli malzemeler,general_quirky
+6673,nasıl gidiyor,general_quirky
+6675,üç şey hakkında konuşabilseydin bunlar ne olurdu,general_quirky
+6677,uzay araştırması,general_quirky
+6692,kitaplar,general_quirky
+6699,ünlüler hakkında dedikodu yapmak,general_quirky
+6723,olly haftanın geri kalanı için gündemim ne,calendar_query
+6734,günümü toplantılardan temizle,calendar_remove
+6741,lütfen takvimime sabah ona günlük kalkışımı ekler misin,calendar_set
+6751,bir sonraki toplantım ne zaman,calendar_query
+6760,öğleden sonra beşteki günlük telefon görüşmemi iptal et,calendar_remove
+6771,çiğdem ile bir toplantı ayarla,calendar_set
+6775,o ne zaman,general_quirky
+6778,bugün herhangi bir etkinliğim var mı,calendar_query
+6779,yarın için herhangi bir rezervasyonum var mı,calendar_query
+6792,bana etkinliklerimden bahset,calendar_query
+6808,takvimimdeki bütün etkinlikleri kaldır,calendar_remove
+6821,olly bana maçka parkındaki pikniği hatırlat,calendar_set
+6823,olly bu hafta sonu açık hava filmine gitmek istiyorum bana hatırlat,calendar_set
+6827,yarın akşam dokuzda oğuz ile görüşme ekledin mi,calendar_query
+6831,önümüzdeki beş gün tüm etkinlikleri sil,calendar_remove
+6841,yarın akşam dokuzda hiç toplantım var mı,calendar_query
+6858,takvimde şu kişilerle bu etkinliği oluştur,calendar_set
+6873,ziyaret ettiğim son etkinliği silebilir misin,calendar_remove
+6875,takvimimde bugün için yaklaşan bir etkinliğim var mı,calendar_query
+6881,takvimimdeki bir sonraki randevu ne zaman,calendar_query
+6883,yarın öğleden sonra ikideki doğum günü partisini sil,calendar_remove
+6898,takvimimdeki tüm etkinlikleri silebilir misin,calendar_remove
+6905,burası çok ağır,general_quirky
+6908,her gün sabah dokuzda bir hatırlatmaya ihtiyacım var,calendar_set
+6912,bugün toplantıda kimin olmasını beklemeliyim,calendar_query
+6914,her pazartesi takvimime pazartesi toplantısı koy,calendar_set
+6920,altı mart için öğleden önce on birde dernek toplantısı olduğuna dair bir bildirim ayarla,calendar_set
+6925,yarın akşam için herhangi bir program var mı,calendar_query
+6927,tüm olayları ve bilgileri sil,calendar_remove
+6929,bütün etkinlikler ve programları kaldır,calendar_remove
+6932,benim yarınki etkinlik programım nedir,calendar_query
+6939,bana yarın sabah ondaki toplantımı hatırlat,calendar_set
+6948,bu hafta kaç tane toplantım var,calendar_query
+6952,takvimi tamamen sil,calendar_remove
+6963,lütfen yarın sabah yapacağım toplantıdan bir saat önce bana hatırlat,calendar_set
+6985,yarın öğleden sonraki program ne,calendar_query
+6990,yaklaşan etkinlikler,calendar_query
+6991,en sonki etkinlikler,calendar_query
+7007,muzaffer için yarına bir randevu ayarla,calendar_set
+7016,takvimimde yaklaşan etkinlikler var mı,calendar_query
+7034,gelecek ay tatil için bir hatırlatıcı oluştur,calendar_set
+7035,bu ay için takvimi temizle,calendar_remove
+7043,iki saat sonraya alarm kur lütfen,alarm_set
+7052,bu cumartesi öğleden sonra iki ile akşam dört arasında bir şeyim var mı,calendar_query
+7064,lütfen günün geri kalanı için tüm takvim etkinliklerimi sil,calendar_remove
+7065,bugün benim takvim imde hangi etkinlikler var,calendar_query
+7066,takvim etkinliğim nedir,calendar_query
+7070,bugün hiç hatırlatıcım var mı,calendar_query
+7086,bugün akşamki toplantıyı kaldır,calendar_remove
+7101,on ikisi sabahı doktor randevumu hatırlat,calendar_set
+7104,cumartesi sabahı mete yıldırım ve nihat ile brunch için bir takvim girişi yap,calendar_set
+7108,bugün akşam altıda nermin ile buluşacağımı hatırlat,calendar_set
+7112,haftaya benim patronumla olan toplantı ne zaman,calendar_query
+7131,ayın onunda olacak düğünü takvimimden sil,calendar_remove
+7134,etkinliklerde sırada ne var,calendar_query
+7136,yarın randevum var hatırlat,calendar_set
+7164,öğleden sonra dört,calendar_set
+7169,olly her perşembe öğleden sonra iki için terapist ime gideceğim,calendar_set
+7174,iptal et,calendar_remove
+7184,cumartesi akşam onda seherin doğum gününe gitmek istiyorum,calendar_set
+7201,gelecek haftaki planım ne,calendar_query
+7223,bana arkadaşım ahmet'in resmen işe başlama tarihini söyle,calendar_query
+7229,lütfen benim takvimimde iki nisan'a türkiye'de tatil ekle,calendar_set
+7239,akşam sekizde ilaç almam gerektiğini hatırlat,calendar_set
+7244,maç kaçta başlayacak,calendar_query
+7255,ben yarın için iptal etmem gereken ne planladım,calendar_remove
+7260,hatırlatıcıyı yarın öğleden sonra üçteki toplantıya ayarla,calendar_set
+7279,bana gelecek pazartesi kuru temizlemeden kıyafetleri almam gerektiğini hatırlat,calendar_set
+7300,yarın babamı ziyaret etmem gerektiğini hatırlat,calendar_set
+7305,takvime bu öğleden sonra için bir birleşme etkinliği ekle,calendar_set
+7309,bugünkü ilk randevum ne,calendar_query
+7310,bugün programımda ne var,calendar_query
+7312,bana yarın öğle yemeğinde ali ile buluşmayı hatırlat,calendar_set
+7317,bu etkinlik için ablamın evinin yerini ayarlayabilir misin,calendar_set
+7341,bir sonraki etkinliği takvimden kaldır,calendar_remove
+7345,takvimime on iki temmuz yasin doğum günü ekle,calendar_set
+7351,takvime dokuz ağustos akşamı saat sekizde frank ile akşam yemeği yiyeceğimizi yaz,calendar_set
+7357,mart ayında takvimimdeki etkinliklerin listesi nelerdir,calendar_query
+7373,düğün ne zaman planlanıyor,calendar_query
+7374,mart ayında hangi toplantılar mevcut,calendar_query
+7381,lütfen iki bin on yedi martının yirmi ikisinde bulunan üçüncü etkinliği kontrol et,calendar_query
+7401,yarın onunla sevgililer günü ekle,calendar_set
+7402,önümüzdeki ay için annemle doğum günü ekle,calendar_set
+7421,arkadaşınla bir toplantı oluştur,calendar_set
+7424,toplantıdan önce partiye katıl,calendar_set
+7445,lütfen yalnızca bu kişilerle bir etkinlik oluştur,calendar_set
+7458,beni öğlen on iki de havaalanından almayı unutma öğleden sonra üçte bir toplantım var,calendar_set
+7470,ercüment ile olan toplantıyı on marta ayarla,calendar_set
+7474,yarın akşam yedide oyuncularla benim aramda bir toplantı ayarlamayı unutma,calendar_set
+7486,mevcut uyarılarım neler,calendar_query
+7495,bana yarınki mülakatı hatırlat,calendar_set
+7505,yaklaşan etkinlikler,calendar_query
+7516,etkinliği tekrar eden olarak ayarla,calendar_set
+7517,salıya bir toplantı ayarla,calendar_set
+7523,dün yapılan toplantıda neleri not aldık,calendar_query
+7530,lütfen bir sonraki toplantımı ekle,calendar_set
+7541,bu öğe için yarın için hatırlatıcı ayarla,calendar_set
+7555,toplantı için kişi a yı ara,calendar_set
+7571,fatura döngüsü ne zaman,calendar_query
+7595,çerezler için beş dakikalık bir zamanlayıcı ayarlayın,calendar_set
+7617,hokey maçı cuma günü ne zaman başlıyor,calendar_query
+7620,lütfen tüm takvim etkinliklerimi sil,calendar_remove
+7627,bana yarın sabah pizza yapmam gerektiğini hatırlat,calendar_set
+7631,her cuma öğle namazı için onikiye ayarla,calendar_set
+7646,bekleyen bir hatırlatıcım var mı,calendar_query
+7653,bana erkek kardeşimin yirmi nisandaki doğum gününü hatırlatmayı unutma,calendar_set
+7665,mike jim ve bob ile bir öğle yemeği randevusu eklemek istiyorum,calendar_set
+7675,bana bugün sabah dörtte yaklaşan toplantıyı hatırlat,calendar_set
+7676,yaklaşan toplantıyı listele,calendar_set
+7682,evan parker ile yapacağım tüm hafta sonu etkinliklerimi bul ve sil,calendar_remove
+7684,bu etkinliği takvimime not düş,calendar_set
+7688,bekleyen herhangi bir hatırlatıcım var mı,calendar_query
+7699,bunu bana mutlaka hatırlat,calendar_set
+7703,hey olly lütfen yarın sabah ondaki toplantı için bir hatırlatıcı ayarla,calendar_set
+7720,lütfen bana saklı anımsatıcıları bildir,calendar_query
+7723,bu hafta olan toplantımı söyle bana,calendar_query
+7727,pazartesi bir doğum günüm var etkinliği ayarla,calendar_set
+7729,on beşinde bir bilet almam lazım,calendar_set
+7731,akşam için bir etkinlik ayarla,calendar_set
+7732,her üç temmuza bob'un doğum gününü ayarla,calendar_set
+7734,bana her cuma mağazaya gitmeyi hatırlat,calendar_set
+7738,cumartesi programımdan market alışverişini sil,calendar_remove
+7747,takvimimdeki tüm verileri kaldır,calendar_remove
+7753,pazartesi günü ne yapmalıyım,calendar_query
+7755,takvimimde bir etkinliği tekrarla,calendar_set
+7766,o ay için takvimimi temizlemenin ve ilerlemenin yolları var mı,calendar_remove
+7769,dört şubat öğleden sonra ikiye atatürk parkında antreman ekle,calendar_set
+7780,bana selinin doğum gününü hatırlat,calendar_set
+7782,bugünün programı nasıl,calendar_query
+7801,katılım için bir not ekle,calendar_set
+7804,her gün sabah sekizde iş konularım için yinelenen bir anımsatıcı yap,calendar_set
+7830,programımı temizle,calendar_remove
+7840,bugün sabah sekiz ile akşam beş arasında olmam gereken bir yer var mı,calendar_query
+7846,bu haftanın hatırlatıcıları neler,calendar_query
+7852,bu gece akşam beşe beyzbol antremanı etkinliği ekle,calendar_set
+7867,yarın benim sabahım nasıl görünüyor,calendar_query
+7871,bu cuma toplantıya kimler katılıyor,calendar_query
+7877,ikisi ile on beşi arasında meler oldu,news_query
+7880,bana bugün ile yirmi biri arasındaki etkinlikleri söyle,calendar_query
+7893,lütfen her otuz dakikada bir seçimle ilgili bir güncelleme verin,calendar_set
+7907,bugün hiç randevum var mı,calendar_query
+7920,takvimi aç tüm etkinlikleri kaldır,calendar_remove
+7930,cuma günü benim gazideki biyoloji testimi hatırlat,calendar_set
+7945,yirmi kasımda ne var,calendar_query
+7947,gelecek haftaki irem derici konseri için program nedir,calendar_query
+7968,show ile ilgili neler bilmem gerekiyor,calendar_query
+7969,bu akşam tiyatroda kim ve neden var,recommendation_events
+7977,bugün kurulmuş herhangi bir hatırlatıcım var mı,calendar_query
+7999,yedi mart için düzenlenen veli toplantısını kaldır,calendar_remove
+8014,benim takvim imde bugün için benim bir toplantı m var mı,calendar_query
+8039,on dakika içinde işe gitmem için bir anımsatıcı kut lütfen,calendar_set
+8046,gelecek hafta kaç toplantım var,calendar_query
+8047,on dört şubat için restoranda akşam yemeği rezervasyonu yap,calendar_set
+8057,bu hafta sonu ne oluyor,calendar_query
+8059,bu hafta çöp toplama haftası mı,calendar_query
+8061,akşam yemeği partisi bu gece saat kaçta başlıyor,calendar_query
+8063,bir sonraki hatırlatıcım ne zaman,calendar_query
+8068,bana yirmi iki mart'taki turnuva detaylarını anlat,calendar_query
+8069,yarın öğlen istanbul beşiktaşda madoda öğle yemeği ayarla,calendar_set
+8072,cuma günü bir randevum var mı,calendar_query
+8078,öğleden sonra bir de kuaför den köpeğimi almak için bir anımsatıcı gönder,calendar_set
+8089,benim toplantı ne zaman,calendar_set
+8101,olly benim randevularımın saatini değiştirmek için email gönder,email_sendemail
+8122,her cuma öğle yemeği etkinliğini yineleye değiştir,calendar_set
+8127,takvimimdeki toplantıyı güncelle ve toplantıyı yansıt,calendar_set
+8132,yarın trenler kaçta hareket ediyorlar,calendar_query
+8133,cemi almak için öğleden sonra üçe hatırlatma koy,calendar_set
+8146,benim on dördündeki toplantımı iptal et,calendar_remove
+8152,bana salı gecesi konser hakkında bilgi ver,calendar_query
+8160,pelinin emekliliği için buluşma olduğu konusunda hatırlatma lazım salı günü öğleden sonra saat üçe hatırlatıcı kur,calendar_set
+8192,o etkinlikte neler oluyor,recommendation_events
+8207,bu sabah on ile on iki arasında ne işim var,calendar_query
+8208,john ile yapacağım akşamki toplantının saati nedir,calendar_query
+8253,her sabah saat beşte uyanmam gereken bir hatırlatıcı ayarla,alarm_set
+8258,istiklal caddesindeki konser hakkında daha fazla bilgi,calendar_query
+8263,olly bu gece yarınki toplantıyı hatırlat,calendar_set
+8270,çarşamba günü toplantı duyurusu,calendar_set
+8272,yaklaşan toplantımı takvimime ekle,calendar_set
+8282,lütfen takvimimi tamamen temizle,calendar_remove
+8287,bu gece ozan ile yapacağım toplantıyı sil,calendar_remove
+8311,çarşambaları öğleden sonra iki için bir hatırlatıcı ayarla,calendar_set
+8315,ayşenin doğum günü martın birinde olduğu doğrumu,calendar_query
+8323,yarınki toplantıyı takvimime ekledin mi,calendar_query
+8325,bu hafta her gün için öğle yemeği toplantıları ekle,calendar_set
+8329,cuma günü öğleden sonra üçteki toplantı için bir hatırlatıcı ayarla,calendar_set
+8333,her şeyi takvimden kaldır,calendar_remove
+8372,selam siri takvimimin yarın tamamen temizlendiğinden emin ol,calendar_remove
+8373,iki saat içinde yeni toplantı bildirimi,calendar_set
+8377,bana takvimi hatırlat,calendar_set
+8384,bu sabah bekleyen randevu var mı,calendar_query
+8385,bu hafta maaş haftası mı,calendar_query
+8417,takvimimdeki tüm randevuları iptal et,calendar_remove
+8418,hangi hatırlatmaları ayarlamalıyım,calendar_query
+8425,bugün sabah altı kırk beş haberlerinde ne var,calendar_query
+8434,takvimimdeki öğlen birdeki etkinliğimi kaldır,calendar_remove
+8446,bana bugünden itibaren bir hafta sonra saat beşte kütüphanede olmam gerektiğini hatırlat,calendar_set
+8447,gelecek cumartesi saat beşte kütüphaneye gitmek için bir hatırlatıcı ayarla,calendar_set
+8451,bana yaklaşan milli bayramları hatırlat,calendar_set
+8463,bugün öğleden sonra birdeki etkinliği takvimimden kaldır,calendar_remove
+8479,akşam beşte ki toplantım için hatırlatma ayarla,calendar_set
+8487,lütfen çarşamba sabah dokuzda doktor mahmut ofisinde randevusunu ekle,calendar_set
+8491,bu akşamki futbol maçında önemli yerler nelerdi,calendar_query
+8493,bana bugün programımda ne olduğunu söyle,calendar_query
+8510,tarkan izmir'e ne zaman geliyor,calendar_query
+8522,takvimime bir şeyler eklemek istiyorum,calendar_set
+8528,etkinliği takvimden temizle ve yenile,calendar_remove
+8543,gelecek etkinliklerim neler,calendar_query
+8548,takvimdeki son etkinliği sil,calendar_remove
+8549,lütfen takvimdeki bir sonraki etkinliği iptal edin,calendar_remove
+8578,bugün sekiz ile on arasında hangi görüşmeler var,calendar_query
+8592,yarın öğleden sonra iki de bana hatırlat,calendar_set
+8594,bu cumartesi cenkin evindeki havuz partisi için takvimimde bir etkinlik ayarla,calendar_set
+8602,bir ocak için planlanmış etkinliği adresi nedir,calendar_query
+8606,yarın ayşe ile buluşmak istiyorum,calendar_set
+8609,elif ile salı günü olan toplantımı iptal et ve toplantıyı perşembeye al,calendar_set
+8612,takvimimden perşembe günündeki öğle yemeğini kaldır,calendar_remove
+8619,internet faturamı ödememi hatırlatmak için her ayın on beşinde bir etkinlik ayarla,calendar_set
+8622,takvimime aşağıdaki tarih ve saati ekle,calendar_set
+8626,etkinlik ne zaman,calendar_query
+8655,goshen new york 'ta beş mayısta öğleden sonra üçten başlayarak dan'in mezuniyeti için bir etkinlik ekle,calendar_set
+8668,geçen sene kaç saatim toplantılarda geçti,calendar_query
+8677,toplantıyı sil,calendar_remove
+8697,ali ile yirmi bir mart onda bir toplantım var,calendar_set
+8699,toplantı için hazırlanmam gerek ti,calendar_query
+8707,yaklaşan etkinliklerimi göster,calendar_query
+8714,bir sonraki etkinliği takvimden sil,calendar_remove
+8723,takvim benim bir kasım iki bin yirmi birde boş olduğumu söylüyor mu,calendar_query
+8729,haftalık randevu anımsatıcısı oluştur,calendar_set
+8749,bugünden iki gün sonrasını tatilim olarak bayrakla,calendar_set
+8751,salı öğle toplantısı,calendar_set
+8752,on yedi mart için herhangi bir planım var mı,calendar_query
+8753,olly doktor randevumu cuma günü öğleden sonra ikiye ayarla,calendar_set
+8755,takvimime akşam yemeği rezervasyonlarını ekleyebilir misin,calendar_set
+8778,hüseyinin nikahı için takvim bilgisi oluştur,calendar_set
+8783,bugün hiç takvim etkinliklerim var mı,calendar_query
+8786,benim lokasyonumda tatil araştır,recommendation_events
+8788,belirli tarihlerde son günlerdeki olayları aramak,recommendation_events
+8800,listemde herhangi bir hatırlatıcı var mı,calendar_query
+8802,lütfen bana hatırlat,calendar_set
+8803,lütfen alarm kur,alarm_set
+8808,pazartesi günü toplantılar hakkında herhangi bir anımsatmaya ihtiyacım var mı,calendar_set
+8829,takvim etkinliği yanlış mı,calendar_query
+8834,haftanın geri kalanı için tüm toplantılarımı iptal et,calendar_remove
+8842,iki mayıs ı mervenin doğum günü olarak her sene yinelenen takvime ekle,calendar_set
+8847,yağmurluğumu almamı hatırlatmanı istiyorum çünkü yağmur yağabilir,calendar_set
+8848,lütfen bana şemsiyemi almamı söyle çünkü bugün çok sıcak olacak,calendar_set
+8859,on dört haziran iki bin on yedi için programım nedir,calendar_query
+8863,lütfen pazar günü için tüm anımsatmaları sil,calendar_remove
+8873,perşembe günü uludağ kebapda akşam yemeğini hatırla,calendar_set
+8890,hatırlatıcıyı ayarla,calendar_set
+8895,bu insanlarla takvim etkinliği,calendar_set
+8896,bugünkü programımı temizle,calendar_remove
+8899,detaylar,calendar_query
+8903,son etkinliklerden bahset,calendar_query
+8928,toplantılar ne zaman,calendar_query
+8933,parti ne zaman için programlanmış,calendar_query
+8934,sonraki bir hafta olacak tüm etkinlikler ile ilgili beni bilgilendir,calendar_set
+8938,cemal evlilik yıl dönümü,calendar_set
+8941,bu ay tatil ne zaman,calendar_query
+8953,salı günkü toplantı ile ilgili bilgilendir,calendar_set
+8959,bana akşam programını hatırlatmanı istiyorum,calendar_set
+8984,takvimden orçunun doğum gününü sil,calendar_remove
+9002,tamam google departman başkan yardımcısı ile yirmi bir mart iki bin on yedide bir toplantı ayarla,calendar_set
+9004,perşembe günü finansal i̇şler müdürü ile bir toplantıya ihtiyacım var,calendar_set
+9008,takvimimden doğum günü etkinliğini kaldır,calendar_remove
+9013,bana beş nisanda patronla bir toplantı olduğunu hatırlat,calendar_set
+9023,bu perşembe vize başvurusu için bir hatırlatma oluştur,calendar_set
+9040,takvimde üç temmuzu boş bırak,calendar_remove
+9049,salı akşam dörde alarm kur,alarm_set
+9051,salı günü ahmet'in düğünü için bir etkinlik hatırlatıcı oluştur,calendar_set
+9065,takvime yinelenen bir etkinlik koy,calendar_set
+9067,bu hafta sonu meşgul müyüm,calendar_query
+9069,olly haftaya randevum var mı,calendar_query
+9082,etkinlikten sonraki günü sil,calendar_remove
+9097,sıfırlanması gereken etkinlikleri hatırlat,calendar_set
+9123,kız kardeşimin ziyaretini aile takvimime ekle,calendar_set
+9127,kongre merkezi nerede,qa_factoid
+9136,cuma günü herhangi bir toplantı,calendar_query
+9144,bana cumartesi günü saat on ikideki randevumu hatırlat,calendar_set
+9164,olly bu ay hiç takvim etkinliğim var mı,calendar_query
+9171,olly önümüzdeki cumartesi sabah on için takvimde bir kayıt oluştur,calendar_set
+9179,bana ocak ayının yirmi ikisindeki toplantıyı hatırlat,calendar_set
+9189,bir saat içerisindeki toplantıyı bana hatırlat,calendar_set
+9190,bana bir saat içinde toplantımı hatırlat,calendar_set
+9208,biraz radyo çal,play_radio
+9211,vitrin radyoyu aç,play_radio
+9214,pandora yı aç rock kanalı çal,play_radio
+9215,iheartradio rov rock aç,play_radio
+9228,güzel fıkralar için bir radyo kanalı aç,play_radio
+9249,radyoyu başlat,play_radio
+9253,alemfm nokta com,play_radio
+9256,radyo aç,play_radio
+9280,radyo kanalını aç lütfen,play_radio
+9281,bu radyo kanalını dinlemek istiyorum,play_radio
+9287,radyo aç,play_radio
+9299,kral f. m. radyo kanalını başlatabilir misin,play_radio
+9310,tunes çal,play_radio
+9325,frekans dokuz yüz doksan yedi aç,play_radio
+9340,kanal dokuz yüz elli bir'i aç,play_radio
+9343,lütfen radyo çal,play_radio
+9355,radyo açık,play_radio
+9369,benim favori radyo kanalıma git,play_radio
+9371,beni gülümsetecek bir şarkı çal,play_music
+9375,number one turk çal,play_radio
+9382,a. t. v. radyo 'yu aç,play_radio
+9383,radyo d çal,play_radio
+9391,benim fm radyomu aç ve radyo d çal,play_radio
+9425,olly rnb çalan istasyon dinlemek istiyorum,play_radio
+9428,radyoda futbol maçı çal,play_radio
+9432,spor podcastlerimin kaçının henüz dinlemediğim yeni bölümleri var,play_radio
+9442,pandorayı aç ve top hitleri çal,play_radio
+9447,lütfen pandora'da popüler müzik çal,play_radio
+9453,benim için radyo d çal,play_radio
+9454,bana trt fm 'den biraz radyo müziği çal,play_radio
+9459,en iyi amerikan folk müziği aç lütfen,play_music
+9489,radyoda müzik programları aç,play_radio
+9492,güncel çalma listesini çal,play_music
+9500,sirius 'da sezen aksu'nun bir parçasını bul,play_radio
+9512,radyo d kanalını çal the buzz,play_radio
+9518,f. m. de haberleri çal,play_radio
+9521,geveze 'li fularsız entellik de sezen aksu lu bölümü aç,play_radio
+9534,doksan üç nokta beş f.m. çal,play_radio
+9580,ntv radyo 'yu aç,play_radio
+9589,ok google hasan dinç 'i başlatabilir misin,play_radio
+9593,akşam dokuzda benim favori istasyonumu çal,play_radio
+9599,power fm,play_radio
+9606,bu program için gerekli podcastleri çal,play_radio
+9612,bu sabah hangi istasyonlar iyi müzik çalıyor,play_radio
+9614,radyo d 'ye bağlan,play_radio
+9615,bir country station aç,play_radio
+9633,radyo programı nihat ve sivrisinek'i aç,play_radio
+9642,a. t. v. radyo çal,play_radio
+9660,bu programı aç,play_radio
+9673,harry potter'ın benim favori sesli kitabımı çalar mısın,play_audiobook
+9677,burak soyer sesli kitabını açabilir misin,play_audiobook
+9688,unutkan aşk bölüm yediyi başlat,play_audiobook
+9692,osmanlıyı yeniden keşfetmek sesli kitabına devam et,play_audiobook
+9709,sesi durdurur musun,play_audiobook
+9712,benim sesli kitabımı çalmaya devam et,play_audiobook
+9725,sesli kitabı durdur,play_audiobook
+9733,vatan yahut silistre yi kaldığım yerden aç,play_audiobook
+9734,can sesli kitabını başlat,play_audiobook
+9736,en son eklenen sesli kitap ı çal,play_audiobook
+9743,audio çal,play_audiobook
+9756,en son ara verdiğimiz yerden benim sesli kitap a devam et,play_audiobook
+9765,en son çaldığın sesli kitap la devam et,play_audiobook
+9771,son zamanlarda durdurulmuş audio yu çal,play_audiobook
+9775,sesli kitabıma benim başladığım son bölümün başından devam et,play_audiobook
+9778,kiralık konak çal,play_audiobook
+9783,beş dakika mola verelim,play_audiobook
+9787,kitap okumaya başla,play_audiobook
+9798,benim için kuran a devam et,play_audiobook
+9811,mai ve siyah sesli kitabını aç ve en son çalınan yerden çal,play_audiobook
+9816,bu playbacki sesli kitapta ara ve benim için çal,play_audiobook
+9817,bu sesli kitabı kaldığı yerden devam ettir,play_audiobook
+9822,downpourdan kara kitabı dinle,play_audiobook
+9831,bölüm dörtten kuran okumaya başla,play_audiobook
+9834,yıldız tilbe den sesli kitap tan bir şarkı ile devam et,play_audiobook
+9838,sesli kitap kuran çal,play_audiobook
+9840,kuyucaklı yusuf adlı sesli kitaba devam edebilir misin,play_audiobook
+9849,sesli kitap ta greya yı çal,play_audiobook
+9863,fransızca dersinde okuma kısmına devam et,play_audiobook
+9872,lütfen dağılmak istiyorum u çal,play_audiobook
+9874,o sabahattin ali kitap ını okumaya başla,play_audiobook
+9876,benim sesli kitabımla devam et,play_audiobook
+9889,benim sinekli bakkal kitabımı oynatmaya devam et,play_audiobook
+9892,kürk mantolu madonna'yı kaldığı yerden devam ettir,play_audiobook
+9907,bu sesli kitap ta bu nokta dan çal,play_audiobook
+9921,bana sarımsaklı ekmek tarifi ver,cooking_recipe
+9926,makarna pişirmek için ne kadar zaman gerekli,cooking_recipe
+9934,brokoli ve tavukla ne pişirebilirim,cooking_recipe
+9951,yemek yaparken beni yönlendir,cooking_recipe
+9965,nasıl makarna yapabilirim,cooking_recipe
+9968,beyaz şarap yerine ne kullanılabilir,cooking_recipe
+9978,antep yemekleri videoları oynatabilir misin lütfen,cooking_recipe
+9982,olly nasıl deniz mahsulleri çorbası yaparım,cooking_recipe
+9993,tantuni nasıl yapılır,cooking_recipe
+9996,en seksi yemek hangisi,cooking_recipe
+9999,pizza yı çıtır yapmak için ne kadar süre pişirmem gerekir,cooking_recipe
+10017,börülceyi nasıl pişirirsin,cooking_recipe
+10020,bana tarifler ver,cooking_recipe
+10022,nasıl pişireceğimi göstermek için google ı kullan,cooking_recipe
+10037,bana en iyi pişirme fikirlerini ver,cooking_recipe
+10039,kurabiye tarifi göster,cooking_recipe
+10041,nasıl kurabiye yaparım,cooking_recipe
+10058,bir litrede kaç fincan var,cooking_recipe
+10070,fırında patates nasıl yapabilirim,cooking_recipe
+10086,pizza tarifi ara,cooking_recipe
+10110,nasıl rulo köfte yaparım,cooking_recipe
+10129,bana bir erişteli tavuk çorbası tarifi bul,cooking_recipe
+10135,glütensiz menüler ara,cooking_recipe
+10138,bana yemek tarifini nasıl pişireceğimi göster,cooking_recipe
+10143,buzlu turtayı ne kadar soğutayım,cooking_recipe
+10146,dört kişilik sufle nasıl yapılır,cooking_recipe
+10152,sosisli tarifi bul,cooking_recipe
+10154,güveç kabında tavuk güveç tarif i,cooking_recipe
+10157,spagetti tarifi getirebilir misin,cooking_recipe
+10162,hindi köfte tarifi getir,cooking_recipe
+10169,yemek tarifleri,cooking_recipe
+10186,tavuk göğsünü fırında ne kadar pişirmeliyim,cooking_recipe
+10195,yengeç eti için tarif,cooking_recipe
+10196,meksika yemeği için öneriye ihtiyacım var,cooking_recipe
+10210,yorum yok,cooking_recipe
+10218,haşlanmış yumurta için pişirme süresi ne kadar,cooking_recipe
+10237,badem sütü için kolay tarif bul,cooking_recipe
+10238,tavuklu güveç tarifi bul,cooking_recipe
+10242,yemek tarifi ara,cooking_recipe
+10245,alexa benimle satranç oyna,play_game
+10255,satranç oynamak istiyorum oynatabilir misin,play_game
+10267,güzel bir satranç oyununa ne dersin,play_game
+10273,solitaire aç,play_game
+10279,yarış oyunu oyna,play_game
+10290,hadi langırt oynayalım,play_game
+10291,örümcek oyununu başlat,play_game
+10293,benle oyun oynamak ister misin,play_game
+10295,benim futbol oyunumu beşinci levelden oynatmanı istiyorum,play_game
+10301,trivia oyununu oynamak istiyorum,play_game
+10303,oyun bul,play_game
+10324,yılan koynumda oyna,play_game
+10327,bulmaca çözelim,play_game
+10351,papa pear saga 'yı aç,play_game
+10361,hadi tavla oynayalım,play_game
+10364,oyun aç,play_game
+10367,clash of clans oyununda düşman rolünü alabilir misin,play_game
+10374,lütfen benimle satranç oyna,play_game
+10388,bu şarkıya isim verebilir misin,play_game
+10397,benimle poker oynayabilir misin,play_game
+10412,millionaires oynayalım,play_game
+10415,tic tac toe oynayalım,play_game
+10424,benim alışveriş listemdeki öğeleri listele olly,lists_query
+10449,önümüzdeki hafta olan kıbrıs gezisini iptal etmek istiyorum,lists_remove
+10450,bugün alışveriş listemde ne var,lists_query
+10453,alışveriş listesinden ekmeği çıkar,lists_remove
+10457,parti alışveriş listeme votka ekle,lists_query
+10458,alınacaklar listesini kaldır,lists_remove
+10468,yeni bir liste oluşturabilir misin,lists_createoradd
+10470,geçen hafta satın alınan ürünleri yiyecek listesinden kaldır,lists_remove
+10475,görünüşe göre,lists_remove
+10486,listeyi temizle,lists_remove
+10488,liste yap,lists_createoradd
+10496,hangi marketler için liste yaptım,lists_query
+10506,listelerim neler,lists_query
+10518,hangi listeler mevcut,lists_query
+10520,listeyi bul ve elmayı kaldır,lists_remove
+10521,osmanlıca şarkı listemi sil,lists_remove
+10526,lütfen bir listeyi kaldır,lists_remove
+10529,bu öğeyi listeye ekle,lists_createoradd
+10532,yaptığım son beş liste neydi,lists_query
+10539,bana en son yüklenen listeyi gönder,lists_query
+10545,benim için bir numara listesi yap,lists_createoradd
+10548,benim için yeni bir liste oluştur lütfen,lists_createoradd
+10551,bugün yapılacaklar listemde ne var,lists_query
+10554,bugün neler yapıyorum,general_quirky
+10555,yapılacaklar listemdeki beş numaralı maddeyi kontrol et,lists_query
+10557,lütfen benim listemi göster,lists_query
+10589,excel dosyasını listeden kaldır,lists_remove
+10602,bana bir oynatma listesi söyle,music_query
+10605,listede kaç tane yiyecek var,lists_query
+10614,liste ön eki kuru olan tüm gıda maddelerini içermemelidir,lists_remove
+10616,yarına kadar yeni bir liste oluştur,lists_createoradd
+10626,yeni bir liste yap,lists_createoradd
+10627,yeni bir market listesine kalem ekle,lists_createoradd
+10629,lütfen bu öğeyi listeden kaldırın,lists_remove
+10648,market listesine ekle,lists_createoradd
+10666,listeyi oku,lists_query
+10672,listemi doldur,lists_query
+10685,hangi listelere sahip olduğumu söyle,lists_query
+10689,üçüncü öğeyi kaldır,lists_remove
+10697,liste ne içeriyor,lists_query
+10700,lütfen bu öğeyi listeye ekleyin,lists_createoradd
+10728,mevcut listeleri göster,lists_query
+10730,lütfen bana listemde ne olduğunu söyler misin,lists_query
+10732,market listemden karabiberi çıkar,lists_remove
+10741,listeme bir şey ekle,lists_createoradd
+10746,şu öğeyi listemden kaldır,lists_remove
+10751,google çeviri,lists_query
+10754,bu hafta için yapılacaklar listeme ne eklediğimi oku,lists_query
+10758,alışveriş listesi öğelerini oku,lists_query
+10763,alışveriş listeme kahvaltılık gevrek ekle,lists_createoradd
+10767,benim alışveriş listemde yumurta var mı,lists_query
+10775,planladığım parti için bir irtibat listem var mı,lists_query
+10784,yapılacaklar listemi sil,lists_remove
+10791,kalemi listeden çıkart,lists_remove
+10797,lütfen bakkal listesine süt ekle,lists_createoradd
+10806,lütfen bana listelerimi gösterir misin,lists_query
+10817,listeleri aç listeyi kaldır,lists_remove
+10830,olly listemde sırada ne var,lists_query
+10844,benim bakkal listemden sütü çıkar,lists_remove
+10850,lütfen ben hangi listeleri yaptım söyle,lists_query
+10854,onu listeden yeniden düzenle,lists_remove
+10860,onu listeden çıkar,lists_remove
+10865,olly listede başka neyim var,lists_query
+10870,bugün yapılacaklar listeme yiyecek satın almayı ekle,lists_createoradd
+10883,lütfen bana öğeyi nasıl kaldırabileceğimi söyle,lists_remove
+10886,listelerimi kontrol edebilir miyim,lists_query
+10889,ben alışveriş listesi yaptım mı,lists_query
+10896,öğeyi listemden kaldır,lists_remove
+10901,yeni bir liste oluştur,lists_createoradd
+10904,bana listeyi anlat,lists_query
+10916,lütfen ilk listeyi kaldır,lists_remove
+10924,çarşamba sabahki toplantıyı kaldır,calendar_remove
+10925,bekleyen faturalarımın yeni bir listesini oluştur,lists_createoradd
+10928,listemi bana oku,lists_query
+10929,bana listemi ver,lists_query
+10941,iş için bir liste yap,lists_createoradd
+10952,lütfen futbol başlıklı listeyi sil,lists_remove
+10962,bu listeyi artık istemiyorum,lists_remove
+10965,yapılacaklar listemde herhangi bir şey var mı,lists_query
+10967,şu anda hangi listeler mevcut,lists_query
+10969,son satırı sil,lists_remove
+10973,okul malzemeleri için yeni bir liste oluştur,lists_createoradd
+10988,tatil listemden gazeteyi aramayı sil,lists_remove
+11004,bugünkü alışveriş listemi oku,lists_query
+11007,bugün için listede ne var,lists_query
+11014,bir listeye bir madde eklemek,lists_createoradd
+11020,market alışverişini listeden çıkar,lists_remove
+11022,boyamız bitti o yüzden banyo badanasını listeden çıkar,lists_remove
+11041,bana daha fazla sabun sipariş etmemi hatırlat,lists_createoradd
+11045,listemi aç,lists_query
+11047,son çalınan şarkıyı kaldır,lists_remove
+11061,lütfen ali'yi kişi listeme ekle,email_addcontact
+11063,bana listelerimi okuyabilir misin,lists_query
+11064,hey listelerim neler,lists_query
+11065,hey olly benim listelerim neler,lists_query
+11070,market listemdeki eşyaların neler olduğunu söyler misin,lists_query
+11076,o listede ne var,lists_query
+11077,bana listemde ne olduğunu söyle,lists_query
+11079,bir liste kaldır,lists_remove
+11084,sütü alışveriş listesinden çıkar,lists_remove
+11086,market listeme süt ekle,lists_createoradd
+11096,tarkan müzik listesini kaldır,lists_remove
+11109,bu belirli listede neler var,lists_query
+11119,iş listelerimi görebilir miyim,lists_query
+11122,bunu bir listeye ekle,lists_createoradd
+11131,lütfen bugün yapılacaklar listemi kaldır,lists_remove
+11160,yumurta istemiyorum,lists_remove
+11169,mevcut olanları listele,lists_query
+11178,satın alınacak aylık alışverişlerin bir listesini oluştur,lists_createoradd
+11181,çalışma planım,calendar_query
+11182,benim sağlık planım,lists_query
+11196,yeni yıl listesine hamur işleri ekle,lists_createoradd
+11200,yapılacak şeyler listesini sil,lists_remove
+11212,eski çalma listesini sil ve yenisini oluştur,lists_createoradd
+11214,listeyi kontrol et,lists_query
+11245,yapılacaklar listemde kaç madde var,lists_query
+11256,listemi kontrol et,lists_query
+11281,podcastteki bir bölümü iletebilir misin,play_podcasts
+11283,sonraki bölümü çal,play_podcasts
+11294,benim podcast ımı yerleştir,play_podcasts
+11300,sonraki bölüme geç,play_podcasts
+11305,en yeni rabarba yı çal,play_podcasts
+11324,sıradaki bölüm e git,play_podcasts
+11326,rabarba nın yedinci bölümünü çal,play_podcasts
+11332,en son dans parçalarını bul ve bir çalma listesi yap,play_music
+11333,ceza 'dan tüm şarkıları düzenle ve çal,play_music
+11338,podcasti en baştan çalar,play_podcasts
+11348,hey benim geçen gece durdurduğum o podcast ı çal,play_podcasts
+11358,bir sonraki podcast a atla,play_podcasts
+11363,bir sonraki podcast ı yeniden çal,play_podcasts
+11364,sıradaki podcast a atla,play_podcasts
+11370,mesut süre podcast ı dinlemek istiyorum,play_podcasts
+11372,favori,play_podcasts
+11374,devam et lütfen,play_podcasts
+11377,podcast bul ve onu aç,play_podcasts
+11385,benim müzik klasörümü çalabilir misin,play_music
+11399,sıradaki bölüme atla,play_podcasts
+11406,bu podcast i bitir ve yenisini başlat,play_podcasts
+11419,tarkanın en son podcastini dinle,play_podcasts
+11440,gelecek bölümü çal,play_podcasts
+11450,haber saati podcastini başlat,play_podcasts
+11463,bana en yüksek derecelendirilen podcastler i göster,play_podcasts
+11477,sıradaki bilmeniz gereken şeyler bölümünü oynat,play_podcasts
+11487,klasik parçalar çal,play_music
+11496,berkcan güven podcastini çal,play_podcasts
+11500,bölüm bire dön,play_podcasts
+11503,butonu geri al,play_podcasts
+11509,bana en son bölümü göster,play_podcasts
+11513,olly ağır sıklet podcastini aç,play_podcasts
+11530,cihaza kayıtlı beyaz podcastini aç,play_podcasts
+11548,ağ podcast,play_podcasts
+11552,çok daha net ve kişiye yönelik,play_podcasts
+11553,yüksek sadakat,play_podcasts
+11557,barış özcan son bölümü çal,play_podcasts
+11562,bu podcasti dinlemek istiyorum,play_podcasts
+11583,bu hafta sinemalarda oynayan yeni filmler hangileri,recommendation_movies
+11596,eskişehir yakınlarında devam eden köpek gösterileri var mı,recommendation_events
+11608,şehirdeki en yakın pub nerede,recommendation_locations
+11611,yakınlarda gerçekleşecek konserler,recommendation_events
+11615,cinemaximumda vizyonda hangi filmler var,recommendation_movies
+11617,büyükşehir tiyatrolarında hangi gösteriler veya sergiler programlanmış,recommendation_events
+11621,yakınımda hangi olaylar oluyor,recommendation_events
+11624,meksika yemeği yemek için yakınımda nereye gitmeliyim,recommendation_locations
+11631,biraz sushi ihtiyacım var en yakını hangisi,recommendation_locations
+11654,yakınlarda çin restoranı ara,recommendation_locations
+11658,bu gece yemek festivali nerede,recommendation_events
+11666,butik mağazaları arıyorum bana bir kilometrelik uzaklıkta giyim dükkanları bulabilir misin,recommendation_locations
+11675,en yakın restoran nerede,recommendation_locations
+11690,olly bana dükkanın yerini sapta,recommendation_locations
+11693,bugün hangi yeni filmler var,recommendation_movies
+11699,konumuma en yakın kebapçıları göster,recommendation_locations
+11708,boğaziçindeki iyi bisikletçiler,recommendation_locations
+11711,mahalledeki en iyi bar,recommendation_locations
+11712,bana tüm yerel etkinlikleri söyle,recommendation_events
+11716,bakkalın yanında,recommendation_locations
+11721,adana civarında sinemada hangi komedi filmini izleyebilirim,recommendation_movies
+11729,gülhane parkını gezerken bir yapılacaklar listesi hazırla,recommendation_events
+11730,yellowstone milli parkını ziyaret ettiğimde ne yapmalıyım,recommendation_events
+11732,çevremde neler oluyor,recommendation_events
+11740,yakınımdaki tiyatrolar,recommendation_movies
+11743,gelecek hafta ankarada hangi kitap fuarı etkinlikleri düzenleniyor,recommendation_events
+11745,yeni vin diesel filminin oynadığı en yakın tiyatro hangisi,recommendation_movies
+11762,istanbul'da hangi etkinlikler oluyor,recommendation_events
+11785,düğün dernek,recommendation_movies
+11795,beşiktaşta en ucuz dizüstü bilgisayarları kim satıyor,recommendation_locations
+11800,buradaki en iyi giysici nedir,recommendation_locations
+11819,bira satan bir market bul,recommendation_locations
+11849,bana yakın sinemalarda hangi filmler oynuyor,recommendation_movies
+11851,yakınımda oynayan popüler filmler neler,recommendation_movies
+11857,i. m. d. b. oylamaları iyi filmler,recommendation_movies
+11876,civarımda hangi etkinlikler gerçekleşiyor,recommendation_events
+11883,hangi lunapark araçları en iyisi,recommendation_events
+11899,ne izlemeye değer,recommendation_movies
+11906,bu haftasonu bölgemde hangi aktiviteler var bildir,recommendation_events
+11928,istanbulda neler oluyor,recommendation_events
+11933,benim muhite yakın ne tür mağazalar var,recommendation_locations
+11945,bu bölgede ucuz restoran tavsiye edebilir misin,recommendation_locations
+11948,olly yakınımdaki restoranlar neler,recommendation_locations
+11952,bölgemdeki en yakın irlanda barını nerede bulabilirim,recommendation_locations
+11962,olly çevremde hangi barlar var,recommendation_locations
+11980,bana milano'da olan tüm etkinlikleri göster,recommendation_events
+11998,bana şehrimde neler olduğunu söyle,recommendation_events
+12006,bugün istanbul 'da neler var,recommendation_events
+12022,mahallemde kaç tane market var,recommendation_locations
+12039,bölgemdeki bir restoranı sor,recommendation_locations
+12044,çok açım adanada ne yenir,recommendation_locations
+12045,olly batı ataşehirde nereden içecek alabilirim,recommendation_locations
+12055,bugünün yerel etkinlikleri,recommendation_events
+12076,civardaki tüm dükkanları listele,recommendation_locations
+12095,yavuz selim caddesinde bir pub önerebilir misin,recommendation_locations
+12096,mahallede neler oluyor,recommendation_events
+12107,tekirdağda bana pizza getirecek bir yere ihtiyacım var,recommendation_locations
+12108,lara 'da hangi çin lokantaları var,recommendation_locations
+12119,lütfen konumumdaki etkinlikleri ara,recommendation_events
+12125,hey olly çarşamba günü muğla ya giden trenleri öğrenmek istiyorum,transport_ticket
+12134,kayseri ye bir sonraki tren ne zaman,transport_query
+12136,yunanistan 'a en iyi yol hangisi,transport_query
+12144,yarım saat içinde çin mahallesine gidiyorum bana bir uber ayarla,transport_taxi
+12149,olly bu cuma ö. s. beş için istanbul a eurostar da bilet ayarla,transport_ticket
+12165,manhattan 'dan new york 'a benim a. c. sınıf tren koltuğumu ayırt,transport_ticket
+12168,bağdat caddesi 'nde trafik durumu nasıl,transport_traffic
+12174,bana şimdi bir uber çağır,transport_taxi
+12177,nilüfer sokakta trafik daha mı sıkışık,transport_traffic
+12178,kadife sokakta şu anda ne kadar trafik var,transport_traffic
+12181,bana hemen bir uber gönder,transport_taxi
+12185,tren istasyonu nerede,transport_query
+12205,uber'in on beş dakika içinde evimde olmasını rica eder misin,transport_taxi
+12206,havalimanına gitmek için bir taksi ihtiyacım var,transport_taxi
+12217,bana bir uçak bileti ayırt,transport_ticket
+12232,eve gitmek için taksi ara,transport_taxi
+12236,evimden alacak uber çağır,transport_taxi
+12247,mersin istikametine programlı bir sonraki dört treni bana bildirebilir misin lütfen,transport_query
+12253,mahmutbey gişelerde trafik nasıl,transport_traffic
+12258,trafik nasıl,transport_traffic
+12260,bana gelecek perşembe için has turizmden bir antakya bileti al daha ileri gün varsa daha iyi,transport_query
+12267,ankara 'dan kastamonu 'ya giden trenin saatleri ne,transport_query
+12284,susam sokağı na bir sonraki tren saat kaçta,transport_query
+12298,hadi bir taksi tutalım,transport_taxi
+12302,beni en yakın tren istasyonuna yönlendir,transport_query
+12303,feneryolu 'ndan bostancı 'ya tren zamanları,transport_query
+12307,salı günü paris 'e giden tren için iki bilet al,transport_ticket
+12317,işten eve trafik durumu nedir,transport_traffic
+12318,buradan eve olan trafik durumunu söyle,transport_traffic
+12322,taksi ayırt,transport_taxi
+12325,antrenör ve ücret,transport_ticket
+12345,istanbul'da trafik çok yoğundur,transport_traffic
+12352,yarın sabah için havalimanı na gitmek için bir taksi ayarla,transport_taxi
+12358,trafik durumunu öğrenmek istiyorum,transport_traffic
+12363,bana en yakın müsait taksiyi çağır,transport_taxi
+12368,izmir'e nasıl gidebilirim,transport_query
+12372,bana uber çağır,transport_taxi
+12373,taksi çağır,transport_taxi
+12380,sirkeci için son trene yeniden bilet al,transport_ticket
+12394,bana bugün i̇stanbul a giden tren biletini satın al,transport_ticket
+12408,en yakın apple mağazası yol tarifi,transport_query
+12414,bana mevcut trafik durumu hakkında fikir ver,transport_traffic
+12438,nevşehir 'den yozgat istikametine giden tren zamanları nedir,transport_query
+12439,istanbul'dan ankara'ya nasıl giderim,transport_query
+12441,evden işe trafik nasıl,transport_traffic
+12451,bir araç bul,transport_taxi
+12455,yirmi üçünde kadıköy 'e tren zamanları nedir,transport_query
+12461,tren bileti satın al,transport_ticket
+12464,yarın sabah sekizde bana bir taksi lazım,transport_taxi
+12470,sabah giden bir bilet ayırt,transport_ticket
+12478,bugün ö. s. on dan sonra uygun bir uber şoförü bul,transport_taxi
+12484,aydın istikameti için tren kaçta alkıyor,transport_query
+12488,gelecek salı için bana ankaraya bir tren bileti ayarlayabilir misin,transport_ticket
+12504,tren aydın dan kaçta kalkıyor,transport_query
+12505,istanbul istikametine bir sonraki pegasus treni ne zaman,transport_query
+12527,bana yerel taksi servisinin numarasını bul,transport_taxi
+12533,bana yerin tarifini ver,transport_query
+12550,tatilya için rota,transport_query
+12554,lokasyona gitmem lazım taksi çağır,transport_taxi
+12565,bu konum için tüm tren bilet fiyatlarının bir listesini istiyorum lütfen,transport_query
+12575,aydına gitmem lazım bana bir tren bileti ayarla,transport_ticket
+12587,istanbul'dan eskişehir'e tren saatleri nedir,transport_query
+12593,olly lütfen bana atlantaya bir tren bileti al,transport_ticket
+12602,bir tren bileti ne kadar,transport_query
+12617,istanbula bir tren bileti nasıl satın alınacağı ile ilgili bana bilgi gönder lütfen,transport_query
+12625,bana samsun için tren saatlerini verebilir misin,transport_query
+12627,yarın sabah on dan önce aydın için bir tren bilet i ayarla,transport_ticket
+12651,akbanka gitmek istiyorum bana yol tarifi ver,transport_query
+12654,lütfen bana bir erzuruma tren bileti siparişi ver,transport_ticket
+12656,beni işe götürmek için yarın sabah sekize bir taksiye ihtiyacım var,transport_taxi
+12665,anlık trafik,transport_traffic
+12667,tren sefer saatleri ne zaman,transport_query
+12669,bizim eve kadar olan trafiği kontrol edebilir misin,transport_traffic
+12674,trafik yoğun mu,transport_traffic
+12680,ankara'ya giden trene binmek için bana bir bilet al,transport_ticket
+12692,aydın da genellikle ne kadar trafik var,transport_traffic
+12706,bu sefer bi tren bileti ayırt,transport_ticket
+12711,uber ayarla,transport_taxi
+12712,akmerkez'e bir araba bul lütfen,transport_taxi
+12715,beni hemen alması için bir taksi çağır,transport_taxi
+12729,trafikte herhangi bir problem var mı,transport_traffic
+12740,en yakın mcdonaldsa yol tarifi,transport_query
+12741,şehir merkezine gitmek için hangi caddeye girmeliyim,transport_query
+12748,bir tren bileti almam gerek,transport_ticket
+12764,bir tren bileti ayırtın,transport_ticket
+12768,aydına bir tren bileti kaç para,transport_query
+12781,çiçek taksiden bir taksi iste,transport_taxi
+12783,bu sabah trafik nasıl,transport_traffic
+12787,şimdi trafik nasıl,transport_traffic
+12791,yakınımdaki trafik nasıl,transport_traffic
+12810,orduda şu anda trafik durumu nasıl,transport_traffic
+12827,ny için tüm tren saatlerini listele,transport_query
+12828,aydın için bütün tren ve saatini de göster,transport_query
+12834,bugün bana iskenderun'a bir tren bileti al,transport_ticket
+12840,maçka parkı 'na en hızlı yol hangisi,transport_query
+12854,irctc uygulamasını açın ve bilet rezervasyonuna gidin,transport_ticket
+12872,benim için aydın a bir tren bileti ayırt,transport_ticket
+12877,bir saatlik bir süre içinde beni şu anki konumumdan alacak bir taksi ayarla,transport_taxi
+12885,bugün hangi rotada trafik daha az,transport_traffic
+12886,izmir'e tren biletimi ayırt,transport_ticket
+12888,beni cuma günü sabah beş otuz da havalimanı na götürecek bir taksi bul,transport_taxi
+12891,nj 'den ny 'a banliyö treninde bir yer al,transport_ticket
+12892,ertesi gün ankara istikametinde olan trenlerin listesini sayabilir misin,transport_query
+12895,belli bir bölgede yollar dar mı geniş mi,transport_traffic
+12899,benim için yirmi bir marta bir tren koltuğu rezerve et,transport_ticket
+12901,lütfen bana kuzey demiryolu tren inin saatini bildir,transport_query
+12904,lütfen sonraki taksiyi ayarla,transport_taxi
+12919,uber uygulama aç ve bana bir araba çağır lütfen,transport_taxi
+12923,hey bana en yakın trene saat kaçta yetişebilirim,transport_query
+12944,bir tanım bul,qa_definition
+12947,polonyanın cumhurbaşkanı kimdir,qa_factoid
+12950,hırvatistan hangi para birimini kullanır,qa_currency
+12952,zürafa ne kadar uzundur,qa_factoid
+12956,zahmet kelimesi hangi durumda kullanılır,qa_definition
+12974,bu direncin rezistansını hesapla,qa_factoid
+12977,google,qa_maths
+12978,tarama merkezleri,qa_maths
+12980,bana tahliyenin kısaca tanımını söyle,qa_definition
+13011,sizce zamanda yolculuk mümkün mü,general_quirky
+13022,sertap erenerin yaşı ne,qa_factoid
+13024,arkadaşa e-posta at,email_sendemail
+13029,bana vahiy kitabında hangi farklı ülkelerin temsil edildiğini açıkla,general_quirky
+13033,üç kere yedi ne eder,qa_maths
+13037,bu gece ne pişirsem,general_quirky
+13038,bana öldüğümüzde neler olacağını söyle,general_quirky
+13051,nuri bilge ceylan hangi ilden,qa_factoid
+13063,sadece sen ve benim için bir gün ayarla,general_quirky
+13071,kırk ikinin karekökü kaç,qa_maths
+13075,söyle bana neden cem yılmaz gülse birselden daha iyi bir komedyen,qa_factoid
+13076,bana şener şenin göbek adını söyle,qa_factoid
+13084,zürafa kelimesi nasıl yazılır,qa_definition
+13085,tedavülden kaldırma kelimesini söyleyebilir misin,qa_definition
+13100,dünyanın en uzun binaları hangileriydi,qa_factoid
+13106,duman şarkılarını duyuyor musun,music_query
+13107,meslektaşımla bir toplantı ayarla,calendar_set
+13110,rol yapan oyuncu,qa_definition
+13113,lütfen bana cüneyt arkının bir sonraki filmi hakkında bilgi verin,qa_factoid
+13118,yok,qa_factoid
+13125,yalan söyleyebilir misin,general_quirky
+13139,kasırga nedir,qa_definition
+13157,kelimeyi googleda ara,qa_definition
+13185,ankaradan istanbula olan mesafeyi hesapla,qa_factoid
+13198,hesabı çöz,qa_maths
+13202,izmirin nüfusu nedir,qa_factoid
+13211,ana dilin nedir,general_quirky
+13224,hülya avşar kaç yaşında,qa_factoid
+13227,kendimi daha mutlu etmek için bana yapabileceğim her şeyi özetle,general_quirky
+13228,on kolay adımda zengin olabilseydim bunlar ne olurdu,general_quirky
+13230,en büyük hayvan,qa_factoid
+13231,en yüksek bina,qa_factoid
+13271,tarkanın yaşadığı yer neresi,qa_factoid
+13275,konumum neresi,general_quirky
+13280,internetten toplayabildiğin tüm bilgiler dahilinde başkan kennedyyi kimin öldürdüğüne dair en iyi açıklamayı bana verebilir misin,qa_factoid
+13281,karım için orijinal romantik mesajlar yazmak istiyorum,general_quirky
+13284,bana cahit arf ve onun matematiksel macerası ile ilgili hikaye yi anlat,qa_factoid
+13316,aşağıdaki soru öğretmenin amaçlarını ve eylemlerini analiz etmenizi istiyor,qa_factoid
+13319,en büyük hip hop sanatçıları kimlerdir,qa_factoid
+13338,ikiyüzlülük ne demektir,qa_definition
+13339,riyakarlık kelimesi ne anlama gelir,qa_definition
+13349,şu soruyu cevapla süper mario kardeşlerde en baş olmak ne demek,general_quirky
+13353,cümle içinde kullan,qa_definition
+13354,iki artı ikinin cevabı ne,qa_maths
+13355,sapmayı tanımla,qa_definition
+13367,kelimeleri tanımlarken eş anlamlılar sözlüğü ver ve daha açık hale getirmek için bir cümle içinde kullan,general_quirky
+13373,tüm zamanların en iyi beş n. h. l. golcüleri kimlerdir,general_quirky
+13382,ismet inönü ne zaman doğdu,qa_factoid
+13384,ankara valisi kim,qa_factoid
+13387,kişisel dijital asistanın tanımı nedir,qa_definition
+13419,erdoğanın kamuoyu desteği nedir,qa_factoid
+13455,bunun cevabını nasıl alacağım söyler misin,general_quirky
+13462,matematik problemini çöz,qa_maths
+13465,diğer gezegenlerde yaşam var mı,general_quirky
+13469,en sevdiğin renk hangisi,general_quirky
+13470,robotiklerin üç kanunu ile ilgili ne düşünüyorsun,general_quirky
+13480,bana bugünün şanslı rengini söyle,general_quirky
+13481,benim için bir şiir oku,general_quirky
+13490,borsa ile geçen hafta ankara daki hava durumu arasında bir ilişki var mı,general_quirky
+13496,mehmet ali alabora tek çocuk mu,qa_factoid
+13499,lütfen bu kelime yi araştır,qa_definition
+13502,gökyüzü neden mavidir,qa_factoid
+13510,yirmi dört kere yirmi dört nedir,qa_maths
+13515,bir dünya günü ne kadardır,qa_factoid
+13517,inşallah bir öğle yemeği yeriz beraber,general_quirky
+13519,beyaz kelebekler kimlerdi,qa_factoid
+13522,dünyanın sonu ne zaman gelecek,general_quirky
+13530,gergin ne demek,qa_definition
+13533,manitam şu anda nerede,general_quirky
+13540,ambulansın tanımına bak,qa_definition
+13544,votkalı jöle kalorisiz mi,qa_factoid
+13549,kıyma almak için en ucuz yeri söyler misin,recommendation_locations
+13563,patates ne demek,qa_definition
+13572,bana bununla ilgili ilginç bir gerçek söyle,general_quirky
+13576,bir sonraki tur ne zaman,general_quirky
+13583,şu anda dolar ve avro arasındaki döviz kuru nedir,qa_currency
+13587,çerçeveyi tanımla,qa_definition
+13588,patatesin tanımını yap,qa_definition
+13615,adel kaç kere elmas oldu,qa_factoid
+13617,bana bugün dünyada gerçekleşen en garip olayları anlat,general_quirky
+13624,saati söyle,datetime_query
+13643,metinseli nasıl tanımlarsın,qa_definition
+13645,bulgaristana bedava seyahat etmek istiyorum beni oraya götürür müsün,general_quirky
+13647,yen amerikan doları takas oranları,qa_currency
+13651,beş kilometrede kaç mil var,qa_maths
+13658,aslı enver kaç yaşında,qa_factoid
+13667,tarsus içel nerede,qa_factoid
+13682,recep tayyip erdoğan şu anda ne yapıyor,qa_factoid
+13704,baz istasyonu nedir,qa_definition
+13708,tl nin frank karşılığı ne,qa_currency
+13710,aydın izmir arası kaç kilometre,qa_factoid
+13720,kanada doları karşısında birleşik devletler doları döviz takas oranı nedir,qa_currency
+13724,anıtkabir hakkında ne biliyorsun,qa_definition
+13737,a. b. d. ve çin arasındaki döviz kurları ne kadar,qa_currency
+13756,bana bilgi ver,qa_definition
+13788,amerika birleşik devletlerinin ortalama rakımı nedir,qa_factoid
+13795,birleşik devletler ve fransa arasındaki döviz kuru nedir,qa_currency
+13797,istanbulda ne kadar insan yaşıyor,qa_factoid
+13804,siri bir amerikan doları kaç japon yeni eder,qa_currency
+13806,mehmet günsür kaç yılında doğdu,qa_factoid
+13812,bana kültür mantarından bahset,qa_definition
+13816,migros hisse senedi fiyatları,qa_stock
+13836,hangi din en doğrudur,general_quirky
+13842,hatay ve içel arasında kaç mil var,qa_factoid
+13844,şener şen kaç yaşında,qa_factoid
+13846,demet akbağ hiç akademi ödülü kazandı mı,qa_factoid
+13848,yen için döviz kurunu söyle,qa_currency
+13859,tl karşısında abd doları takas oranı nedir,qa_currency
+13861,lütfen bana dolar ve yen arasındaki kur farkıını göster,qa_currency
+13870,golün tanımı ne,qa_definition
+13875,binali yıldırım kaç yaşında,qa_factoid
+13892,iki çocuğu meşgul etmem lazım ne yapabilirim söyle,general_quirky
+13914,doların rupi cinsinden döviz kurunu bana verebilir misin,qa_factoid
+13919,bana güneş enerjili bahçe kazıklarından bahset,qa_definition
+13924,adananın en büyük ilçesi hangisi,qa_factoid
+13935,sanal gerçeklik gözlüğünün tanımı nedir,qa_definition
+13938,yeni tinder eşleşmem var mı,calendar_query
+13957,muz neye benzer,qa_definition
+13978,ali ağaoğlu kimdir,qa_factoid
+13988,danimarka nerededir,qa_factoid
+14007,fiyort ne demek,qa_factoid
+14010,bülent ersoy ne zaman doğmuştur,qa_factoid
+14012,tweet ne demek,qa_definition
+14014,sakarya nerede,qa_factoid
+14018,zafer ne demek,qa_definition
+14039,hangi abd eyaleti en kuzeydedir,qa_factoid
+14062,stonehenge nerede,qa_factoid
+14069,bizim toptan için hisse fiyatına ihtiyacım var,qa_stock
+14073,hint rupisi kuru ne kadar,qa_currency
+14078,bermuda şeytan üçgeni nedir,qa_factoid
+14087,filipin pesosu kuru nedir,qa_currency
+14088,turkcellin güncel hisse senedi oranı nedir,qa_stock
+14125,hadisenin biyografisini göster,qa_factoid
+14144,avro'dan abd doları'na,qa_currency
+14145,lütfen bana atatürkün doğum gününü verir misin,qa_factoid
+14152,külot ne tür bir don,qa_factoid
+14156,wikipediayı dene,qa_definition
+14173,olly doların değeri brezilyada daha mı fazla yoksa daha mı az,qa_currency
+14175,gömlek neye benzer,qa_definition
+14195,danışmanıma sor,qa_stock
+14203,dow jones bugün kaçta,qa_stock
+14205,lütfen bana bugün dow hisselerine yatırım yaparsam ne zaman zengin olabileceğimi ve beş yıl sonra getirisi ne olacağını söyle,qa_stock
+14207,tarkan hangi yılda doğdu,qa_factoid
+14212,mekanların tam yerini bul,recommendation_locations
+14218,bir fit kaç inç eder,qa_maths
+14227,kanada doları karşısında euro kuru ne kadar,qa_currency
+14230,meltem cumbulun en iyi beş filmini listele,qa_factoid
+14263,amerikan doları ve avro arasındaki döviz kuru nedir,qa_currency
+14267,altı eksi dört nedir,qa_maths
+14269,bir avro kaç dolara eşittir bana söyle,qa_currency
+14273,ingiltere ne kadar büyük,qa_factoid
+14285,bana izmirden bahset,qa_factoid
+14291,dünyadaki çeşitli bitkileri göster,qa_factoid
+14301,coca-cola hissesi bugün nasıl gidiyor,qa_stock
+14320,ecevitin karısı kim,qa_factoid
+14341,google için bugünün kapanış fiyatı,qa_stock
+14343,akbank hisse fiyatını söyle,qa_stock
+14346,hipotez ne demek,qa_definition
+14358,özgürlük heykeli ne zaman yapıldı,qa_factoid
+14361,mete gazoz kaç yaşında evlendi,qa_factoid
+14377,cüneyt arkın kimdir,qa_factoid
+14380,gelişmemiş tanımı nedir,qa_definition
+14384,empire state binasının yüksekliği ne kadar,qa_factoid
+14390,amerikan doları ve hint rupisi arasındaki döviz kuru nedir,qa_currency
+14393,siyasetin şu anki halini anlat,qa_factoid
+14397,edis ne zaman doğdu,qa_factoid
+14408,kendini bir kelimeyle tanımla,general_quirky
+14421,en yakın italyan restoranı nerede,recommendation_locations
+14430,yahninin neye benzediğini söyler misin,qa_definition
+14450,hande yener yeni bir albüm kaydediyor mu,qa_factoid
+14452,obje adı tanımı,qa_definition
+14458,volkswagen golf araba nasıl görünüyor,qa_definition
+14460,ipad air özellikleri,general_quirky
+14479,bana güneş ve ay arasındaki mesafeyi söyle,qa_factoid
+14492,sözlükte dünya için tanımı bul,qa_definition
+14516,iki bin on yedinin en iyi akıllı telefonu hangisi,qa_factoid
+14527,dövizle alacağım döviz kuru,qa_currency
+14541,bana bu kişinin ayrıntılarını al,general_quirky
+14542,lütfen bu kişi hakkında birkaç ayrıntı söyle,general_quirky
+14565,bugün türkiye deki en büyük kaygı ne ve bunu gidermek için yapılacak en etkili şey nedir,general_quirky
+14574,türkiye cumhuriyetinin yirmi beşinci başkanı kimdir,qa_factoid
+14582,bana uçaksız en düşük maliyetle baliye nasıl gideceğimi söyle seçenek süresi önemli değil iki yüz gün seyahat zamanım ve harcayacak sadece dolarım var,general_quirky
+14593,bana diz üstü bilgisayarın devresini tarif et,qa_definition
+14596,iphone hisseleri genellikle ne zaman düşer,qa_stock
+14604,açıkla,qa_definition
+14609,bana yerçekiminin nasıl çalıştığını açıkla,qa_factoid
+14617,ajda pekkan ve mirkelam ne zaman evlendi,qa_factoid
+14621,dolar ile euro arasında döviz takas oranları,qa_currency
+14635,hipertrofinin ne anlama geldiğini söyler misin,qa_definition
+14645,borsa şirket ismi,qa_stock
+14654,robotum işimi benim için yapsa çok sevinirim,general_quirky
+14657,bana laptop devresinin tanımını ver,qa_definition
+14669,xyyi tanımla,qa_definition
+14677,turkcell hisse senedi açılış fiyatını bana ver,qa_stock
+14704,organik buğdayı nereden alabilirim,recommendation_locations
+14708,hisseler lütfen,qa_stock
+14719,dolar ı tl kuruna çevir,qa_currency
+14721,dolar rupi döviz takas kuru,qa_currency
+14727,erdoğanın seçimi kazanmasını sağlayan faktör nedir,general_quirky
+14731,deprem tahmini,general_quirky
+14737,google hindi pişirmenin en kolay ve hızlı yolu nedir,cooking_query
+14744,ızgara ne tür bir alettir ve nasıl kullanırım,general_quirky
+14745,benim için pilici tanımla,qa_definition
+14755,anıtkabir nerede,qa_factoid
+14764,bana topun neye benzediğini tarif et,qa_definition
+14773,alexa kamer gençle ilgili bildiğin her şeyi bana göster,qa_factoid
+14774,bana vestelin hisse senedi fiyatlarını söyle,qa_stock
+14775,aksa hisse senedi fiyatları nedir,qa_stock
+14796,google hissesinin değeri nedir,qa_stock
+14803,yeni planlar getirdin,general_quirky
+14808,bir sterlini abd dolarına çevir,qa_currency
+14819,yüksek hisse senedi fiyatı,qa_stock
+14827,canonun açıklamasında kaç mega piksel yazıyor,qa_factoid
+14848,paris hilton nasıl ünlü oldu,qa_factoid
+14849,iki kere üçün cevabı ne,qa_maths
+14850,on iki bölü dört kaç eder,qa_maths
+14852,beren saatin doğal saç rengi nedir,qa_factoid
+14861,eğer beş amerikan dolarım varsa bu kaç avustralya doları eder,qa_currency
+14865,benim için ay tarifi yap,qa_definition
+14866,dünyada kaç tane nehir var,qa_factoid
+14868,oğlak burcu olan ünlüleri bul,qa_factoid
+14872,bir tüketici malı ise müşteri geri bildirimi nedir,general_quirky
+14882,hint rupisi nin abd doları karşısında döviz takas fiyatı ne,qa_currency
+14888,şu nesneyi tarif eder misin lütfen,qa_definition
+14897,nasanın fırlattığı ilk uydu nedir,qa_factoid
+14901,lütfen bir fili tarif et,qa_definition
+14906,bugün amerikan doları kuru ne kadar,qa_currency
+14918,hürrem sultan ne kadar zamandır hamile,qa_factoid
+14920,kipa hisse senedi fiyatı nedir,qa_stock
+14924,kolayca envanter tutmak ve bir şeyler azaldığında bana haber vermeni istiyorum,general_quirky
+14930,ali ağaoğlu bu hafta neler yaptı,qa_factoid
+14946,makarna sosu tanımı nedir,qa_definition
+14950,insanlar nasıl oluyor da her şeyi tanrıdan gizleyebileceklerini düşünüyorlar,general_quirky
+14952,döviz kuru ücretleri,qa_currency
+14953,by nedir,qa_definition
+14961,merve ildeniz kaç yaşında,qa_factoid
+14971,söyle bana dünya nasıl başladı,general_quirky
+14985,bana on dolar ın euro karşılığını söyle,qa_currency
+14987,bilgisayar nedir,qa_definition
+14989,dünyanın en küçük adası hangisidir,qa_factoid
+15014,japonya ne kadar büyük,qa_factoid
+15015,istanbul almanya arası mesafe ne,transport_query
+15017,bana bu gece sinemalarda hangi filmlerin oynadığını söyler misin,recommendation_movies
+15030,olly sorun kelimesinin tanımı nedir,qa_definition
+15033,olly amerikan doları ile avustralya doları arasındaki döviz kuru nedir,qa_currency
+15043,apple kaçta işlem görüyor,qa_stock
+15047,hey olly pasifin anlamı nedir,qa_definition
+15057,albert einstein görelilik teorisini bulduğunda kaç yaşındaydı,qa_factoid
+15064,sıfırdan beşe üstel fonksiyonun yakın bir integralini hesapla,qa_factoid
+15065,brexitin a. b. vatandaşlarını uzun ve orta vadede nasıl etkileyeceğini söyle,qa_factoid
+15090,bizimle meksika pezosu arasındaki kuru ara lütfen,qa_currency
+15093,olly vestel televizyon ile ilgili tanım bul,qa_definition
+15097,vestel için takas fiyatları nedir,qa_currency
+15100,ne kadar uzakta,qa_factoid
+15125,bu şey ne,qa_definition
+15134,vestel hisseleri ne kadar,qa_stock
+15145,twitterda hakkında en çok konuşulan konu ne,social_query
+15157,annemin söylediği son şey neydi,social_query
+15171,bana hafta sonundan itibaren kardelen'in facebook'undan güncellemeleri al,social_query
+15174,bana benim facebook'umdan yeni yorumlar bul,social_query
+15180,son instagram fotoğrafım kaç beğeni aldı,social_query
+15182,bana sabah gazetesi yazısındaki son tweeti oku,social_query
+15193,kutlamak için facebook'ta yeni durum at,social_post
+15207,benim her üç saatte bir olan facebook güncellememin çalışıyor olması lazım,social_query
+15215,onu facebooka koy,social_post
+15219,bu makale çok iyi linki benim için facebooktan paylaşabilir misin,social_post
+15221,youtube'da bir video yayınla,social_post
+15242,facebook statüsü yoğun gün,social_post
+15245,lütfen cemil ile gönderi paylaş,social_post
+15247,lütfen durumu facebooka gönder,social_post
+15252,akrabalarımın fotoğraflarına dayanarak gittikleri yerlerin bir listesini göster,social_query
+15258,facebooktaki güncel haber akışı,social_query
+15265,bana toplam takipçi sayısı da dahil olmak üzere twitter kullanıcı profilimin ayrıntılarını ver,social_query
+15269,güzel bunu facebookuma atarmısın,social_post
+15272,sosyal medyama ne olduğunu söyler misin,social_query
+15294,benim akışıma en son gelen nedir,social_query
+15297,lütfen beni yeni durum güncellemelerinden haberdar et,social_query
+15301,trend olan sosyal medya,social_query
+15319,yeni tweet,social_post
+15342,facebook u aç ve amerika birleşik devletlerine mutlu yıllar dile,social_post
+15349,metrodan memnun değilim lütfen bana yardım et,social_post
+15370,monitise uygulamalarının çöktüğünü söyleyen bir tweet gönderebilir misin,social_post
+15374,aşağıdakileri facebookta bir durum olarak yayınla,social_post
+15375,lütfen twitterda bir durum paylaş ve,social_post
+15379,lütfen bu resmi facebook hesabımda paylaş,social_post
+15381,lale emlağa tweet at ve onlara uygulamamın bozuk olduğunu bildir,social_post
+15388,facebook grubuma geldiğimi söyle,social_post
+15396,lütfen levise şikayet et,social_post
+15397,onlara sıralarının çok uzun olduğunu söyle,social_post
+15414,bana yemlik lazım,general_quirky
+15421,bu mesajı twitter'da microsoft'a gönder,social_post
+15427,benim telefonumdaki facebook a resim postala alexa,social_post
+15436,vestel elektroniğe bir şikayet tweeti at,social_post
+15455,türk havayollarına tweet gönder çantalarımı kaybettiğiniz için kızgınım,social_post
+15458,pizza hutda korkunç bir hizmetim vardı bunu tweetlemem gerekiyor,social_post
+15460,twitter tüketici servisi aracılığıyla şikayet gönder,social_post
+15462,nossa mobilya müşterine hizmetlerine bir şikayet tweeti gönderebilir misin,social_post
+15466,superonline a halen beklediğimi söyle,social_post
+15471,bugün aldığım tablet için vatana şikayet yaz,social_post
+15475,ulusal şebeke elektriğin tekrar kesildiğini bilsin,social_post
+15478,twitter aracılığıyla amazon müşteri hizmetleri,social_post
+15512,lütfen beni benim sosyal medya hesaplarım hakkında bilgilendir,social_query
+15514,samsung'a şikayet tweet'i at,social_post
+15516,lütfen dizüstü bilgisayarın hatalı servisi hakkında dell firmasına bir tweet at,social_post
+15531,şoka tweet at ve müşteri hizmetlerinin çok kötü olduğunu söyle,social_post
+15533,olly makara ya bir tweet gönder onlara en kötü müşteri hizmetlerine sahip olduklarını söyle,social_post
+15538,müşteri hizmetlerine takip eden mesajın şikayet tweetini oluştur,social_post
+15540,metin facebookta yeni bir şey yayınladı mı,social_query
+15541,kötü teslimat hakkında dominosa bir tweet gönder,social_post
+15545,bu firmaya tweet atmam gerektiğini hatırlat,calendar_set
+15558,facebooka off hastayım yaz,social_post
+15559,tumblra gönderi paylaş ve eğlendiğimi söyle,social_post
+15562,durumu ele al,general_quirky
+15572,burger kinge şikayet tweet at,social_post
+15581,olly şirkete bir tweet gönder,social_post
+15583,boscha buzdolabımla ilgili bir şikayet tweeti at,social_post
+15588,galeri yi aç video ismi postala,social_post
+15596,twittera gönderi yoğun bir gün var önümde,social_post
+15609,twitter hesabımda müşteri hizmetlerine litre başına gram hizmeti için iyi değil tweet'i at,social_post
+15625,şikayeti tweet at,social_post
+15630,instagram hesabımdaki en son fotoğraflar neler,social_query
+15632,ok google moenun lokantasındaki servis korkunç olduğunu tweetle,social_post
+15639,drenaj tıkanmasıyla ilgili şikayeti benim için tweet at,social_post
+15645,sosyal bilgi,social_query
+15695,tüketici servisine en sonki iletişimimiz konusunda hayal kırıklığına uğradığımı belirten bir tweet at,social_post
+15725,twitterda bir durum paylaşmak istiyorum,social_post
+15753,sabahattin önderden araba kazası hakkında ne zaman bir eposta aldım,email_query
+15761,yeni e-postalarım olursa bana haber ver,email_query
+15778,emilia ya akşam yemeği için beklediğimizi söyleyen bir email gönder,email_sendemail
+15786,emilia dan herhangi bir e-posta var mı,email_query
+15795,lütfen chelsea'ya bir e-posta gönderebilir misin,email_sendemail
+15798,gelen kutumu kontrol et,email_query
+15805,david'e bir yarın olacak toplantı için bir email at ve david öğleden sonra buluşabilir miyiz de,email_sendemail
+15812,olly zeynepin partisi hakkında bilgi almak istiyorum,general_quirky
+15836,benim en yakın zamanlı epostamı aç ve yanıtla,email_sendemail
+15858,bu içeriği e-posta aracılığıyla gönder,email_sendemail
+15861,anneme bir email gönder konu hava durumu vücut bu hafta orada hava nasıl,email_sendemail
+15863,annemden gelen okunmamış epostalar için epostaları kontrol et,email_query
+15867,lütfen bana kişilerimden zeynebin ayrıntılarını ver,email_querycontact
+15868,listemde ali isminde olan bir kişi var mı,email_querycontact
+15897,mehmet gmail.com'a yeni yıl e-postası gönder,email_sendemail
+15900,kadir'in soyadı ne,email_querycontact
+15903,arkadaşımın sorusuna yanıt gönder,email_sendemail
+15909,son iki saat içindeki e-postaları kontrol et,email_query
+15910,son oniki saatte gelen epostaları kontrol et,email_query
+15921,alexa mvay at hotmail nokta comu yeni kişi olarak muhammed veysel ay adına ekle,email_addcontact
+15930,hepsiburadadan yeni epostalar varsa bana bildir,email_query
+15939,gelecek mesajı bu kişiye eposta ile gönder lütfen,email_sendemail
+15973,emre rahmet'ten bütçelerle ilgili hiç e-posta alıp almadığımı kontrol et ve bak,email_query
+15986,bu epostayı kişiye kaydet,email_addcontact
+15993,ahmete mevcut en son teknoloji konularını gönder,email_sendemail
+16007,cansu bana e-posta gönderdiğinde bana haber ver,email_query
+16020,öğleden sonra saat üç den beri gelen kutumda ne biriktiğini bana bildir,email_query
+16025,arkadaşım ahmet'e yarın meşgul olacağıma dair bir e-posta gönderebilir misin,email_sendemail
+16026,mahmut son teslim tarihlerini ara,email_query
+16027,hey iş arkadaşına bir email başlat,email_sendemail
+16030,bu iş arkadaşına bu eposta adresinden yeni eposta aç,email_sendemail
+16037,lütfen gmail gelen kutumu yenile,email_query
+16066,selam gönder,email_sendemail
+16078,macitden en son maili göster,email_query
+16081,müdürüme bir e-posta gönder,email_sendemail
+16083,en son e-postaları göster olly,email_query
+16085,george brown'a e-posta at,email_sendemail
+16090,son beş dakika içinde gelen herhangi bir eposta,email_query
+16104,arkadaşıma bir eposta gönder doğum günü dilekleri ilet,email_sendemail
+16107,annemin mail adresi nedir,email_querycontact
+16132,bu yeni e-postanın kişilerime eklenmesini istiyorum,email_sendemail
+16135,enese email gönder dosyaları yarın göndereceğim,email_sendemail
+16140,son zamanlarda alınan tüm epostaları zaman damgasıyla göster,email_query
+16144,bana yeni eposta göster,email_query
+16160,yanıtlayı aç,email_sendemail
+16161,bu maile cevap ver,email_sendemail
+16173,gbaby e eposta gönder ve ona büyük annesinin onu sevdiğini ve harika bir hafta sonu geçirmesini dilediğini söyle,email_sendemail
+16176,cevap yaz,email_sendemail
+16184,bana abimin iletişim bilgilerini söyle,email_querycontact
+16206,bu mesajı aile grubuna gönder a ile başlar,email_sendemail
+16214,son zamanlarda bana kim eposta gönderdi ve epostaların konuları nelerdir,email_query
+16232,olly lütfen ahmetin fikrinin harika olduğunu belirterek epostasına yanıt ver,email_sendemail
+16241,performans incelemesi için buluşmak üzere patrona eposta gönder,email_sendemail
+16244,uğur türkiye de mi yaşıyor,email_querycontact
+16249,yeni email hesabıma herhangi bir email gelirse beni bilgilendir,email_query
+16279,selam bu gece akşam yemeği için bana gel kardeşim mesajını email olarak gönder,email_sendemail
+16286,tekneyi satan adama paranın bende olduğunu söyleyen bir eposta gönder,email_sendemail
+16288,bana dün patronla ilgili e-postayı kimin gönderdiğini söyle,email_query
+16289,klinik tetkiklerim hakkında ne söyledi,email_query
+16290,kişi hakkında bilgi bulabilir miyim,email_querycontact
+16294,okunmamış epostalarımı oku,email_query
+16298,yeni epostaları kontrol et,email_query
+16303,son zamanlarda hiç e-posta uyarıları alıp almadığımı kontrol edebilir misin,email_query
+16305,benim için bir eposta gönder,email_sendemail
+16319,herkese cevap ver,email_sendemail
+16322,osman çelik'e söyle,email_sendemail
+16330,teşekkür cevabı yaz,email_sendemail
+16334,hazel kurada'dan gelen hiç yeni bir e-postam var mı,email_query
+16372,promosyonumla ilgili herhangi bir e-posta var mı,email_query
+16386,hey epostaları kontrol et,email_query
+16393,geçen hafta bana gelen tüm e-postaların konularını ve gönderenlerini listele,email_query
+16394,son zamanlarda bana kim eposta gönderdi ve ne hakkında eposta attılar,email_query
+16396,epostayı metine gönder,email_sendemail
+16407,eposta başlat,email_sendemail
+16421,kaç tane okunmamış epostam var,email_query
+16423,ahmet'e akşam yemeğinin kaçta olduğunu soran bir e-posta gönder,email_sendemail
+16442,kablonete hizmetlerinin berbat olduğunu bildiren bir e-posta gönder,email_sendemail
+16445,lütfen bu gönderenden gelen son eposta çalışmasını kontrol edin,email_query
+16448,benim eposta hesabımı aç ve yeni eposta olup olmadığını kontrol et,email_query
+16454,patronuma geç kalacağımı söyleyen bir eposta gönder,email_sendemail
+16462,ne gibi yeni mesajlarım var,email_query
+16463,yeni emaillerimi aç,email_query
+16478,simgeden gelen emailleri kontrol et,email_query
+16479,alinin epostasını yanıtla,email_sendemail
+16487,bugün kaç eposta,email_query
+16493,annem bana hiç email gönderdi mi,email_query
+16512,anneme eposta gönder yarın alışverişe gitmek istiyorum,email_sendemail
+16525,ibrahimden gelen tüm mailleri kontrol et,email_query
+16533,pınara bir eposta yazmama yardım eder misin,email_sendemail
+16543,olly lütfen annemden email alıp almadığımı kontrol et,email_query
+16570,tüm şirket çalışanlarıma bir eposta gönder,email_sendemail
+16573,adrese email mesajı gönder,email_sendemail
+16574,yeni adres,email_sendemail
+16580,google cuma eklediğim hakan için yeni eposta adresini bul,email_query
+16582,bu patronum için doğru alan kodu mu,email_querycontact
+16586,yanıtla,email_sendemail
+16588,lütfen üç aydır konuşmadığım kişileri sil,email_querycontact
+16601,can at gmail nokta com adresine bir e-posta göndermek istiyorum,email_sendemail
+16611,kızıma seni seviyorum diye eposta gönder,email_sendemail
+16612,anneme doğum günün kutlu olsun diye eposta gönder,email_sendemail
+16615,lütfen bana meltemin bana herhangi bir eposta gönderip göndermediğini söyle,email_query
+16641,patrondan hiç yeni gelen eposta var mı,email_query
+16653,son bir saat içinde herhangi bir eposta aldım mı,email_query
+16685,henüz hiç kişisel e-posta geldi mi,email_query
+16699,kız kardeşimden dün gelen e-postamı aç yanıt ver'e tıkla ve benim yanıtım için ses aktivasyonunu aç,email_sendemail
+16709,telefon rehberimde kaç kişi var,email_querycontact
+16723,ahmet'in bana ne hakkında e-posta gönderdiğini görebiliyor musun,email_query
+16726,bob'dan toplantı kelimesini içeren konuyla ilgili e-postaları bulmak istiyorum,email_query
+16744,lütfen benim annem e email gönder,email_sendemail
+16745,cengiz bana bir e-posta gönderdi mi,email_query
+16750,e-postama bak,email_query
+16768,ayşe'nin son e-postasını aç,email_sendemail
+16769,iletişim için eposta ara,email_query
+16770,kişi bul,email_query
+16774,e-postamı aç,email_query
+16779,can adındaki kişiyi aç,email_querycontact
+16788,en son kime e-posta gönderdim,email_query
+16795,bugünün gelen kutusundaki emaillerin konu satırı ne ve gönderenleri kimler,email_query
+16818,lütfen kişi listemi aç,email_querycontact
+16821,deryanın iletişim bilgilerini aç,email_querycontact
+16825,hasan lidar dan gelen tüm emailleri kontrol et,email_query
+16829,melihe yanıt gönder,email_sendemail
+16833,yeni herhangi bir e-postam var mı,email_query
+16840,tayfuna eposta gönder,email_sendemail
+16843,benim mailimi kontrol et,email_query
+16848,sunaya email göndermem ve bir şeyden bahsetmem gerek,email_sendemail
+16850,okunmamışları göster,email_query
+16877,gelen kutumda yeni e-postalar var mı,email_query
+16881,maili cevapla,email_sendemail
+16885,bayan palmer'a bir e-posta gönderin ve ona dean'in son ödevini teslim edip etmediğini sorun,email_sendemail
+16903,son e-postama bir yanıt gönder,email_sendemail
+16929,muratın epostasını altı otuz yanıtıyla cevapla,email_sendemail
+16945,e-postalarım neler,email_query
+16971,jean'in e-postasını yanıtlamak istiyorum,email_sendemail
+16991,jane doe'den gelen e-postaları kontrol et,email_query
+17006,hiç yeni e-posta var mı,email_query
+17009,benim için gelen kutusuna göre kontrol et,email_query
+17017,bu emaili yeni kişi yap,email_addcontact
+17018,kişilere kaydet,email_addcontact
+17034,bana yakın tarihli tüm e-postaları ver,email_query
+17035,son e-posta etkinliğim nedir,email_query
+17037,bana ilgili kişi e-posta bilgilerini ver,email_querycontact
+17046,lütfen bana mahmut dan yeni epostalar bildir,email_query
+17048,bana sadece ceren'den gelen yeni e-postaları bildir,email_query
+17074,öğleden sonra beşten beri hiç e-posta aldım mı,email_query
+17076,bugün aliden hiç eposta aldım mi,email_query
+17080,şirket çalışanıma bugünkü planlanmış toplantı bilgilerini içeren bir e-posta gönder,email_sendemail
+17082,azradan bugün yeni email almış mıyım,email_query
+17093,meliha ya eposta gönder,email_sendemail
+17102,raci'nin telefon numarasını ara,email_querycontact
+17121,yeni mailleri bildir,email_query
+17137,okunmamış kaç mesajım var,email_query
+17140,lütfen az önce okuduğum epostayı yanıtla,email_sendemail
+17153,bert bugün bana yazdı mı,email_query
+17167,alex'in adresi nedir,email_querycontact

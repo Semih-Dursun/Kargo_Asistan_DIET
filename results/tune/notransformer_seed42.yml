@@ -1,0 +1,17 @@
+recipe: default.v1
+language: tr
+pipeline:
+- name: WhitespaceTokenizer
+- name: CountVectorsFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier
+  epochs: 100
+  random_seed: 42
+  batch_size:
+  - 64
+  - 128
+  number_of_transformer_layers: 0
+assistant_id: 20261111-104332-patient-transfer

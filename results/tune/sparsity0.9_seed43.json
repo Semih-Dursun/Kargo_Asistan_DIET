@@ -1,0 +1,11 @@
+{
+  "name": "sparsity0.9",
+  "overrides": {
+    "weight_sparsity": 0.9
+  },
+  "seed": 43,
+  "dev": {
+    "macro_f1": 0.7935220979782274,
+    "accuracy": 0.8066896212493851
+  }
+}

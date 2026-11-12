@@ -1,0 +1,41 @@
+id,text,gold,predicted,confidence,category
+16838,emaili yeni e-posta kimliği ne gönderebilir misin,email_sendemail,email_query,0.9261226654052734,A same-domain neighbour
+9330,çal,play_radio,play_music,0.9984941482543944,C very short / underspecified
+4268,listedeki bir sonraki şarkıya geç,music_settings,play_music,0.3933447301387787,A same-domain neighbour
+13513,köpeğin kaç bacağı vardır,qa_factoid,general_quirky,0.9466069340705872,B open-domain overlap
+13330,ispermeçet balinası ne kadar büyüktür,qa_factoid,social_query,0.6503738164901733,B open-domain overlap
+9760,çalmayı durdur,play_audiobook,audio_volume_mute,0.9802706241607666,D label or translation artefact
+12817,alışveriş merkezine nasıl gidebilirim,transport_query,recommendation_locations,0.9860591292381288,A same-domain neighbour
+6403,bir yere nasıl gidilir,transport_query,general_quirky,0.6110935807228088,C very short / underspecified
+11331,bana podcastimdeki en iyi derecelendirme alan rock şarkıları göster,play_podcasts,play_music,0.4252499341964721,A same-domain neighbour
+11634,ben bugün hangi filmi seyredeyim,recommendation_movies,general_quirky,0.9994750618934632,B open-domain overlap
+15444,şirket adına iki başparmak aşağı,social_post,takeaway_order,0.831649661064148,E other cross-domain
+8426,bana dünden bu sabaha kadar olan güncel olaylardan bahset,calendar_query,news_query,0.9542394280433656,D label or translation artefact
+5157,olly oturma odasındaki ışıkları kapat,iot_hue_lightoff,iot_hue_lightdim,0.5304968357086182,A same-domain neighbour
+11424,enes batur,play_podcasts,qa_definition,0.7118328809738159,C very short / underspecified
+14339,çin e karşı hindistan ile ilgili bana ekonomi ve g.d.p bilgisi ver,general_quirky,iot_hue_lighton,0.6497356295585632,B open-domain overlap
+4482,bu sabah yolumdaki karları temizlemem lazım mı,weather_query,alarm_remove,0.6080930829048157,E other cross-domain
+13547,cem yılmaz dün gece nerede görüldü,general_quirky,calendar_query,0.9522858262062072,B open-domain overlap
+8308,dün öğle saatlerinde taksim meydanında ki protesto ne hakkındaydı,news_query,email_querycontact,0.3180119395256042,E other cross-domain
+3554,aşk çalma listesi ni açar mısın,play_music,play_radio,0.9913212656974792,A same-domain neighbour
+13140,bana kasırga hakkında her şeyi anlat,qa_definition,news_query,0.7813204526901245,B open-domain overlap
+9700,şapka 'yı aç,play_audiobook,iot_wemo_on,0.6265770792961121,D label or translation artefact
+4174,hey olly mevcut ışık ayarlarını değiştir,iot_hue_lightchange,audio_volume_other,0.9554716348648072,E other cross-domain
+254,olly benim favori fenerbahçe oyuncumdan güzel bir bölüm oynat,play_music,play_game,0.4177754521369934,A same-domain neighbour
+15968,eğer oldukça bilindik bir yerdense önemli olarak işaretle,email_query,email_addcontact,0.9577618837356568,D label or translation artefact
+2870,olly bana alarmlarımı söyle,alarm_query,general_greet,0.5376177430152893,E other cross-domain
+5886,sıcak konu,news_query,weather_query,0.999948263168335,C very short / underspecified
+2167,beni yarım saat sonra kaldır,alarm_set,calendar_remove,0.9052802324295044,D label or translation artefact
+2472,bulunduğum yer için saat şu anda doğru mu,datetime_query,calendar_query,0.9947223663330078,A same-domain neighbour
+11916,yakındaki tema parkları nelerdir,recommendation_events,lists_query,0.5788520574569702,E other cross-domain
+1127,karışık üzerinden şarkılar çal,play_music,music_settings,0.9068188071250916,A same-domain neighbour
+5574,oturma odasındaki ışıkları aydınlat,iot_hue_lightup,iot_hue_lightdim,0.7635753154754639,A same-domain neighbour
+3654,ne tür müzik sevdiğimi düşünüyorsun,music_query,general_quirky,0.9838000535964966,B open-domain overlap
+3364,tak tak,general_joke,transport_taxi,0.9085108637809752,C very short / underspecified
+7892,bugünkü bir sonraki etkinliği dil,calendar_remove,calendar_query,0.9905760288238524,D label or translation artefact
+3349,araba nerede,audio_volume_up,qa_factoid,0.6858945488929749,D label or translation artefact
+10216,internette kek kalıbı ara,cooking_recipe,lists_query,0.6392868161201477,E other cross-domain
+14283,bana ankaradan bahset,qa_factoid,recommendation_events,0.5188040733337402,B open-domain overlap
+15839,konu,email_query,general_quirky,0.94778573513031,C very short / underspecified
+13521,dünya niye yuvarlak,general_quirky,qa_factoid,0.9999959468841552,B open-domain overlap
+15634,ok google benzin istasyonu sahibinin pislik olduğunu tweet'le,social_post,takeaway_query,0.7865320444107056,E other cross-domain

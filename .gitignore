@@ -1,0 +1,7 @@
+.venv/
+.cuda11/
+.rasa/
+models/
+__pycache__/
+.DS_Store
+*.pyc

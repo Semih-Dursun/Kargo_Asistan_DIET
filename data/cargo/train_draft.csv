@@ -1,0 +1,272 @@
+id,text,intent
+0,TR482915637 numaralı gönderimin güncel durumunu öğrenmek istiyorum,kargo_takip
+1,kargomun şu anda hangi şubede olduğunu öğrenebilir miyim,kargo_takip
+2,Yurtiçi Kargo ile gönderilen paketimin durumunu sorgulamak istiyorum,kargo_takip
+3,sipariş ettiğim ürünün kargo hareketlerini görüntüleyebilir miyim,kargo_takip
+4,123456789012 takip numaralı kargonun konumunu bildirir misiniz,kargo_takip
+5,kargom nerede kaldı,kargo_takip
+6,paketim şu an nerede,kargo_takip
+7,Aras kargom nerelerde dolaşıyor,kargo_takip
+8,Trendyol'tan aldığım şey nerede acaba,kargo_takip
+9,kargo yola çıktı mı,kargo_takip
+10,nerede benim kargom,kargo_takip
+11,durumu nedir TR778120934 numaralı paketin,kargo_takip
+12,şu an hangi aşamada kargom,kargo_takip
+13,yolda mı paketim,kargo_takip
+14,MNG kargomun konumu nedir şimdi,kargo_takip
+15,kargom nerde,kargo_takip
+16,kargoyu nerde kaldı bi bakarmısın,kargo_takip
+17,paketim nerdee,kargo_takip
+18,takip nomaram TR204958113 nerde bu,kargo_takip
+19,kargo hangi asamada,kargo_takip
+20,Amazon siparişimin kargosu nerede,kargo_takip
+21,Trendyol paketim şu an hangi şubede,kargo_takip
+22,siparişimin hangi tarihte teslim edileceğini öğrenmek istiyorum,teslimat_tarihi_sor
+23,TR482915637 numaralı kargonun tahmini teslim tarihini söyler misiniz,teslimat_tarihi_sor
+24,paketim ne zaman elime ulaşır,teslimat_tarihi_sor
+25,Hepsiburada siparişimin teslimat günü nedir,teslimat_tarihi_sor
+26,kargomun yarın teslim edilip edilmeyeceğini öğrenebilir miyim,teslimat_tarihi_sor
+27,kargom ne zaman gelir,teslimat_tarihi_sor
+28,paket kaç güne gelir,teslimat_tarihi_sor
+29,bu hafta gelir mi kargom,teslimat_tarihi_sor
+30,Yurtiçi Kargo ne zaman getirecek,teslimat_tarihi_sor
+31,ne zaman elime geçer bu paket,teslimat_tarihi_sor
+32,gelir mi bugün kargom,teslimat_tarihi_sor
+33,hangi gün teslim edilecek paketim,teslimat_tarihi_sor
+34,ne zaman gelecek siparişim N11'den verdiğim,teslimat_tarihi_sor
+35,teslimat tarihi nedir bu kargonun,teslimat_tarihi_sor
+36,kaç gün sürer Ankara'ya gelmesi,teslimat_tarihi_sor
+37,kargom ne zman gelir,teslimat_tarihi_sor
+38,paket ne zaman gelcek,teslimat_tarihi_sor
+39,tahmini teslimat tarihi nedir kargo gelicek mi yarın,teslimat_tarihi_sor
+40,ne zamn teslim edilcek siparişim,teslimat_tarihi_sor
+41,kaç güne gelir bu kargo,teslimat_tarihi_sor
+42,"kargom kayboldu, yardımcı olabilir misiniz",kayip_kargo
+43,TR603814295 numaralı gönderim kayıp görünüyor,kayip_kargo
+44,teslim edildi olarak görünen kargom bana ulaşmadı,kayip_kargo
+45,"paketim kayıp, araştırma başlatmanızı talep ediyorum",kayip_kargo
+46,kargom üç haftadır hiçbir şubede görünmüyor,kayip_kargo
+47,kargom kayboldu galiba,kayip_kargo
+48,paketim yok oldu,kayip_kargo
+49,kargo teslim edilmiş diyor ama bende yok,kayip_kargo
+50,Aras kargomu kaybetmiş,kayip_kargo
+51,takipte hiç hareket yok kargom kaybolmuş gibi,kayip_kargo
+52,kayboldu kargom,kayip_kargo
+53,bulunamıyor paketim hiçbir yerde,kayip_kargo
+54,ulaşmadı elime teslim edildi denen kargo,kayip_kargo
+55,kayıp olmuş PTT ile gönderdiğim paket,kayip_kargo
+56,"yok kargom, kaybolmuş",kayip_kargo
+57,kargom kayboldu yaa,kayip_kargo
+58,paketim kayip,kayip_kargo
+59,kargom kaybolmuş sanırm,kayip_kargo
+60,teslım edildi yazıyo ama gelmedi,kayip_kargo
+61,kargoyu kaybetmişler bulamıyoruz,kayip_kargo
+62,satın aldığım ürünü iade etmek istiyorum,iade_talebi
+63,Trendyol üzerinden aldığım siparişin iade sürecini başlatmak istiyorum,iade_talebi
+64,ürünü geri göndermek için iade kodu alabilir miyim,iade_talebi
+65,iade kargosu nasıl gönderilir,iade_talebi
+66,"aldığım ürün beklentimi karşılamadı, iade talep ediyorum",iade_talebi
+67,ürünü iade edecem,iade_talebi
+68,aldığım şeyi geri göndermek istiyorum,iade_talebi
+69,iade nasıl yapılıyor,iade_talebi
+70,Hepsiburada'dan aldığımı iade etmek istiyorum,iade_talebi
+71,"beğenmedim, geri yollayacağım",iade_talebi
+72,iade etmek istiyorum ürünü,iade_talebi
+73,geri göndermem lazım aldığım paketi,iade_talebi
+74,nasıl yaparım iadeyi,iade_talebi
+75,iade paketini nereye göndereceğim,iade_talebi
+76,"istiyorum iadeyi, uymadı bedeni",iade_talebi
+77,ürünü iade etmek istiyom,iade_talebi
+78,iade nasıl yapılır bilmiyorum,iade_talebi
+79,aldıgım ürünü geri gondermek istiyorum,iade_talebi
+80,iyade talebi oluşturmak istiyom,iade_talebi
+81,ürün olmamis iade edecem,iade_talebi
+82,N11'den aldığım ürünü iade etmek istiyorum,iade_talebi
+83,Amazon siparişimi nasıl geri gönderebilirim,iade_talebi
+84,teslimat adresimi değiştirmek istiyorum,adres_degistir
+85,TR482915637 numaralı kargonun adresini güncelleyebilir miyim,adres_degistir
+86,kargomun teslim adresini Kadıköy ilçesindeki adresime çevirmek istiyorum,adres_degistir
+87,"yanlış adres girdim, düzeltmek için ne yapmam gerekir",adres_degistir
+88,gönderinin adres bilgisini güncellemek istiyorum,adres_degistir
+89,adresi yanlış yazmışım değiştirebilir miyim,adres_degistir
+90,kargoyu başka bir adrese yollayın,adres_degistir
+91,adres değişikliği yapabilir miyim,adres_degistir
+92,paketi iş yerime gönderir misiniz,adres_degistir
+93,kargo adresimi değiştirmem lazım,adres_degistir
+94,değiştirmek istiyorum teslimat adresini,adres_degistir
+95,başka adrese yönlendirilebilir mi kargom,adres_degistir
+96,"Ankara'ya yönlendirin paketi, adres değişti",adres_degistir
+97,adres yanlış kargoda,adres_degistir
+98,güncellenebilir mi adresim,adres_degistir
+99,adresi yanlış yazmışım düzeltebilirmiyiz,adres_degistir
+100,kargo adresimi degistirmek istiyom,adres_degistir
+101,adres degisikligi yapcam kargoda,adres_degistir
+102,paketi baska adrese yollayın lütfen,adres_degistir
+103,adresim yanlış girilmiş kargonun,adres_degistir
+104,kargom hasarlı olarak elime ulaştı,hasarli_kargo
+105,paketin dışı yırtılmış ve ürün zarar görmüş,hasarli_kargo
+106,"teslim aldığım ürün kırık geldi, ne yapabilirim",hasarli_kargo
+107,"kargo kutusu ezilmiş durumda, hasar tespit tutanağı istiyorum",hasarli_kargo
+108,Aras ile gelen paketim hasarlıydı,hasarli_kargo
+109,paket ezik geldi,hasarli_kargo
+110,ürün kırık çıktı kargodan,hasarli_kargo
+111,kargo patlamış gelmiş,hasarli_kargo
+112,içindeki şey kırılmış,hasarli_kargo
+113,paketi açtım ürün çatlak,hasarli_kargo
+114,hasarlı geldi kargom,hasarli_kargo
+115,"kırılmış ürün, kutusu ezik",hasarli_kargo
+116,"zarar görmüş paketim, ne yapacağım",hasarli_kargo
+117,yırtık gelmiş kargo paketi,hasarli_kargo
+118,"ezilmiş kutu, bozuk ürün",hasarli_kargo
+119,kargom hasarli geldi,hasarli_kargo
+120,urun kırık gelmiş paketten,hasarli_kargo
+121,paket ezilmiş gelmiş ne yapcaz,hasarli_kargo
+122,kargo yırtılmıs gelmiş,hasarli_kargo
+123,ürün kirik cikti,hasarli_kargo
+124,3 desi bir paketi göndermenin ücreti nedir,kargo_ucreti_sor
+125,İstanbul'dan Ankara'ya kargo fiyatı ne kadar,kargo_ucreti_sor
+126,kargo gönderim ücretlerini öğrenmek istiyorum,kargo_ucreti_sor
+127,10 desi ağırlığındaki koli için fiyat bilgisi alabilir miyim,kargo_ucreti_sor
+128,Yurtiçi Kargo gönderim ücreti ne kadar,kargo_ucreti_sor
+129,kargo ne kadar tutar,kargo_ucreti_sor
+130,paket yollamak kaç para,kargo_ucreti_sor
+131,5 desi kargo kaç lira,kargo_ucreti_sor
+132,Aras ile İzmir'e göndermek ne kadar,kargo_ucreti_sor
+133,ücret ne kadar olur kargonun,kargo_ucreti_sor
+134,ne kadar kargo ücreti,kargo_ucreti_sor
+135,kaç lira 2 desi paket,kargo_ucreti_sor
+136,fiyatı nedir göndermenin Bursa'ya,kargo_ucreti_sor
+137,tutar ne kadar 40x30x20 bir koli için,kargo_ucreti_sor
+138,hesaplayın kargo ücretini,kargo_ucreti_sor
+139,kargo ne kadr,kargo_ucreti_sor
+140,paket gondermek kaç para,kargo_ucreti_sor
+141,7 desi kargo kac lira,kargo_ucreti_sor
+142,ücreti ne kadar olcak Antalya'ya,kargo_ucreti_sor
+143,kargo fiyatlari nedir,kargo_ucreti_sor
+144,15 desi paketin gönderim ücreti kaç lira,kargo_ucreti_sor
+145,1 desi küçük bir paket ne kadar tutar,kargo_ucreti_sor
+146,en yakın kargo şubesinin adresini öğrenmek istiyorum,sube_bul
+147,Kadıköy'de bulunan Yurtiçi Kargo şubesi nerede,sube_bul
+148,Mersin şehrindeki PTT şubelerinin listesini alabilir miyim,sube_bul
+149,kargo teslim noktası nerede bulunuyor,sube_bul
+150,şubenin çalışma saatleri ve adresi nedir,sube_bul
+151,en yakın kargo şubesi nerede,sube_bul
+152,Aras şubesi nerede burada,sube_bul
+153,Çankaya'da kargo şubesi var mı,sube_bul
+154,paketi nereye bırakabilirim,sube_bul
+155,yakınlarda MNG şubesi var mı,sube_bul
+156,nerede en yakın şube,sube_bul
+157,var mı Beşiktaş'ta kargo şubesi,sube_bul
+158,nerede bu Sürat Kargo şubesi,sube_bul
+159,şube adresi nedir Konya'daki,sube_bul
+160,hangi şubeye gitmem gerek paketimi almak için,sube_bul
+161,en yakin kargo subesi nerde,sube_bul
+162,sube nerde bu,sube_bul
+163,Aras şubesi nerde acaba,sube_bul
+164,yakında kargo ofisi varmı,sube_bul
+165,Kadıköy'de sube varmi,sube_bul
+166,teslimat saatini değiştirmek istiyorum,teslimat_randevu
+167,kargomun cumartesi günü teslim edilmesini rica ediyorum,teslimat_randevu
+168,"hafta içi evde olamayacağım, teslimat gününü değiştirebilir miyiz",teslimat_randevu
+169,kurye gelmeden önce beni arayabilir mi,teslimat_randevu
+170,TR482915637 numaralı kargo için yeni bir teslimat randevusu almak istiyorum,teslimat_randevu
+171,kargoyu yarın getirin,teslimat_randevu
+172,bugün evde değilim başka gün gelsin,teslimat_randevu
+173,akşam saatinde teslim eder misiniz,teslimat_randevu
+174,kurye öğleden sonra gelsin,teslimat_randevu
+175,teslimat gününü kaydırabilir miyiz,teslimat_randevu
+176,cumartesi getirin kargoyu,teslimat_randevu
+177,gelsin pazartesi paketim,teslimat_randevu
+178,"evde olmayacağım bugün, ertelenebilir mi teslimat",teslimat_randevu
+179,akşam teslim edilsin kargo,teslimat_randevu
+180,değiştirilebilir mi teslimat günü,teslimat_randevu
+181,kargoyu yarına alabilirmiyiz,teslimat_randevu
+182,bugun evde olmicam teslimat ertelensin,teslimat_randevu
+183,teslımat saatini degistirmek istiyom,teslimat_randevu
+184,kurye aksam gelsin lütfen,teslimat_randevu
+185,cumartesi getirirmisiniz kargoyu,teslimat_randevu
+186,gönderdiğim kargoyu iptal etmek istiyorum,kargo_iptal
+187,henüz teslim edilmeyen siparişimin gönderimini iptal edebilir miyim,kargo_iptal
+188,TR603814295 numaralı gönderiyi iptal etmek istiyorum,kargo_iptal
+189,kargom şubeye ulaşmadan iptal talebinde bulunmak istiyorum,kargo_iptal
+190,kargo kaydımı silmek istiyorum,kargo_iptal
+191,kargoyu iptal edin,kargo_iptal
+192,gönderiyi vazgeçtim iptal edebilir miyiz,kargo_iptal
+193,kargo çıkmadan iptal etmek istiyorum,kargo_iptal
+194,paketi göndermekten vazgeçtim,kargo_iptal
+195,iptal etmek istiyorum bu kargoyu,kargo_iptal
+196,iptal edin kargomu,kargo_iptal
+197,"vazgeçtim kargodan, iptal",kargo_iptal
+198,edilebilir mi iptali gönderinin,kargo_iptal
+199,silin bu gönderiyi,kargo_iptal
+200,iptal olsun kargo,kargo_iptal
+201,kargoyu iptal etmek istiyom,kargo_iptal
+202,gönderiyi iptal edebilirmiyiz,kargo_iptal
+203,vazgectim kargoyu iptal edin,kargo_iptal
+204,kargo iptali nasıl yapılır,kargo_iptal
+205,iptal etmek istiyom paketi,kargo_iptal
+206,Hepsiburada siparişimin kargosunu iptal etmek istiyorum,kargo_iptal
+207,bir kargo göndermek istiyorum,gonderi_olustur
+208,adresimden kurye çağırmak istiyorum,gonderi_olustur
+209,İzmir'deki alıcıya paket göndermek için gönderi oluşturabilir miyim,gonderi_olustur
+210,yeni bir gönderi kaydı açmak istiyorum,gonderi_olustur
+211,Aras Kargo ile paket göndermek istiyorum,gonderi_olustur
+212,paket yollayacağım,gonderi_olustur
+213,kurye gönderir misiniz adrese,gonderi_olustur
+214,kargo göndermek için ne yapmam lazım,gonderi_olustur
+215,5 desi bir koli yollamak istiyorum,gonderi_olustur
+216,evden paket aldırabilir miyim,gonderi_olustur
+217,göndermek istiyorum bir paket,gonderi_olustur
+218,gelsin kurye evime,gonderi_olustur
+219,yollamak istiyorum Ankara'ya bir koli,gonderi_olustur
+220,nasıl gönderirim kargoyu,gonderi_olustur
+221,çağırmak istiyorum kurye,gonderi_olustur
+222,kargo gondermek istiyom,gonderi_olustur
+223,kurye cagirmak istiyorum adrese,gonderi_olustur
+224,paket yollıcam nasıl yapıcam,gonderi_olustur
+225,gönderi olusturmak istiyom,gonderi_olustur
+226,kuryeyi eve gönderirmisiniz,gonderi_olustur
+227,12 desi bir koli göndereceğim,gonderi_olustur
+228,4 desi paket için kurye çağırmak istiyorum,gonderi_olustur
+229,"kargom belirtilen sürede teslim edilmedi, şikayetçiyim",kargo_gecikme_sikayet
+230,teslimat tarihi geçti ancak paketim hâlâ gelmedi,kargo_gecikme_sikayet
+231,Yurtiçi Kargo gecikmesi nedeniyle şikayette bulunmak istiyorum,kargo_gecikme_sikayet
+232,siparişim beş gündür şubede bekliyor,kargo_gecikme_sikayet
+233,TR482915637 numaralı gönderi çok geciktirildi,kargo_gecikme_sikayet
+234,kargom çok gecikti,kargo_gecikme_sikayet
+235,paket hâlâ gelmedi artık sıkıldım,kargo_gecikme_sikayet
+236,üç gündür kargo getirmediler,kargo_gecikme_sikayet
+237,MNG kargom bir haftadır yolda,kargo_gecikme_sikayet
+238,neden bu kadar geç geliyor kargom,kargo_gecikme_sikayet
+239,gecikti kargom çok,kargo_gecikme_sikayet
+240,"gelmedi hâlâ paketim, söz verilen gün geçti",kargo_gecikme_sikayet
+241,bekliyorum günlerdir kargoyu,kargo_gecikme_sikayet
+242,geç kalmış Aras teslimatı,kargo_gecikme_sikayet
+243,"şikayetim var, geç geliyor kargo",kargo_gecikme_sikayet
+244,kargom cok gecikti yaa,kargo_gecikme_sikayet
+245,paket hala gelmedi sikayetciyim,kargo_gecikme_sikayet
+246,ucgündür kargo gelmedi,kargo_gecikme_sikayet
+247,kargo neden bu kadar gec geliyo,kargo_gecikme_sikayet
+248,teslimat gecikmiş sikayet etmek istiyom,kargo_gecikme_sikayet
+249,"Trendyol siparişim hâlâ gelmedi, çok gecikti",kargo_gecikme_sikayet
+250,N11'den verdiğim sipariş günlerdir yolda,kargo_gecikme_sikayet
+251,müşteri temsilcisiyle görüşmek istiyorum,temsilci_talep
+252,bir yetkiliye bağlanabilir miyim,temsilci_talep
+253,canlı destek hattına nasıl ulaşırım,temsilci_talep
+254,Yurtiçi Kargo müşteri hizmetleri numarasını öğrenmek istiyorum,temsilci_talep
+255,sorunumu bir temsilciye iletmek istiyorum,temsilci_talep
+256,temsilciye bağlayın,temsilci_talep
+257,biriyle konuşmak istiyorum,temsilci_talep
+258,gerçek biri var mı orada,temsilci_talep
+259,müşteri hizmetleri telefonu nedir,temsilci_talep
+260,beni bir insana aktarır mısınız,temsilci_talep
+261,bağlayın beni temsilciye,temsilci_talep
+262,konuşabilir miyim yetkili biriyle,temsilci_talep
+263,görüşmek istiyorum bir yetkiliyle,temsilci_talep
+264,nasıl ulaşırım müşteri hizmetlerine,temsilci_talep
+265,istiyorum canlı destek,temsilci_talep
+266,musteri temsilcisine baglanmak istiyom,temsilci_talep
+267,yetkili biriyle konusabilirmiyim,temsilci_talep
+268,canli destege baglayin,temsilci_talep
+269,temsilci ile gorusmek istiyorum,temsilci_talep
+270,müsteri hizmetleri numarası nedir,temsilci_talep

@@ -1,0 +1,27 @@
+id,text,intent
+0,TR123456789 nerede,kargo_takip
+1,kargom şu an hangi aşamada,kargo_takip
+2,kargom ne zaman gelir,teslimat_tarihi_sor
+3,Trendyol siparişim hangi gün teslim edilecek,teslimat_tarihi_sor
+4,kargom kayboldu,kayip_kargo
+5,teslim edildi yazıyor ama elime ulaşmadı,kayip_kargo
+6,aldığım ürünü iade etmek istiyorum,iade_talebi
+7,Hepsiburada siparişimi geri göndermem lazım,iade_talebi
+8,kargonun adresini değiştirmek istiyorum,adres_degistir
+9,"teslimat adresi yanlış girilmiş, Kadıköy'e yönlendirir misiniz",adres_degistir
+10,kargom hasarlı geldi,hasarli_kargo
+11,"paket ezilmiş, ürün kırık çıktı",hasarli_kargo
+12,5 desi kargo ne kadar tutar,kargo_ucreti_sor
+13,Ankara'dan İzmir'e kargo ücreti nedir,kargo_ucreti_sor
+14,Kadıköy'de Aras Kargo şubesi nerede,sube_bul
+15,en yakın kargo şubesini öğrenmek istiyorum,sube_bul
+16,kargoyu cumartesi teslim eder misiniz,teslimat_randevu
+17,"evde olmayacağım, teslimatı yarına alabilir miyiz",teslimat_randevu
+18,gönderdiğim kargoyu iptal etmek istiyorum,kargo_iptal
+19,kargo çıkmadan siparişi iptal edebilir miyim,kargo_iptal
+20,kargo göndermek istiyorum,gonderi_olustur
+21,adresimden kurye çağırabilir miyim,gonderi_olustur
+22,kargom çok gecikti,kargo_gecikme_sikayet
+23,Yurtiçi Kargo üç gündür getirmedi,kargo_gecikme_sikayet
+24,müşteri temsilcisine bağlanmak istiyorum,temsilci_talep
+25,yetkili biriyle konuşabilir miyim,temsilci_talep

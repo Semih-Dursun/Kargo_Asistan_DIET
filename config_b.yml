@@ -1,0 +1,18 @@
+# Config B: A + dondurulmuş BERTurk (yalnızca dense özellikler eklenir)
+# Proposal 4: A ile birebir aynı, ek olarak LanguageModelFeaturizer.
+recipe: default.v1
+language: tr
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: LanguageModelFeaturizer
+    model_name: bert
+    model_weights: dbmdz/bert-base-turkish-cased
+  - name: DIETClassifier
+    epochs: 100
+    random_seed: 42
+    batch_size: [64, 128]   # GPU belleği (4 GB): varsayılan [64,256] OOM veriyor; A/B/C aynı

@@ -1,0 +1,380 @@
+/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/core/tracker_store.py:1044: MovedIn20Warning: Deprecated API features detected! These feature(s) are not compatible with SQLAlchemy 2.0. To prevent incompatible upgrades prior to updating applications, ensure requirements files are pinned to "sqlalchemy<2.0". Set environment variable SQLALCHEMY_WARN_20=1 to show all deprecation warnings.  Set environment variable SQLALCHEMY_SILENCE_UBER_WARNING=1 to silence this message. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base: DeclarativeMeta = declarative_base()
+/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/validation.py:134: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/pkg_resources/__init__.py:3117: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/pkg_resources/__init__.py:3117: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('ruamel')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/tensorflow/lite/python/util.py:52: DeprecationWarning: jax.xla_computation is deprecated. Please use the AOT APIs.
+  from jax import xla_computation as _xla_computation
+/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:66: PyparsingDeprecationWarning: 'setParseAction' deprecated - use 'set_parse_action'
+  ).setParseAction(self._family)
+/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:127: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  self._parser.parseString(pattern)
+/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/matplotlib/fontconfig_pattern.py:134: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  self._parser.resetCache()
+[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Entity entity 'game_type' has only 1 training examples! The minimum is 2, because of this the training may fail.
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Entity entity 'music_album' has only 1 training examples! The minimum is 2, because of this the training may fail.
+[0m2026-11-07 16:50:47 INFO     rasa.engine.training.hooks  - Restored component 'CountVectorsFeaturizer' from cache.
+2026-11-07 16:50:52 INFO     rasa.engine.training.hooks  - Restored component 'CountVectorsFeaturizer' from cache.
+2026-11-07 16:51:00 INFO     rasa.engine.training.hooks  - Starting to train component 'DIETClassifier'.
+[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/utils/train_utils.py:530: UserWarning: constrain_similarities is set to `False`. It is recommended to set it to `True` when using cross-entropy loss.
+  rasa.shared.utils.io.raise_warning(
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'yarın saat dörtte john c. ve karısı ile buluşma olacağını takvimime koyar mısın' with intent 'calendar_set'. Make sure the start and end values of entities ([(0, 5, 'yarın'), (11, 17, 'dörtte'), (18, 25, 'john c.'), (29, 35, 'karısı'), (40, 47, 'buluşma')]) in the training data match the token boundaries ([(0, 5, 'yarın'), (6, 10, 'saat'), (11, 17, 'dörtte'), (18, 22, 'john'), (23, 24, 'c'), (26, 28, 've'), (29, 35, 'karısı'), (36, 39, 'ile'), (40, 47, 'buluşma'), (48, 57, 'olacağını'), (58, 67, 'takvimime'), (68, 73, 'koyar'), (74, 79, 'mısın')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'a. b. d. ile karşılaştırılınca japonya da saat kaç' with intent 'datetime_convert'. Make sure the start and end values of entities ([(0, 8, 'a. b. d.'), (31, 38, 'japonya')]) in the training data match the token boundaries ([(0, 1, 'a'), (3, 4, 'b'), (6, 7, 'd'), (9, 12, 'ile'), (13, 30, 'karşılaştırılınca'), (31, 38, 'japonya'), (39, 41, 'da'), (42, 46, 'saat'), (47, 50, 'kaç')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'mevcut zamanı ist den e. s. t. e çevir' with intent 'datetime_convert'. Make sure the start and end values of entities ([(14, 17, 'ist'), (22, 30, 'e. s. t.')]) in the training data match the token boundaries ([(0, 6, 'mevcut'), (7, 13, 'zamanı'), (14, 17, 'ist'), (18, 21, 'den'), (22, 23, 'e'), (25, 26, 's'), (28, 29, 't'), (31, 32, 'e'), (33, 38, 'çevir')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'g. m. t. ile mevcut saat' with intent 'datetime_query'. Make sure the start and end values of entities ([(0, 8, 'g. m. t.')]) in the training data match the token boundaries ([(0, 1, 'g'), (3, 4, 'm'), (6, 7, 't'), (9, 12, 'ile'), (13, 19, 'mevcut'), (20, 24, 'saat')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'kişilerimdeki merve s. hakkında bana bilgi ver' with intent 'email_querycontact'. Make sure the start and end values of entities ([(14, 22, 'merve s.')]) in the training data match the token boundaries ([(0, 13, 'kişilerimdeki'), (14, 19, 'merve'), (20, 21, 's'), (23, 31, 'hakkında'), (32, 36, 'bana'), (37, 42, 'bilgi'), (43, 46, 'ver')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'geçmişte ve günümüzde a. b. d. ve ingilterededeki sosyal statü ne gibi farklılıklar gösterir' with intent 'general_quirky'. Make sure the start and end values of entities ([(22, 30, 'a. b. d.'), (34, 49, 'ingilterededeki')]) in the training data match the token boundaries ([(0, 8, 'geçmişte'), (9, 11, 've'), (12, 21, 'günümüzde'), (22, 23, 'a'), (25, 26, 'b'), (28, 29, 'd'), (31, 33, 've'), (34, 49, 'ingilterededeki'), (50, 56, 'sosyal'), (57, 62, 'statü'), (63, 65, 'ne'), (66, 70, 'gibi'), (71, 83, 'farklılıklar'), (84, 92, 'gösterir')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 't. v. kapat' with intent 'iot_wemo_off'. Make sure the start and end values of entities ([(0, 5, 't. v.')]) in the training data match the token boundaries ([(0, 1, 't'), (3, 4, 'v'), (6, 11, 'kapat')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 't. v. listemde ne var' with intent 'lists_query'. Make sure the start and end values of entities ([(0, 5, 't. v.')]) in the training data match the token boundaries ([(0, 1, 't'), (3, 4, 'v'), (6, 14, 'listemde'), (15, 17, 'ne'), (18, 21, 'var')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'b. b. c. haberlerini söyle' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'b. b. c.')]) in the training data match the token boundaries ([(0, 1, 'b'), (3, 4, 'b'), (6, 7, 'c'), (9, 20, 'haberlerini'), (21, 26, 'söyle')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'b. b. c. haberlerde haberler nedir' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'b. b. c.')]) in the training data match the token boundaries ([(0, 1, 'b'), (3, 4, 'b'), (6, 7, 'c'), (9, 19, 'haberlerde'), (20, 28, 'haberler'), (29, 34, 'nedir')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'olly bana b. b. c. den birkaç haber göster' with intent 'news_query'. Make sure the start and end values of entities ([(10, 18, 'b. b. c.')]) in the training data match the token boundaries ([(0, 4, 'olly'), (5, 9, 'bana'), (10, 11, 'b'), (13, 14, 'b'), (16, 17, 'c'), (19, 22, 'den'), (23, 29, 'birkaç'), (30, 35, 'haber'), (36, 42, 'göster')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'c. n. n. haberleri aç' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'c. n. n.')]) in the training data match the token boundaries ([(0, 1, 'c'), (3, 4, 'n'), (6, 7, 'n'), (9, 18, 'haberleri'), (19, 21, 'aç')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'b. b. c. den haber güncellemesi ver' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'b. b. c.')]) in the training data match the token boundaries ([(0, 1, 'b'), (3, 4, 'b'), (6, 7, 'c'), (9, 12, 'den'), (13, 18, 'haber'), (19, 31, 'güncellemesi'), (32, 35, 'ver')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'b. b. c. deki haber gelişmeleri nedir' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'b. b. c.')]) in the training data match the token boundaries ([(0, 1, 'b'), (3, 4, 'b'), (6, 7, 'c'), (9, 13, 'deki'), (14, 19, 'haber'), (20, 31, 'gelişmeleri'), (32, 37, 'nedir')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'bana b. b. c. den en son gelişmeleri göster' with intent 'news_query'. Make sure the start and end values of entities ([(5, 13, 'b. b. c.')]) in the training data match the token boundaries ([(0, 4, 'bana'), (5, 6, 'b'), (8, 9, 'b'), (11, 12, 'c'), (14, 17, 'den'), (18, 20, 'en'), (21, 24, 'son'), (25, 36, 'gelişmeleri'), (37, 43, 'göster')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'günün haberleri fox t. v.' with intent 'news_query'. Make sure the start and end values of entities ([(0, 5, 'günün'), (16, 25, 'fox t. v.')]) in the training data match the token boundaries ([(0, 5, 'günün'), (6, 15, 'haberleri'), (16, 19, 'fox'), (20, 21, 't'), (23, 24, 'v')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'c. n. n. türkte bugünün haberlerini toparla' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'c. n. n.'), (16, 23, 'bugünün')]) in the training data match the token boundaries ([(0, 1, 'c'), (3, 4, 'n'), (6, 7, 'n'), (9, 15, 'türkte'), (16, 23, 'bugünün'), (24, 35, 'haberlerini'), (36, 43, 'toparla')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'bana c. n. n. haberlerini söyle şimdi' with intent 'news_query'. Make sure the start and end values of entities ([(5, 13, 'c. n. n.')]) in the training data match the token boundaries ([(0, 4, 'bana'), (5, 6, 'c'), (8, 9, 'n'), (11, 12, 'n'), (14, 25, 'haberlerini'), (26, 31, 'söyle'), (32, 37, 'şimdi')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'm. s. n. haberler' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'm. s. n.')]) in the training data match the token boundaries ([(0, 1, 'm'), (3, 4, 's'), (6, 7, 'n'), (9, 17, 'haberler')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'c. n. n. den haber al' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'c. n. n.')]) in the training data match the token boundaries ([(0, 1, 'c'), (3, 4, 'n'), (6, 7, 'n'), (9, 12, 'den'), (13, 18, 'haber'), (19, 21, 'al')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'c. n. n. de haberler nedir' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'c. n. n.')]) in the training data match the token boundaries ([(0, 1, 'c'), (3, 4, 'n'), (6, 7, 'n'), (9, 11, 'de'), (12, 20, 'haberler'), (21, 26, 'nedir')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'fox t. v. haberleri duyalım' with intent 'news_query'. Make sure the start and end values of entities ([(0, 9, 'fox t. v.')]) in the training data match the token boundaries ([(0, 3, 'fox'), (4, 5, 't'), (7, 8, 'v'), (10, 19, 'haberleri'), (20, 27, 'duyalım')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'bugün c. n. n. deki haberleri göster' with intent 'news_query'. Make sure the start and end values of entities ([(6, 14, 'c. n. n.')]) in the training data match the token boundaries ([(0, 5, 'bugün'), (6, 7, 'c'), (9, 10, 'n'), (12, 13, 'n'), (15, 19, 'deki'), (20, 29, 'haberleri'), (30, 36, 'göster')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'bugün c. n. n. de hangi yazılar var' with intent 'news_query'. Make sure the start and end values of entities ([(0, 5, 'bugün'), (6, 14, 'c. n. n.')]) in the training data match the token boundaries ([(0, 5, 'bugün'), (6, 7, 'c'), (9, 10, 'n'), (12, 13, 'n'), (15, 17, 'de'), (18, 23, 'hangi'), (24, 31, 'yazılar'), (32, 35, 'var')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'c. n. n. uygulamamı aç ve benim için oku' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'c. n. n.')]) in the training data match the token boundaries ([(0, 1, 'c'), (3, 4, 'n'), (6, 7, 'n'), (9, 19, 'uygulamamı'), (20, 22, 'aç'), (23, 25, 've'), (26, 31, 'benim'), (32, 36, 'için'), (37, 40, 'oku')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'c. n. n. deki en son manşetler neler' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'c. n. n.')]) in the training data match the token boundaries ([(0, 1, 'c'), (3, 4, 'n'), (6, 7, 'n'), (9, 13, 'deki'), (14, 16, 'en'), (17, 20, 'son'), (21, 30, 'manşetler'), (31, 36, 'neler')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'b. b. c. den en son haberler nedir' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'b. b. c.')]) in the training data match the token boundaries ([(0, 1, 'b'), (3, 4, 'b'), (6, 7, 'c'), (9, 12, 'den'), (13, 15, 'en'), (16, 19, 'son'), (20, 28, 'haberler'), (29, 34, 'nedir')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'b. b. c. haber dünya haber' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'b. b. c.'), (15, 20, 'dünya')]) in the training data match the token boundaries ([(0, 1, 'b'), (3, 4, 'b'), (6, 7, 'c'), (9, 14, 'haber'), (15, 20, 'dünya'), (21, 26, 'haber')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'bana c. n. n. den haberleri göster' with intent 'news_query'. Make sure the start and end values of entities ([(5, 13, 'c. n. n.')]) in the training data match the token boundaries ([(0, 4, 'bana'), (5, 6, 'c'), (8, 9, 'n'), (11, 12, 'n'), (14, 17, 'den'), (18, 27, 'haberleri'), (28, 34, 'göster')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'c. n. n. türk' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'c. n. n.')]) in the training data match the token boundaries ([(0, 1, 'c'), (3, 4, 'n'), (6, 7, 'n'), (9, 13, 'türk')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'b. b. c. haberleri' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'b. b. c.')]) in the training data match the token boundaries ([(0, 1, 'b'), (3, 4, 'b'), (6, 7, 'c'), (9, 18, 'haberleri')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'en son yüklenen b. b. c. haberlerini bana oku' with intent 'news_query'. Make sure the start and end values of entities ([(16, 24, 'b. b. c.')]) in the training data match the token boundaries ([(0, 2, 'en'), (3, 6, 'son'), (7, 15, 'yüklenen'), (16, 17, 'b'), (19, 20, 'b'), (22, 23, 'c'), (25, 36, 'haberlerini'), (37, 41, 'bana'), (42, 45, 'oku')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'c. n. n. de en son durum nedir' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'c. n. n.')]) in the training data match the token boundaries ([(0, 1, 'c'), (3, 4, 'n'), (6, 7, 'n'), (9, 11, 'de'), (12, 14, 'en'), (15, 18, 'son'), (19, 24, 'durum'), (25, 30, 'nedir')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'arabam üzerindeki g. p. s. için yeni bir bildirim ekle' with intent 'news_query'. Make sure the start and end values of entities ([(0, 6, 'arabam'), (18, 26, 'g. p. s.')]) in the training data match the token boundaries ([(0, 6, 'arabam'), (7, 17, 'üzerindeki'), (18, 19, 'g'), (21, 22, 'p'), (24, 25, 's'), (27, 31, 'için'), (32, 36, 'yeni'), (37, 40, 'bir'), (41, 49, 'bildirim'), (50, 54, 'ekle')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'alexa bana n. b. c. den haberleri ver' with intent 'news_query'. Make sure the start and end values of entities ([(11, 19, 'n. b. c.')]) in the training data match the token boundaries ([(0, 5, 'alexa'), (6, 10, 'bana'), (11, 12, 'n'), (14, 15, 'b'), (17, 18, 'c'), (20, 23, 'den'), (24, 33, 'haberleri'), (34, 37, 'ver')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'c. n. n. haberler' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'c. n. n.')]) in the training data match the token boundaries ([(0, 1, 'c'), (3, 4, 'n'), (6, 7, 'n'), (9, 17, 'haberler')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'göç ile ilgili b. b. c. haberini göster' with intent 'news_query'. Make sure the start and end values of entities ([(0, 3, 'göç'), (15, 23, 'b. b. c.')]) in the training data match the token boundaries ([(0, 3, 'göç'), (4, 7, 'ile'), (8, 14, 'ilgili'), (15, 16, 'b'), (18, 19, 'b'), (21, 22, 'c'), (24, 32, 'haberini'), (33, 39, 'göster')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'en son b. b. c. raporlarını göster' with intent 'news_query'. Make sure the start and end values of entities ([(7, 15, 'b. b. c.')]) in the training data match the token boundaries ([(0, 2, 'en'), (3, 6, 'son'), (7, 8, 'b'), (10, 11, 'b'), (13, 14, 'c'), (16, 27, 'raporlarını'), (28, 34, 'göster')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'b.b.c. göçmen raporunu göster' with intent 'news_query'. Make sure the start and end values of entities ([(0, 6, 'b.b.c.'), (7, 13, 'göçmen')]) in the training data match the token boundaries ([(0, 5, 'b.b.c'), (7, 13, 'göçmen'), (14, 22, 'raporunu'), (23, 29, 'göster')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'şu an dünyada neler oluyor b. b. c. yi kontrol et' with intent 'news_query'. Make sure the start and end values of entities ([(6, 13, 'dünyada'), (27, 35, 'b. b. c.')]) in the training data match the token boundaries ([(0, 2, 'şu'), (3, 5, 'an'), (6, 13, 'dünyada'), (14, 19, 'neler'), (20, 26, 'oluyor'), (27, 28, 'b'), (30, 31, 'b'), (33, 34, 'c'), (36, 38, 'yi'), (39, 46, 'kontrol'), (47, 49, 'et')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'b. b. c. haberde bugün neler oluyor' with intent 'news_query'. Make sure the start and end values of entities ([(0, 8, 'b. b. c.'), (17, 22, 'bugün')]) in the training data match the token boundaries ([(0, 1, 'b'), (3, 4, 'b'), (6, 7, 'c'), (9, 16, 'haberde'), (17, 22, 'bugün'), (23, 28, 'neler'), (29, 35, 'oluyor')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'fox t. v. uygulamasını aç' with intent 'news_query'. Make sure the start and end values of entities ([(0, 9, 'fox t. v.')]) in the training data match the token boundaries ([(0, 3, 'fox'), (4, 5, 't'), (7, 8, 'v'), (10, 22, 'uygulamasını'), (23, 25, 'aç')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'n. p. r. podcastini çalabilir misin lütfen' with intent 'play_podcasts'. Make sure the start and end values of entities ([(0, 8, 'n. p. r.')]) in the training data match the token boundaries ([(0, 1, 'n'), (3, 4, 'p'), (6, 7, 'r'), (9, 19, 'podcastini'), (20, 29, 'çalabilir'), (30, 35, 'misin'), (36, 42, 'lütfen')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'dokuz yüz yetmiş beş f.m. çal lütfen' with intent 'play_radio'. Make sure the start and end values of entities ([(0, 25, 'dokuz yüz yetmiş beş f.m.')]) in the training data match the token boundaries ([(0, 5, 'dokuz'), (6, 9, 'yüz'), (10, 16, 'yetmiş'), (17, 20, 'beş'), (21, 24, 'f.m'), (26, 29, 'çal'), (30, 36, 'lütfen')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'sadece dokuz yüz doksan dokuz f.m. radyosunu çal' with intent 'play_radio'. Make sure the start and end values of entities ([(7, 34, 'dokuz yüz doksan dokuz f.m.')]) in the training data match the token boundaries ([(0, 6, 'sadece'), (7, 12, 'dokuz'), (13, 16, 'yüz'), (17, 23, 'doksan'), (24, 29, 'dokuz'), (30, 33, 'f.m'), (35, 44, 'radyosunu'), (45, 48, 'çal')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'radyo sadece kral f. m. çalmalı' with intent 'play_radio'. Make sure the start and end values of entities ([(13, 23, 'kral f. m.')]) in the training data match the token boundaries ([(0, 5, 'radyo'), (6, 12, 'sadece'), (13, 17, 'kral'), (18, 19, 'f'), (21, 22, 'm'), (24, 31, 'çalmalı')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'f. m. aç' with intent 'play_radio'. Make sure the start and end values of entities ([(0, 5, 'f. m.')]) in the training data match the token boundaries ([(0, 1, 'f'), (3, 4, 'm'), (6, 8, 'aç')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'senin kral f. m. radyo kanalını açmana ihtiyacım var' with intent 'play_radio'. Make sure the start and end values of entities ([(6, 16, 'kral f. m.')]) in the training data match the token boundaries ([(0, 5, 'senin'), (6, 10, 'kral'), (11, 12, 'f'), (14, 15, 'm'), (17, 22, 'radyo'), (23, 31, 'kanalını'), (32, 38, 'açmana'), (39, 48, 'ihtiyacım'), (49, 52, 'var')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'kiss f. m. radyoyu aç' with intent 'play_radio'. Make sure the start and end values of entities ([(0, 10, 'kiss f. m.')]) in the training data match the token boundaries ([(0, 4, 'kiss'), (5, 6, 'f'), (8, 9, 'm'), (11, 18, 'radyoyu'), (19, 21, 'aç')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'bana kiss f. m. kanalını bul' with intent 'play_radio'. Make sure the start and end values of entities ([(5, 15, 'kiss f. m.')]) in the training data match the token boundaries ([(0, 4, 'bana'), (5, 9, 'kiss'), (10, 11, 'f'), (13, 14, 'm'), (16, 24, 'kanalını'), (25, 28, 'bul')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'benim için radyo f. m. istasyonlarından birini benim için çalar mısın' with intent 'play_radio'. Make sure the start and end values of entities ([(17, 22, 'f. m.')]) in the training data match the token boundaries ([(0, 5, 'benim'), (6, 10, 'için'), (11, 16, 'radyo'), (17, 18, 'f'), (20, 21, 'm'), (23, 39, 'istasyonlarından'), (40, 46, 'birini'), (47, 52, 'benim'), (53, 57, 'için'), (58, 63, 'çalar'), (64, 69, 'mısın')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'istanbul f. m.' with intent 'play_radio'. Make sure the start and end values of entities ([(0, 14, 'istanbul f. m.')]) in the training data match the token boundaries ([(0, 8, 'istanbul'), (9, 10, 'f'), (12, 13, 'm')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'kral f. m. de sabah şovunu aç çal lütfen' with intent 'play_radio'. Make sure the start and end values of entities ([(0, 10, 'kral f. m.')]) in the training data match the token boundaries ([(0, 4, 'kral'), (5, 6, 'f'), (8, 9, 'm'), (11, 13, 'de'), (14, 19, 'sabah'), (20, 26, 'şovunu'), (27, 29, 'aç'), (30, 33, 'çal'), (34, 40, 'lütfen')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'a. b. d. de bin pesoya sahip olmak için ne kadar paraya ihtiyacım var' with intent 'qa_currency'. Make sure the start and end values of entities ([(0, 8, 'a. b. d.'), (16, 22, 'pesoya')]) in the training data match the token boundaries ([(0, 1, 'a'), (3, 4, 'b'), (6, 7, 'd'), (9, 11, 'de'), (12, 15, 'bin'), (16, 22, 'pesoya'), (23, 28, 'sahip'), (29, 34, 'olmak'), (35, 39, 'için'), (40, 42, 'ne'), (43, 48, 'kadar'), (49, 55, 'paraya'), (56, 65, 'ihtiyacım'), (66, 69, 'var')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'g. d. p. ne anlama geliyor açıkla' with intent 'qa_definition'. Make sure the start and end values of entities ([(0, 8, 'g. d. p.')]) in the training data match the token boundaries ([(0, 1, 'g'), (3, 4, 'd'), (6, 7, 'p'), (9, 11, 'ne'), (12, 18, 'anlama'), (19, 26, 'geliyor'), (27, 33, 'açıkla')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'elli inç smart t. v. yi tanımla' with intent 'qa_definition'. Make sure the start and end values of entities ([(0, 20, 'elli inç smart t. v.')]) in the training data match the token boundaries ([(0, 4, 'elli'), (5, 8, 'inç'), (9, 14, 'smart'), (15, 16, 't'), (18, 19, 'v'), (21, 23, 'yi'), (24, 31, 'tanımla')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'ilk a. b. d. başkanı kimdir' with intent 'qa_factoid'. Make sure the start and end values of entities ([(4, 12, 'a. b. d.')]) in the training data match the token boundaries ([(0, 3, 'ilk'), (4, 5, 'a'), (7, 8, 'b'), (10, 11, 'd'), (13, 20, 'başkanı'), (21, 27, 'kimdir')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'yemeksepeti den k. f. c. kızarmış tavuk iste' with intent 'takeaway_order'. Make sure the start and end values of entities ([(0, 11, 'yemeksepeti'), (16, 24, 'k. f. c.'), (25, 39, 'kızarmış tavuk')]) in the training data match the token boundaries ([(0, 11, 'yemeksepeti'), (12, 15, 'den'), (16, 17, 'k'), (19, 20, 'f'), (22, 23, 'c'), (25, 33, 'kızarmış'), (34, 39, 'tavuk'), (40, 44, 'iste')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'beni yönlendirmesi için g. p. s. i aktive et' with intent 'transport_query'. Make sure the start and end values of entities ([(24, 32, 'g. p. s.')]) in the training data match the token boundaries ([(0, 4, 'beni'), (5, 18, 'yönlendirmesi'), (19, 23, 'için'), (24, 25, 'g'), (27, 28, 'p'), (30, 31, 's'), (33, 34, 'i'), (35, 41, 'aktive'), (42, 44, 'et')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0m[93m/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/shared/utils/io.py:100: UserWarning: Misaligned entity annotation in message 'bristol v. t. de hava nasıl' with intent 'weather_query'. Make sure the start and end values of entities ([(0, 13, 'bristol v. t.')]) in the training data match the token boundaries ([(0, 7, 'bristol'), (8, 9, 'v'), (11, 12, 't'), (14, 16, 'de'), (17, 21, 'hava'), (22, 27, 'nasıl')]). Common causes: 
+  1) entities include trailing whitespaces or punctuation
+  2) the tokenizer gives an unexpected result, due to languages such as Chinese that don't use whitespace for word separation
+  More info at https://rasa.com/docs/rasa/training-data-format#nlu-training-data
+[0mEpochs:   0%|          | 0/100 [00:00<?, ?it/s]Epochs:   1%|          | 1/100 [00:31<51:22, 31.14s/it]Epochs:   1%|          | 1/100 [00:31<51:22, 31.14s/it, t_loss=13.1, i_acc=0.429, e_f1=0.22]Epochs:   2%|▏         | 2/100 [00:43<33:07, 20.28s/it, t_loss=13.1, i_acc=0.429, e_f1=0.22]Epochs:   2%|▏         | 2/100 [00:43<33:07, 20.28s/it, t_loss=10.5, i_acc=0.802, e_f1=0.567]Epochs:   3%|▎         | 3/100 [00:57<27:35, 17.07s/it, t_loss=10.5, i_acc=0.802, e_f1=0.567]Epochs:   3%|▎         | 3/100 [00:57<27:35, 17.07s/it, t_loss=11.4, i_acc=0.917, e_f1=0.668]Epochs:   4%|▍         | 4/100 [01:09<24:27, 15.29s/it, t_loss=11.4, i_acc=0.917, e_f1=0.668]Epochs:   4%|▍         | 4/100 [01:09<24:27, 15.29s/it, t_loss=12.6, i_acc=0.952, e_f1=0.731]Epochs:   5%|▌         | 5/100 [01:22<22:36, 14.28s/it, t_loss=12.6, i_acc=0.952, e_f1=0.731]Epochs:   5%|▌         | 5/100 [01:22<22:36, 14.28s/it, t_loss=13.8, i_acc=0.966, e_f1=0.77] Epochs:   6%|▌         | 6/100 [01:34<21:21, 13.63s/it, t_loss=13.8, i_acc=0.966, e_f1=0.77]Epochs:   6%|▌         | 6/100 [01:34<21:21, 13.63s/it, t_loss=14.9, i_acc=0.972, e_f1=0.802]Epochs:   7%|▋         | 7/100 [01:46<20:27, 13.20s/it, t_loss=14.9, i_acc=0.972, e_f1=0.802]Epochs:   7%|▋         | 7/100 [01:46<20:27, 13.20s/it, t_loss=16, i_acc=0.974, e_f1=0.82]   Epochs:   8%|▊         | 8/100 [01:59<19:54, 12.98s/it, t_loss=16, i_acc=0.974, e_f1=0.82]Epochs:   8%|▊         | 8/100 [01:59<19:54, 12.98s/it, t_loss=16.9, i_acc=0.978, e_f1=0.847]Epochs:   9%|▉         | 9/100 [02:11<19:21, 12.76s/it, t_loss=16.9, i_acc=0.978, e_f1=0.847]Epochs:   9%|▉         | 9/100 [02:11<19:21, 12.76s/it, t_loss=17.8, i_acc=0.979, e_f1=0.863]Epochs:  10%|█         | 10/100 [02:23<18:51, 12.57s/it, t_loss=17.8, i_acc=0.979, e_f1=0.863]Epochs:  10%|█         | 10/100 [02:23<18:51, 12.57s/it, t_loss=18.8, i_acc=0.981, e_f1=0.847]Epochs:  11%|█         | 11/100 [02:35<18:25, 12.42s/it, t_loss=18.8, i_acc=0.981, e_f1=0.847]Epochs:  11%|█         | 11/100 [02:35<18:25, 12.42s/it, t_loss=19.4, i_acc=0.981, e_f1=0.88] Epochs:  12%|█▏        | 12/100 [02:47<18:04, 12.32s/it, t_loss=19.4, i_acc=0.981, e_f1=0.88]Epochs:  12%|█▏        | 12/100 [02:47<18:04, 12.32s/it, t_loss=20, i_acc=0.982, e_f1=0.887] Epochs:  13%|█▎        | 13/100 [03:00<17:57, 12.38s/it, t_loss=20, i_acc=0.982, e_f1=0.887]Epochs:  13%|█▎        | 13/100 [03:00<17:57, 12.38s/it, t_loss=20.6, i_acc=0.985, e_f1=0.896]Epochs:  14%|█▍        | 14/100 [03:12<17:39, 12.32s/it, t_loss=20.6, i_acc=0.985, e_f1=0.896]Epochs:  14%|█▍        | 14/100 [03:12<17:39, 12.32s/it, t_loss=21.1, i_acc=0.987, e_f1=0.901]Epochs:  15%|█▌        | 15/100 [03:24<17:22, 12.27s/it, t_loss=21.1, i_acc=0.987, e_f1=0.901]Epochs:  15%|█▌        | 15/100 [03:24<17:22, 12.27s/it, t_loss=21.6, i_acc=0.985, e_f1=0.902]Epochs:  16%|█▌        | 16/100 [03:36<17:01, 12.16s/it, t_loss=21.6, i_acc=0.985, e_f1=0.902]Epochs:  16%|█▌        | 16/100 [03:36<17:01, 12.16s/it, t_loss=22, i_acc=0.986, e_f1=0.911]  Epochs:  17%|█▋        | 17/100 [03:48<16:42, 12.08s/it, t_loss=22, i_acc=0.986, e_f1=0.911]Epochs:  17%|█▋        | 17/100 [03:48<16:42, 12.08s/it, t_loss=22.4, i_acc=0.988, e_f1=0.911]Epochs:  18%|█▊        | 18/100 [04:00<16:23, 11.99s/it, t_loss=22.4, i_acc=0.988, e_f1=0.911]Epochs:  18%|█▊        | 18/100 [04:00<16:23, 11.99s/it, t_loss=22.8, i_acc=0.986, e_f1=0.919]Traceback (most recent call last):
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/engine/graph.py", line 496, in __call__
+    output = self._fn(self._component, **run_kwargs)
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/nlu/classifiers/diet_classifier.py", line 948, in train
+    self.model.fit(
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/tensorflow/python/eager/execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: Graph execution error:
+
+Detected at node 'zeros_like_42' defined at (most recent call last):
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/bin/rasa", line 6, in <module>
+      sys.exit(main())
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/__main__.py", line 133, in main
+      cmdline_arguments.func(cmdline_arguments)
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/cli/train.py", line 202, in run_nlu_training
+      return train_nlu(
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/model_training.py", line 453, in train_nlu
+      return _train_graph(
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/model_training.py", line 286, in _train_graph
+      trainer.train(
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/engine/training/graph_trainer.py", line 105, in train
+      graph_runner.run(inputs={PLACEHOLDER_IMPORTER: importer})
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/engine/runner/dask.py", line 101, in run
+      dask_result = dask.get(run_graph, run_targets)
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 557, in get_sync
+      return get_async(
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 499, in get_async
+      fire_tasks(chunksize)
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 494, in fire_tasks
+      fut = submit(batch_execute_tasks, each_args)
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 542, in submit
+      fut.set_result(fn(*args, **kwargs))
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 238, in batch_execute_tasks
+      return [execute_task(*a) for a in it]
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 238, in <listcomp>
+      return [execute_task(*a) for a in it]
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 224, in execute_task
+      result = _execute_task(task, data)
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/core.py", line 119, in _execute_task
+      return func(*(_execute_task(a, cache) for a in args))
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/engine/graph.py", line 496, in __call__
+      output = self._fn(self._component, **run_kwargs)
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/nlu/classifiers/diet_classifier.py", line 948, in train
+      self.model.fit(
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/keras/engine/training.py", line 1685, in fit
+      tmp_logs = self.train_function(iterator)
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/keras/engine/training.py", line 1284, in train_function
+      return step_function(self, iterator)
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/keras/engine/training.py", line 1268, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/keras/engine/training.py", line 1249, in run_step
+      outputs = model.train_step(data)
+    File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/utils/tensorflow/models.py", line 168, in train_step
+      prediction_gradients = tape.gradient(prediction_loss, self.trainable_variables)
+Node: 'zeros_like_42'
+OOM when allocating tensor with shape[98,221,1] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[{{node zeros_like_42}}]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info. This isn't available when running in Eager mode.
+ [Op:__inference_train_function_50025]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/bin/rasa", line 6, in <module>
+    sys.exit(main())
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/__main__.py", line 133, in main
+    cmdline_arguments.func(cmdline_arguments)
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/cli/train.py", line 202, in run_nlu_training
+    return train_nlu(
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/model_training.py", line 453, in train_nlu
+    return _train_graph(
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/model_training.py", line 286, in _train_graph
+    trainer.train(
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/engine/training/graph_trainer.py", line 105, in train
+    graph_runner.run(inputs={PLACEHOLDER_IMPORTER: importer})
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/engine/runner/dask.py", line 101, in run
+    dask_result = dask.get(run_graph, run_targets)
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 557, in get_sync
+    return get_async(
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 500, in get_async
+    for key, res_info, failed in queue_get(queue).result():
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 542, in submit
+    fut.set_result(fn(*args, **kwargs))
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 238, in batch_execute_tasks
+    return [execute_task(*a) for a in it]
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 238, in <listcomp>
+    return [execute_task(*a) for a in it]
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 229, in execute_task
+    result = pack_exception(e, dumps)
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/local.py", line 224, in execute_task
+    result = _execute_task(task, data)
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/dask/core.py", line 119, in _execute_task
+    return func(*(_execute_task(a, cache) for a in args))
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/site-packages/rasa/engine/graph.py", line 503, in __call__
+    raise GraphComponentException(
+rasa.engine.exceptions.GraphComponentException: Error running graph component for node train_DIETClassifier3.
+Epochs:  18%|█▊        | 18/100 [05:14<23:53, 17.49s/it, t_loss=22.8, i_acc=0.986, e_f1=0.919]
+Traceback (most recent call last):
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/train_diet.py", line 78, in <module>
+    main()
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/train_diet.py", line 72, in main
+    model = train(dataset, cfg, seed)
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/train_diet.py", line 44, in train
+    subprocess.run(cmd, check=True)
+  File "/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/.venv/bin/rasa', 'train', 'nlu', '--nlu', '/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/data/massive/train.yml', '--config', '/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/configs/massive/a_seed42.yml', '--out', '/home/semih/Desktop/Projeler/Kargo_Asistan_DIET/models', '--fixed-model-name', 'massive_a_seed42']' returned non-zero exit status 1.

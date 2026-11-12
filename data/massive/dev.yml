@@ -1,0 +1,2153 @@
+version: "3.1"
+nlu:
+- intent: alarm_query
+  examples: |
+    - [sabah](timeofday) [uyanmak](alarm_type) için alarm kurdum mu
+    - kurulu alarmım var mı
+    - okul alarmım kurulu mu
+    - öğleden önce mi sonra mı
+    - [bugün](date) [sabah ona](time) alarm kurulu mu kontrol et
+    - yaklaşan alarmlar hangileri
+    - [sabah altı ve dokuz](time) arası kaç tane alarm kurdum
+    - alarmlarımı bana söyle
+    - sonraki alarm
+    - kalkış alarmımı kaça kurdun
+    - [yarın](date) [sabah](timeofday) için hiç alarmım var mı
+    - şuan hangi alarmlarım kurulu
+    - farklı alarmımı listele
+    - bana ayarladığın alarm zamanlarını söyle
+    - lütfen bana [hafta içi](date) [sabah](timeofday) alarm bilgisi ver
+    - alarm ayarlarını bildir
+    - başlat'a dokunun ve ardından ayarları seçin
+    - alarm saatlerini bana söyle
+    - benim için kaça alarm kurdun
+- intent: alarm_remove
+  examples: |
+    - [sabah sekiz](time) alarmımdan kurtul
+    - [çarşamba](date) için [sabah altı](time) alarmını kapat
+    - [cumadan sonra](date) [sabah](timeofday) alarmlarını kapat
+    - telefonlar
+    - lütfen kurduğum herhangi alarmları kaldır
+    - önceki alarmlarımı sil
+    - [yarın](date) için alarmı iptal et
+    - [yarın](date) için ayarlanmış alarmları kaldır
+    - lütfen [çarşamba](date) [akşamı](timeofday) alarmını sil
+    - [gece saat dört](time) için ayarlanmış alarmı kaldır
+    - [şebnem'in](person) yatak zamanı alarmını kaldır
+    - olly alarmları iptal et
+    - siri yoga alarmlarını iptal et
+    - [akşam beş](time) alarmından kurtul
+- intent: alarm_set
+  examples: |
+    - [yarın](date) [sabah altıya](time) alarm kur
+    - [sabah](timeofday) [altıya](time) alarm kur
+    - [sabah saat on](time) için bir uyandırma çağrısı ayarla
+    - [öğleden sonra üç](time) için alarm kur
+    - [öğleden sonra bire](time) alarm kur
+    - alarmı başlat
+    - [yarın](date) [sabah altıda](time) uyanmak istiyorum lütfen
+    - [sabah sekiz](time) için alarm kur
+    - [beş](time) saat içinde beni uyar
+    - [yarın](date) [sabah](timeofday) [sekize](time) alarm kur
+    - [beş buçuğa](time) alarm kur
+    - alarmı [bir buçuğa](time) kurabilir misin
+    - [yarın](date) [sabah yedide](time) bir [uyandırma](alarm_type) alarmı istiyorum
+    - [öğleden sonra bir](time) için çalar saat kur
+    - [üç saat](time) sonra beni uyar
+    - lütfen [sabah sekize](time) bir alarm kur
+    - [yarın](date) [sabah](timeofday) saat [on](time) için alarm kur
+    - beni saat [onda](time) uyandır
+    - [sabah beşe](time) alarm kur
+    - lütfen saat [akşam ona](time) alarm kur
+    - [beş dakika sonrasına](time) alarm kur
+    - lütfen alarmımı kur
+    - [sabah altıya](time) alarm kur
+    - alarmı [yirmi beş mayıs](date) saat [akşam beşe](time) kur
+    - bu [akşam](timeofday) saat [beşe](time) alarm kur etiket [taksi](event_name)
+    - saati aç
+    - alarm
+    - [iki saat sonraya](time) alarm kur lütfen
+    - [her sabah](general_frequency) [saat beşte](time) uyanmam gereken bir hatırlatıcı ayarla
+    - lütfen alarm kur
+    - [salı](date) [akşam dörde](time) alarm kur
+- intent: audio_volume_down
+  examples: |
+    - sesi [düşüğe](change_amount) ayarla
+    - daha yumuşak
+    - sesi ayarını düşür
+    - lütfen sesi kısabilir misin
+    - hoparlörlerdeki tüm sesi kıs lütfen
+    - sesini alçalt lütfen
+    - hoparlör sesini azalt
+    - benimle daha sessiz konuş lütfen
+- intent: audio_volume_mute
+  examples: |
+    - [bir sonraki saat](time) boyunca sessize al lütfen
+    - hey olly hoparlörlerin sesini kapat
+    - lütfen kapat
+    - sessiz tuşuna dokun
+    - hoparlörü sessize al lütfen
+    - tüm yanıtları şimdi sessize al
+    - konuşma lütfen
+    - hoparlörlerden gelen sesi kapat
+    - uyu
+    - lütfen cevap verme
+    - sesi kapat
+    - sesi durdur
+    - ayarları sessize al
+    - aksi söyleyene kadar sessize ayarla
+    - lütfen bir süre kendini sessize alır mısın
+- intent: audio_volume_up
+  examples: |
+    - sesi aç
+    - duyamıyorum sesi artır
+    - sesi sadece biraz daha aç
+    - müziğin sesini [doksana](change_amount) çıkar
+    - sesi aç
+    - sesi artır lütfen
+    - lütfen sesi [en yüksek](change_amount) ayara getir
+    - lütfen hoparlör sesini aç
+    - olly sesi aç
+    - sesi aç
+    - daha yüksek sesle konuşur musun
+    - ses açık
+- intent: calendar_query
+  examples: |
+    - [toplantı](event_name) [yarına](date) planlandımı
+    - haftalık planım
+    - program
+    - olly [haftanın geri kalanı](time) için gündemim ne
+    - bir sonraki [toplantım](event_name) ne zaman
+    - [bugün](date) herhangi bir etkinliğim var mı
+    - [yarın](date) için herhangi bir rezervasyonum var mı
+    - bana etkinliklerimden bahset
+    - [yarın](date) [akşam](time) dokuzda [oğuz](person) ile [görüşme](event_name) ekledin mi
+    - [yarın](date) [akşam dokuzda](time) hiç [toplantım](event_name) var mı
+    - takvimimde bugün için yaklaşan bir etkinliğim var mı
+    - takvimimdeki bir sonraki [randevu](event_name) ne zaman
+    - [bugün](date) [toplantıda](event_name) kimin olmasını beklemeliyim
+    - [yarın](date) [akşam](timeofday) için herhangi bir program var mı
+    - benim [yarınki](date) etkinlik programım nedir
+    - [bu hafta](date) kaç tane [toplantım](event_name) var
+    - [yarın](date) [öğleden sonraki](timeofday) program ne
+    - yaklaşan etkinlikler
+    - en sonki etkinlikler
+    - takvimimde yaklaşan etkinlikler var mı
+    - bu [cumartesi](date) öğleden sonra [iki](time) ile [akşam dört](time) arasında bir şeyim var mı
+    - [bugün](date) benim takvim imde hangi etkinlikler var
+    - takvim etkinliğim nedir
+    - [bugün](date) hiç hatırlatıcım var mı
+    - [haftaya](date) benim [patronumla](relation) olan [toplantı](event_name) ne zaman
+    - etkinliklerde sırada ne var
+    - [gelecek haftaki](date) planım ne
+    - bana [arkadaşım](relation) [ahmet'in](person) [resmen işe başlama](event_name) tarihini söyle
+    - [maç](event_name) kaçta başlayacak
+    - [bugünkü](date) ilk [randevum](event_name) ne
+    - [bugün](date) programımda ne var
+    - [mart](date) ayında takvimimdeki etkinliklerin listesi nelerdir
+    - [düğün](event_name) ne zaman planlanıyor
+    - [mart](date) ayında hangi [toplantılar](event_name) mevcut
+    - lütfen [iki bin on yedi martının yirmi ikisinde](date) bulunan üçüncü etkinliği kontrol et
+    - mevcut uyarılarım neler
+    - [yaklaşan](time) etkinlikler
+    - [dün](date) yapılan [toplantıda](event_name) neleri not aldık
+    - [fatura döngüsü](event_name) ne zaman
+    - [hokey maçı](event_name) [cuma günü](date) ne zaman başlıyor
+    - bekleyen bir hatırlatıcım var mı
+    - bekleyen herhangi bir hatırlatıcım var mı
+    - lütfen bana saklı anımsatıcıları bildir
+    - [bu hafta](date) olan [toplantımı](event_name) söyle bana
+    - [pazartesi günü](date) ne yapmalıyım
+    - [bugünün](date) programı nasıl
+    - [bugün](date) [sabah sekiz](time) ile [akşam beş](time) arasında olmam gereken bir yer var mı
+    - [bu haftanın](date) hatırlatıcıları neler
+    - [yarın](date) benim [sabahım](timeofday) nasıl görünüyor
+    - [bu cuma](date) [toplantıya](event_name) kimler katılıyor
+    - bana [bugün](date) ile [yirmi biri](date) arasındaki etkinlikleri söyle
+    - [bugün](date) hiç [randevum](event_name) var mı
+    - [yirmi kasımda](date) ne var
+    - gelecek haftaki [irem derici konseri](event_name) için program nedir
+    - show ile ilgili neler bilmem gerekiyor
+    - [bugün](date) kurulmuş herhangi bir hatırlatıcım var mı
+    - benim takvim imde [bugün](date) için benim bir [toplantı](event_name) m var mı
+    - [gelecek hafta](date) kaç toplantım var
+    - [bu hafta sonu](date) ne oluyor
+    - [bu hafta](date) çöp toplama haftası mı
+    - [akşam yemeği partisi](event_name) [bu gece](timeofday) saat kaçta başlıyor
+    - bir sonraki hatırlatıcım ne zaman
+    - bana [yirmi iki mart'taki](date) [turnuva](event_name) detaylarını anlat
+    - [cuma](date) günü bir randevum var mı
+    - [yarın](date) trenler kaçta hareket ediyorlar
+    - bana [salı](date) [gecesi](time) konser hakkında bilgi ver
+    - bu [sabah on ile on iki arasında ne](time) işim var
+    - [john](person) ile yapacağım [akşamki toplantının](event_name) saati nedir
+    - [istiklal caddesindeki](place_name) [konser](event_name) hakkında daha fazla bilgi
+    - [ayşenin](person) [doğum günü](event_name) [martın birinde](date) olduğu doğrumu
+    - [yarınki](date) [toplantıyı](event_name) takvimime ekledin mi
+    - bu [sabah](timeofday) bekleyen [randevu](event_name) var mı
+    - [bu hafta](date) maaş haftası mı
+    - hangi hatırlatmaları ayarlamalıyım
+    - [bugün](date) [sabah altı kırk beş](time) haberlerinde ne var
+    - [bu akşamki](timeofday) [futbol maçında](sport_type) önemli yerler nelerdi
+    - bana [bugün](date) programımda ne olduğunu söyle
+    - [tarkan](person) [izmir'e](place_name) ne zaman geliyor
+    - gelecek etkinliklerim neler
+    - [bugün](date) [sekiz ile on](time) arasında hangi [görüşmeler](event_name) var
+    - [bir ocak](date) için planlanmış etkinliği adresi nedir
+    - etkinlik ne zaman
+    - [geçen sene](time) kaç saatim [toplantılarda](event_name) geçti
+    - [toplantı](event_name) için hazırlanmam gerek ti
+    - yaklaşan etkinliklerimi göster
+    - takvim benim [bir kasım](date) iki bin yirmi birde boş olduğumu söylüyor mu
+    - [on yedi mart](date) için herhangi bir planım var mı
+    - [bugün](date) hiç takvim etkinliklerim var mı
+    - listemde herhangi bir hatırlatıcı var mı
+    - takvim etkinliği yanlış mı
+    - [on dört haziran iki bin on yedi](date) için programım nedir
+    - detaylar
+    - son etkinliklerden bahset
+    - [toplantılar](event_name) ne zaman
+    - [parti](event_name) ne zaman için programlanmış
+    - [bu ay](time) [tatil](event_name) ne zaman
+    - [bu hafta sonu](date) meşgul müyüm
+    - olly [haftaya](date) [randevum](event_name) var mı
+    - [cuma](date) günü herhangi bir toplantı
+    - olly [bu ay](date) hiç takvim etkinliğim var mı
+    - çalışma planım
+    - yeni tinder eşleşmem var mı
+- intent: calendar_remove
+  examples: |
+    - [günümü](time) [toplantılardan](event_name) temizle
+    - [öğleden sonra beşteki](time) [günlük](general_frequency) [telefon görüşmemi](event_name) iptal et
+    - takvimimdeki bütün etkinlikleri kaldır
+    - [önümüzdeki beş gün](date) tüm etkinlikleri sil
+    - ziyaret ettiğim son etkinliği silebilir misin
+    - [yarın](date) [öğleden sonra ikideki](time) [doğum günü partisini](event_name) sil
+    - takvimimdeki tüm etkinlikleri silebilir misin
+    - tüm olayları ve bilgileri sil
+    - bütün etkinlikler ve programları kaldır
+    - takvimi tamamen sil
+    - bu [ay](date) için takvimi temizle
+    - lütfen [günün geri kalanı](time) için tüm takvim etkinliklerimi sil
+    - [bugün](date) [akşamki](timeofday) [toplantıyı](event_name) kaldır
+    - ayın [onunda](date) olacak [düğünü](event_name) takvimimden sil
+    - iptal et
+    - ben [yarın](date) için iptal etmem gereken ne planladım
+    - bir sonraki etkinliği takvimden kaldır
+    - lütfen tüm takvim etkinliklerimi sil
+    - [evan parker](person) ile yapacağım tüm [hafta sonu](time) etkinliklerimi bul ve sil
+    - [cumartesi](date) programımdan market alışverişini sil
+    - takvimimdeki tüm verileri kaldır
+    - o [ay](date) için takvimimi temizlemenin ve ilerlemenin yolları var mı
+    - programımı temizle
+    - takvimi aç tüm etkinlikleri kaldır
+    - [yedi mart](date) için düzenlenen [veli toplantısını](event_name) kaldır
+    - benim [on dördündeki](date) [toplantımı](event_name) iptal et
+    - lütfen takvimimi tamamen temizle
+    - [bu gece](timeofday) [ozan](person) ile yapacağım [toplantıyı](event_name) sil
+    - her şeyi takvimden kaldır
+    - selam siri takvimimin [yarın](date) tamamen temizlendiğinden emin ol
+    - takvimimdeki tüm [randevuları](event_name) iptal et
+    - takvimimdeki [öğlen birdeki](time) etkinliğimi kaldır
+    - [bugün](date) [öğleden sonra birdeki](time) etkinliği takvimimden kaldır
+    - etkinliği takvimden temizle ve yenile
+    - takvimdeki son etkinliği sil
+    - lütfen takvimdeki bir sonraki etkinliği iptal edin
+    - takvimimden [perşembe günündeki](date) [öğle yemeğini](meal_type) kaldır
+    - [toplantıyı](event_name) sil
+    - bir sonraki etkinliği takvimden sil
+    - [haftanın geri kalanı](time) için tüm [toplantılarımı](event_name) iptal et
+    - lütfen [pazar](date) günü için tüm anımsatmaları sil
+    - [bugünkü](date) programımı temizle
+    - takvimden [orçunun doğum gününü](event_name) sil
+    - takvimimden [doğum günü](event_name) etkinliğini kaldır
+    - takvimde [üç temmuzu](date) boş bırak
+    - etkinlikten sonraki günü sil
+    - [çarşamba](date) [sabahki](timeofday) toplantıyı kaldır
+- intent: calendar_set
+  examples: |
+    - [bugünün](date) [kaçamak günü](event_name) olarak işaretlenmesi gerekiyor
+    - lütfen takvimime [sabah ona](time) [günlük](general_frequency) [kalkışımı](event_name) ekler misin
+    - [çiğdem](person) ile bir [toplantı](event_name) ayarla
+    - olly bana [maçka parkındaki](place_name) [pikniği](event_name) hatırlat
+    - olly bu [hafta](time) sonu açık hava [filmine](event_name) gitmek istiyorum bana hatırlat
+    - takvimde şu kişilerle bu etkinliği oluştur
+    - [her gün](general_frequency) [sabah dokuzda](time) bir hatırlatmaya ihtiyacım var
+    - [her pazartesi](general_frequency) takvimime [pazartesi toplantısı](event_name) koy
+    - [altı mart](date) için [öğleden önce on birde](time) [dernek toplantısı](event_name) olduğuna dair bir bildirim ayarla
+    - bana [yarın](date) [sabah ondaki](time) [toplantımı](event_name) hatırlat
+    - lütfen [yarın](date) [sabah](timeofday) yapacağım [toplantıdan](event_name) [bir saat](time) önce bana hatırlat
+    - [muzaffer](person) için [yarına](date) bir [randevu](event_name) ayarla
+    - [gelecek ay](date) [tatil](event_name) için bir hatırlatıcı oluştur
+    - [on ikisi](date) [sabahı](timeofday) [doktor randevumu](event_name) hatırlat
+    - [cumartesi](date) [sabahı](timeofday) [mete yıldırım](person) ve [nihat](person) ile [brunch](event_name) için bir takvim girişi yap
+    - [bugün](date) [akşam altıda](time) [nermin](person) ile [buluşacağımı](event_name) hatırlat
+    - [yarın](date) [randevum](event_name) var hatırlat
+    - [öğleden sonra dört](time)
+    - olly [her perşembe](general_frequency) [öğleden sonra iki](time) için [terapist](relation) ime gideceğim
+    - [cumartesi](date) [akşam onda](time) [seherin](person) [doğum gününe](event_name) gitmek istiyorum
+    - lütfen benim takvimimde [iki nisan'a](date) [türkiye'de](place_name) [tatil](event_name) ekle
+    - [akşam sekizde](time) [ilaç](event_name) almam gerektiğini hatırlat
+    - hatırlatıcıyı [yarın](date) [öğleden sonra üçteki](time) [toplantıya](event_name) ayarla
+    - bana gelecek [pazartesi](date) [kuru temizlemeden kıyafetleri almam gerektiğini](event_name) hatırlat
+    - [yarın](date) [babamı](relation) ziyaret etmem gerektiğini hatırlat
+    - takvime [bu öğleden sonra](timeofday) için bir [birleşme etkinliği](event_name) ekle
+    - bana [yarın](date) [öğle yemeğinde](meal_type) [ali](person) ile buluşmayı hatırlat
+    - bu etkinlik için [ablamın](relation) [evinin](place_name) yerini ayarlayabilir misin
+    - takvimime [on iki temmuz](date) [yasin](person) [doğum günü](event_name) ekle
+    - takvime dokuz ağustos akşamı saat sekizde frank ile [akşam yemeği](meal_type) yiyeceğimizi yaz
+    - yarın onunla [sevgililer günü](event_name) [ekle](date)
+    - [önümüzdeki ay](date) için [annemle](relation) [doğum günü](event_name) ekle
+    - [arkadaşınla](relation) bir [toplantı](event_name) oluştur
+    - toplantıdan önce [partiye](event_name) katıl
+    - lütfen yalnızca bu kişilerle bir etkinlik oluştur
+    - beni [öğlen on iki](time) de [havaalanından](place_name) almayı unutma [öğleden sonra üçte](time) bir [toplantım](event_name) var
+    - [ercüment](person) ile olan [toplantıyı](event_name) [on marta](date) ayarla
+    - [yarın](date) [akşam](timeofday) [yedide](time) [oyuncularla](person) benim aramda bir [toplantı](event_name) ayarlamayı unutma
+    - bana [yarınki](date) [mülakatı](event_name) hatırlat
+    - etkinliği tekrar eden olarak ayarla
+    - [salıya](date) bir [toplantı](event_name) ayarla
+    - lütfen bir sonraki [toplantımı](event_name) ekle
+    - bu öğe için [yarın](date) için hatırlatıcı ayarla
+    - [toplantı](event_name) için kişi a yı ara
+    - [çerezler](event_name) için [beş dakikalık](time) bir zamanlayıcı ayarlayın
+    - bana [yarın](date) [sabah](timeofday) [pizza yapmam](event_name) gerektiğini hatırlat
+    - [her cuma](general_frequency) öğle [namazı](event_name) için onikiye ayarla
+    - bana [erkek kardeşimin](relation) [yirmi nisandaki](date) [doğum gününü](event_name) hatırlatmayı unutma
+    - [mike jim](person) ve [bob](person) ile bir [öğle yemeği randevusu](meal_type) eklemek istiyorum
+    - bana [bugün](date) [sabah dörtte](time) yaklaşan [toplantıyı](event_name) hatırlat
+    - yaklaşan [toplantıyı](event_name) listele
+    - bu etkinliği takvimime not düş
+    - bunu bana mutlaka hatırlat
+    - hey olly lütfen [yarın](date) [sabah](timeofday) [ondaki](time) [toplantı](event_name) için bir hatırlatıcı ayarla
+    - [pazartesi](date) bir [doğum günüm](event_name) var etkinliği ayarla
+    - [on](date) beşinde bir bilet almam lazım
+    - [akşam](timeofday) için bir etkinlik ayarla
+    - [her üç temmuza](date) [bob'un](person) [doğum gününü](event_name) ayarla
+    - bana [her cuma](date) mağazaya gitmeyi hatırlat
+    - takvimimde bir etkinliği tekrarla
+    - [dört şubat](date) [öğleden sonra ikiye](time) [atatürk parkında](place_name) antreman ekle
+    - bana [selinin](person) [doğum gününü](event_name) hatırlat
+    - katılım için bir not ekle
+    - [her gün](general_frequency) [sabah](time) sekizde iş konularım için yinelenen bir anımsatıcı yap
+    - [bu gece](timeofday) [akşam beşe](time) [beyzbol antremanı](event_name) etkinliği ekle
+    - lütfen her [otuz dakikada](time) bir [seçimle](event_name) ilgili bir güncelleme verin
+    - [cuma](date) günü benim [gazideki](place_name) [biyoloji testimi](event_name) hatırlat
+    - [on dakika](time) içinde [işe gitmem](event_name) için bir anımsatıcı kut lütfen
+    - [on dört şubat](date) için [restoranda](business_type) [akşam yemeği](meal_type) rezervasyonu yap
+    - [yarın](date) [öğlen](timeofday) istanbul beşiktaşda madoda öğle yemeği ayarla
+    - [öğleden sonra bir](time) de [kuaför](place_name) den [köpeğimi almak](event_name) için bir anımsatıcı gönder
+    - benim [toplantı](event_name) ne zaman
+    - [her cuma](date) [öğle yemeği](meal_type) etkinliğini yineleye değiştir
+    - takvimimdeki toplantıyı güncelle ve [toplantıyı yansıt](event_name)
+    - [cemi](person) almak için [öğleden sonra üçe](time) hatırlatma koy
+    - [pelinin](person) [emekliliği](event_name) için buluşma olduğu konusunda hatırlatma lazım [salı](date) günü [öğleden sonra saat üçe](time) hatırlatıcı kur
+    - olly [bu gece](timeofday) [yarınki](date) [toplantıyı](event_name) hatırlat
+    - [çarşamba](date) günü [toplantı](event_name) duyurusu
+    - yaklaşan [toplantımı](event_name) takvimime ekle
+    - [çarşambaları](date) [öğleden sonra iki](time) için bir hatırlatıcı ayarla
+    - [bu hafta](date) [her gün](general_frequency) için [öğle yemeği](meal_type) [toplantıları](event_name) ekle
+    - [cuma günü](date) [öğleden sonra üçteki](time) [toplantı](event_name) için bir hatırlatıcı ayarla
+    - [iki saat](time) içinde yeni [toplantı](event_name) bildirimi
+    - bana takvimi hatırlat
+    - bana [bugünden itibaren bir hafta](date) sonra saat [beşte](time) [kütüphanede](place_name) olmam gerektiğini hatırlat
+    - gelecek [cumartesi](date) saat [beşte](time) [kütüphaneye](place_name) gitmek için bir hatırlatıcı ayarla
+    - bana [yaklaşan milli bayramları](event_name) hatırlat
+    - [akşam beşte ki](time) [toplantım](event_name) için hatırlatma ayarla
+    - lütfen [çarşamba](date) [sabah dokuzda](time) [doktor mahmut](relation) [ofisinde](place_name) randevusunu ekle
+    - takvimime bir şeyler eklemek istiyorum
+    - [yarın](date) [öğleden sonra iki](time) de bana hatırlat
+    - [bu cumartesi](date) [cenkin evindeki](place_name) [havuz partisi](event_name) için takvimimde bir etkinlik ayarla
+    - [yarın](date) [ayşe](person) ile buluşmak istiyorum
+    - [elif ile](person) [salı günü](date) olan [toplantımı](event_name) iptal et ve toplantıyı [perşembeye](date) al
+    - [internet faturamı ödememi](event_name) hatırlatmak için [her ayın on beşinde](general_frequency) bir etkinlik ayarla
+    - takvimime aşağıdaki tarih ve saati ekle
+    - [goshen new york](place_name) 'ta [beş mayısta](date) öğleden sonra [üçten](time) başlayarak [dan'in mezuniyeti](event_name) için bir etkinlik ekle
+    - [ali](person) ile yirmi bir mart [onda](time) bir [toplantım](event_name) var
+    - [haftalık](general_frequency) randevu anımsatıcısı oluştur
+    - bugünden [iki](date) gün sonrasını [tatilim](event_name) olarak bayrakla
+    - [salı](date) [öğle](timeofday) [toplantısı](event_name)
+    - olly [doktor randevumu](event_name) [cuma günü](date) [öğleden sonra ikiye](time) ayarla
+    - takvimime [akşam yemeği rezervasyonlarını](event_name) ekleyebilir misin
+    - [hüseyinin nikahı](event_name) için takvim bilgisi oluştur
+    - lütfen bana hatırlat
+    - [pazartesi](date) günü [toplantılar](event_name) hakkında herhangi bir anımsatmaya ihtiyacım var mı
+    - [iki mayıs](date) ı [mervenin](person) [doğum günü](event_name) olarak [her sene](general_frequency) yinelenen takvime ekle
+    - [yağmurluğumu almamı](event_name) hatırlatmanı istiyorum çünkü yağmur yağabilir
+    - lütfen bana [şemsiyemi almamı](event_name) söyle çünkü [bugün](date) çok sıcak olacak
+    - [perşembe](date) günü [uludağ kebapda](place_name) [akşam yemeğini](meal_type) hatırla
+    - hatırlatıcıyı ayarla
+    - bu insanlarla takvim etkinliği
+    - [sonraki bir hafta](time) olacak tüm etkinlikler ile ilgili beni bilgilendir
+    - [cemal](person) [evlilik yıl dönümü](event_name)
+    - [salı](date) günkü [toplantı](event_name) ile ilgili bilgilendir
+    - bana [akşam programını](event_name) hatırlatmanı istiyorum
+    - tamam google [departman başkan yardımcısı](relation) ile [yirmi bir mart iki bin on yedide](date) bir [toplantı](event_name) ayarla
+    - [perşembe](date) günü [finansal i̇şler müdürü](relation) ile bir [toplantıya](event_name) ihtiyacım var
+    - bana [beş nisanda](date) [patronla](relation) bir [toplantı](event_name) olduğunu hatırlat
+    - bu [perşembe](date) [vize başvurusu](event_name) için bir hatırlatma oluştur
+    - [salı günü](date) [ahmet'in düğünü](event_name) için bir etkinlik hatırlatıcı oluştur
+    - takvime [yinelenen bir etkinlik](event_name) koy
+    - sıfırlanması gereken etkinlikleri hatırlat
+    - [kız kardeşimin ziyaretini aile](event_name) takvimime ekle
+    - bana [cumartesi günü](date) [saat on ikideki](time) [randevumu](event_name) hatırlat
+    - olly önümüzdeki [cumartesi](date) [sabah on](time) için takvimde bir kayıt oluştur
+    - bana [ocak ayının yirmi ikisindeki](date) [toplantıyı](event_name) hatırlat
+    - [bir saat](time) içerisindeki [toplantıyı](event_name) bana hatırlat
+    - bana [bir saat](time) içinde [toplantımı](event_name) hatırlat
+    - [meslektaşımla](relation) bir [toplantı](event_name) ayarla
+    - bu firmaya [tweet atmam](media_type) gerektiğini hatırlat
+- intent: cooking_query
+  examples: |
+    - pişirmek
+    - google hindi pişirmenin en kolay ve hızlı yolu nedir
+- intent: cooking_recipe
+  examples: |
+    - akşam yemeği için [sağlıklı yemekler](food_type) önerir misin
+    - [biftek](food_type) tarifin harikuladeydi
+    - bana [sarımsaklı ekmek](food_type) tarifi ver
+    - [makarna](food_type) [pişirmek](cooking_type) için ne kadar zaman gerekli
+    - [brokoli](ingredient) ve [tavukla](ingredient) ne pişirebilirim
+    - yemek yaparken beni yönlendir
+    - nasıl [makarna](food_type) yapabilirim
+    - [beyaz şarap](ingredient) yerine ne kullanılabilir
+    - [antep](food_type) yemekleri [videoları](media_type) oynatabilir misin lütfen
+    - olly nasıl [deniz mahsulleri çorbası](food_type) yaparım
+    - [tantuni](food_type) nasıl yapılır
+    - [en seksi](food_type) yemek hangisi
+    - [pizza](food_type) yı [çıtır](cooking_type) yapmak için ne kadar süre pişirmem gerekir
+    - [börülceyi](ingredient) nasıl pişirirsin
+    - bana tarifler ver
+    - nasıl pişireceğimi göstermek için google ı kullan
+    - bana en iyi pişirme fikirlerini ver
+    - [kurabiye](food_type) tarifi göster
+    - nasıl [kurabiye](food_type) yaparım
+    - [bir litrede](time) kaç fincan var
+    - fırında [patates](food_type) nasıl yapabilirim
+    - [pizza](food_type) tarifi ara
+    - nasıl [rulo köfte](food_type) yaparım
+    - bana bir [erişteli tavuk çorbası](food_type) tarifi bul
+    - [glütensiz](food_type) menüler ara
+    - bana yemek tarifini nasıl pişireceğimi göster
+    - buzlu turtayı ne kadar soğutayım
+    - dört kişilik [sufle](food_type) nasıl yapılır
+    - [sosisli](food_type) tarifi bul
+    - güveç kabında [tavuk güveç](food_type) tarif i
+    - [spagetti](food_type) tarifi getirebilir misin
+    - [hindi köfte](food_type) tarifi getir
+    - yemek tarifleri
+    - [tavuk göğsünü](food_type) fırında ne kadar pişirmeliyim
+    - [yengeç eti](food_type) için tarif
+    - [meksika yemeği](food_type) için öneriye ihtiyacım var
+    - yorum yok
+    - [haşlanmış yumurta](food_type) için pişirme süresi ne kadar
+    - [badem sütü](drink_type) için kolay tarif bul
+    - [tavuklu güveç](food_type) tarifi bul
+    - yemek tarifi ara
+- intent: datetime_convert
+  examples: |
+    - zaman dilimini ayarla
+    - [doğu yakası](place_name) için saat [akşam sekiz](time) ise [meriç edirne](place_name) de saat kaç
+    - [hatay](place_name) da [gece on](time) ise [içel](place_name) de saat kaç
+    - [girne](place_name) saatini [istanbul](place_name) saatine çevir
+    - [amerikada](place_name) [öğlen on iki](time) iken [hindistanda](place_name) saat kaç
+    - lütfen [öğleden önce dokuz](time) u [erzincan](place_name) dan [sinop](place_name) a çevir
+    - [doğu](time_zone) ve [pasifik](time_zone) zaman farkı ne kadardır
+    - zaman dilimini değiştir
+    - [doğu](time_zone) zaman dilimine çevir
+- intent: datetime_query
+  examples: |
+    - [bugün](date) günlerden ne
+    - [aydın](place_name) da saat kaç
+    - [bayburt'ta](place_name) saat kaç
+    - şimdi [istanbulda](place_name) saat kaç
+    - [bu yıl](date) cumhuriyet bayramı hangi gün
+    - [yirmi iki mart](date) haftanın hangi günüdür
+    - [bugün pazartesi](date) mi
+    - [bugün](date) günlerden ne
+    - tarih ne
+    - saati söyle
+    - [ramazan bayramı](event_name) haftanın hangi gününe geliyor
+    - [kaliforniya'da](place_name) şu an saat kaç
+    - bana [istanbul](place_name) daki zamanı söyler misin
+    - [bugünün](date) tarihini alabilir miyim
+    - [bugünün](date) tarihi
+    - [antalya](place_name) daki mevcut saat ne
+    - [on beş mart](date) hangi gün olacak
+    - [bu ayın son pazartesi](date) gününün tarihini istiyorum
+    - bana saatin kaç olduğunu söyle
+    - [beş aralık](date) hangi gün
+    - bana [bakü](place_name) saatini söyle
+    - yüz bin iki yüz on yedinci
+    - mevcut saati ver
+    - mevcut tarih saat grubu hangisi
+    - bana [ankaradaki](place_name) saati söyle
+    - [doğum günüm](date) hangi gün
+    - bana saatin kaç olduğunu söyler misin
+    - [noel](event_name) e kaç hafta kaldı
+    - saatin kaç olduğunu söyle bana
+    - [türkiye](place_name) deki saati öğrenmek istiyorum
+    - [sevgililer günü](event_name) haftanın hangi günü
+    - bana saati göster
+    - önümüzdeki [cumartesi](date) ayın kaçı
+    - [on altı nisan](date) hangi güne denk geliyor
+    - bana [bugünün](date) tarihini söyle
+    - [bugünün](date) tarihi ne
+    - mevcut [merkezi](time_zone) saat ne
+    - [ankarada](place_name) saat kaç
+    - [bu ay yirmi ikinci](date) günü hangi güne denk geliyor
+    - [trabzon'da](place_name) saat kaç
+    - [izmir](place_name) de saat kaç
+    - [bugün](date) için tarih ve saat ne
+    - şu anda [zimbabve](place_name) de saat kaç
+    - olly şu anda [türkiyede](place_name) saat kaç
+    - bana zamanı bildir
+    - [gelecek hafta](date) [pizza](food_type) ya gitme için en iyi gün hangisi
+    - [istanbul'da](place_name) saat kaç
+    - [yirmi iki nisan](date) da gün
+    - [ordu](place_name) için saat farkı ne
+    - bu yıl [yirmi yedi haziran](date) hangi gün
+    - [bugün](date) ne var
+    - [başka bir şehirde](place_name) saat kaç
+    - [doğu](time_zone) zaman dilimine göre saat kaç
+    - [nisanın yirmi üçü](date) cumartesi mi
+    - [bugün](date) hangi gün
+    - [gelecek hafta](date) ayın [yirmi dördü](date) ne zamana geliyor
+    - [mayısın yirmi ikisi](date) hangi gün
+    - bana [bugün](date) hangi gün olduğunu söyle
+    - [ankara türkiye](place_name) de saat kaç
+    - [doğum günüm](event_name) [gelecek yıl](date) hangi güne denk geliyor
+    - [on ikisi](date) hangi gün
+    - çalar saat
+    - hey olly [antakya hatayda](place_name) saat kaç
+    - saati söyle
+- intent: email_addcontact
+  examples: |
+    - lütfen [ali'yi](person) kişi listeme ekle
+    - [alexa mvay at hotmail nokta comu](email_address) yeni kişi olarak [muhammed veysel ay](person) adına ekle
+    - bu epostayı kişiye kaydet
+    - bu emaili yeni kişi yap
+    - kişilere kaydet
+- intent: email_query
+  examples: |
+    - [sabahattin önderden](person) araba kazası hakkında ne zaman bir eposta aldım
+    - yeni e-postalarım olursa bana haber ver
+    - [emilia](person) dan herhangi bir e-posta var mı
+    - [gelen kutumu](email_folder) kontrol et
+    - [annemden](relation) gelen okunmamış epostalar için epostaları kontrol et
+    - [son iki saat](time) içindeki e-postaları kontrol et
+    - [son oniki saatte](time) gelen epostaları kontrol et
+    - [hepsiburadadan](business_name) yeni epostalar varsa bana bildir
+    - [emre rahmet'ten](person) bütçelerle ilgili hiç e-posta alıp almadığımı kontrol et ve bak
+    - [cansu](person) bana e-posta gönderdiğinde bana haber ver
+    - [öğleden sonra saat üç](time) den beri [gelen kutumda](email_folder) ne biriktiğini bana bildir
+    - [mahmut](person) son teslim tarihlerini ara
+    - lütfen gmail [gelen kutumu](email_folder) yenile
+    - [macitden](person) en son maili göster
+    - en son e-postaları göster olly
+    - [son beş dakika](time) içinde gelen herhangi bir eposta
+    - son zamanlarda alınan tüm epostaları zaman damgasıyla göster
+    - bana yeni eposta göster
+    - son zamanlarda bana kim eposta gönderdi ve epostaların konuları nelerdir
+    - yeni email hesabıma herhangi bir email gelirse beni bilgilendir
+    - bana [dün](date) patronla ilgili e-postayı kimin gönderdiğini söyle
+    - [klinik](business_name) tetkiklerim hakkında ne söyledi
+    - okunmamış epostalarımı oku
+    - yeni epostaları kontrol et
+    - son zamanlarda hiç e-posta uyarıları alıp almadığımı kontrol edebilir misin
+    - [hazel kurada'dan](person) gelen hiç yeni bir e-postam var mı
+    - [promosyonumla](event_name) ilgili herhangi bir e-posta var mı
+    - hey epostaları kontrol et
+    - [geçen hafta](date) bana gelen tüm e-postaların konularını ve gönderenlerini listele
+    - son zamanlarda bana kim eposta gönderdi ve ne hakkında eposta attılar
+    - kaç tane okunmamış epostam var
+    - lütfen bu gönderenden gelen son eposta çalışmasını kontrol edin
+    - benim eposta hesabımı aç ve yeni eposta olup olmadığını kontrol et
+    - ne gibi yeni mesajlarım var
+    - yeni emaillerimi aç
+    - [simgeden](person) gelen emailleri kontrol et
+    - [bugün](date) kaç eposta
+    - [annem](relation) bana hiç email gönderdi mi
+    - [ibrahimden](person) gelen tüm mailleri kontrol et
+    - olly lütfen [annemden](relation) email alıp almadığımı kontrol et
+    - google [cuma](date) eklediğim [hakan](person) için yeni eposta adresini bul
+    - lütfen bana [meltemin](person) bana herhangi bir eposta gönderip göndermediğini söyle
+    - [patrondan](relation) hiç yeni gelen eposta var mı
+    - [son bir saat](time) içinde herhangi bir eposta aldım mı
+    - henüz hiç kişisel e-posta geldi mi
+    - [ahmet'in](person) bana ne hakkında e-posta gönderdiğini görebiliyor musun
+    - [bob'dan](person) toplantı kelimesini içeren konuyla ilgili e-postaları bulmak istiyorum
+    - [cengiz](person) bana bir e-posta gönderdi mi
+    - e-postama bak
+    - iletişim için eposta ara
+    - kişi bul
+    - e-postamı aç
+    - en son kime e-posta gönderdim
+    - [bugünün](date) gelen [kutusundaki](email_folder) emaillerin konu satırı ne ve gönderenleri kimler
+    - [hasan lidar](person) dan gelen tüm emailleri kontrol et
+    - yeni herhangi bir e-postam var mı
+    - benim mailimi kontrol et
+    - okunmamışları göster
+    - [gelen kutumda](email_folder) yeni e-postalar var mı
+    - e-postalarım neler
+    - [jane doe'den](person) gelen e-postaları kontrol et
+    - hiç yeni e-posta var mı
+    - benim için [gelen kutusuna](email_folder) göre kontrol et
+    - bana yakın tarihli tüm e-postaları ver
+    - son e-posta etkinliğim nedir
+    - lütfen bana [mahmut](person) dan yeni epostalar bildir
+    - bana sadece [ceren'den](person) gelen yeni e-postaları bildir
+    - [öğleden sonra beşten](time) beri hiç e-posta aldım mı
+    - [bugün](date) [aliden](person) hiç eposta aldım mi
+    - [azradan](person) [bugün](date) yeni email almış mıyım
+    - yeni mailleri bildir
+    - okunmamış kaç mesajım var
+    - [bert](person) [bugün](date) bana yazdı mı
+- intent: email_querycontact
+  examples: |
+    - lütfen bana kişilerimden [zeynebin](person) [ayrıntılarını](personal_info) ver
+    - listemde [ali](person) [isminde olan](personal_info) bir kişi var mı
+    - [kadir'in](person) [soyadı](personal_info) ne
+    - [annemin](relation) [mail adresi](personal_info) nedir
+    - bana [abimin](relation) [iletişim bilgilerini](personal_info) söyle
+    - [uğur](person) [türkiye](place_name) de mi [yaşıyor](personal_info)
+    - kişi hakkında bilgi bulabilir miyim
+    - bu [patronum](relation) için doğru alan kodu mu
+    - lütfen [üç aydır](date) konuşmadığım kişileri sil
+    - [telefon rehberimde](device_type) kaç kişi var
+    - [can](person) adındaki kişiyi aç
+    - lütfen [kişi listemi](list_name) aç
+    - [deryanın](person) iletişim bilgilerini aç
+    - bana ilgili kişi [e-posta bilgilerini](personal_info) ver
+    - [raci'nin](person) [telefon numarasını](personal_info) ara
+    - [alex'in](person) [adresi](personal_info) nedir
+- intent: email_sendemail
+  examples: |
+    - olly benim [randevularımın](event_name) saatini değiştirmek için email gönder
+    - arkadaşa e-posta at
+    - [emilia](person) ya [akşam yemeği](meal_type) için beklediğimizi söyleyen bir email gönder
+    - lütfen [chelsea'ya](person) bir e-posta gönderebilir misin
+    - [david'e](person) bir [yarın](date) olacak [toplantı](event_name) için bir email at ve [david](person) [öğleden sonra](timeofday) buluşabilir miyiz de
+    - benim en yakın zamanlı epostamı aç ve yanıtla
+    - bu içeriği e-posta aracılığıyla gönder
+    - [anneme](relation) bir email gönder konu hava durumu vücut [bu hafta](date) orada hava nasıl
+    - [mehmet gmail.com'a](email_address) yeni yıl e-postası gönder
+    - [arkadaşımın](relation) sorusuna yanıt gönder
+    - gelecek mesajı bu kişiye eposta ile gönder lütfen
+    - [ahmete](person) mevcut en son teknoloji konularını gönder
+    - [arkadaşım](relation) [ahmet'e](person) [yarın](date) meşgul olacağıma dair bir e-posta gönderebilir misin
+    - hey [iş arkadaşına](relation) bir email başlat
+    - bu [iş arkadaşına](relation) bu eposta adresinden yeni eposta aç
+    - selam gönder
+    - [müdürüme](relation) bir e-posta gönder
+    - [george brown'a](person) e-posta at
+    - [arkadaşıma](relation) bir eposta gönder [doğum günü](event_name) dilekleri ilet
+    - bu yeni e-postanın kişilerime eklenmesini istiyorum
+    - [enese](person) email gönder dosyaları [yarın](date) göndereceğim
+    - yanıtlayı aç
+    - bu maile cevap ver
+    - [gbaby](person) e eposta gönder ve ona büyük annesinin onu sevdiğini ve harika bir hafta sonu geçirmesini dilediğini söyle
+    - cevap yaz
+    - bu mesajı [aile](relation) grubuna gönder a ile başlar
+    - olly lütfen [ahmetin](person) fikrinin harika olduğunu belirterek epostasına yanıt ver
+    - performans incelemesi için buluşmak üzere [patrona](relation) eposta gönder
+    - selam [bu gece](timeofday) [akşam yemeği](meal_type) için bana gel [kardeşim](relation) mesajını email olarak gönder
+    - tekneyi satan adama paranın bende olduğunu söyleyen bir eposta gönder
+    - benim için bir eposta gönder
+    - herkese cevap ver
+    - [osman çelik'e](person) söyle
+    - teşekkür cevabı yaz
+    - epostayı [metine](person) gönder
+    - eposta başlat
+    - [ahmet'e akşam yemeğinin kaçta olduğunu](person) soran bir e-posta gönder
+    - [kablonete](business_name) hizmetlerinin berbat olduğunu bildiren bir e-posta gönder
+    - [patronuma](relation) geç kalacağımı söyleyen bir eposta gönder
+    - [alinin](person) epostasını yanıtla
+    - [anneme](relation) eposta gönder [yarın](date) alışverişe gitmek istiyorum
+    - [pınara](person) bir eposta yazmama yardım eder misin
+    - tüm [şirket çalışanlarıma](relation) bir eposta gönder
+    - adrese email mesajı gönder
+    - yeni adres
+    - yanıtla
+    - [can at gmail nokta com](email_address) adresine bir e-posta göndermek istiyorum
+    - [kızıma](relation) seni seviyorum diye eposta gönder
+    - [anneme](relation) [doğum günün](event_name) kutlu olsun diye eposta gönder
+    - [kız kardeşimden](relation) [dün](date) gelen e-postamı aç yanıt ver'e tıkla ve benim yanıtım için ses aktivasyonunu aç
+    - lütfen benim [annem](relation) e email gönder
+    - [ayşe'nin](person) son e-postasını aç
+    - [melihe](person) yanıt gönder
+    - [tayfuna](person) eposta gönder
+    - [sunaya](person) email göndermem ve bir şeyden [bahsetmem](person) gerek
+    - maili cevapla
+    - [bayan palmer'a](person) bir e-posta gönderin ve ona dean'in son ödevini teslim edip etmediğini sorun
+    - son e-postama bir yanıt gönder
+    - [muratın](person) epostasını altı otuz yanıtıyla cevapla
+    - [jean'in](person) e-postasını yanıtlamak istiyorum
+    - [şirket çalışanıma](relation) [bugünkü](date) planlanmış toplantı bilgilerini içeren bir e-posta gönder
+    - [meliha](person) ya eposta gönder
+    - lütfen az önce okuduğum epostayı yanıtla
+- intent: general_greet
+  examples: |
+    - hey
+    - hey
+- intent: general_joke
+  examples: |
+    - bana bir [hayvan](joke_type) fıkrası anlatır mısın
+    - bana internetteki en iyi [tık tık](joke_type) şakasını bul
+    - [yeni](joke_type) fıkra araştır
+    - [komik](joke_type) espri
+    - hey beni mutlu edecek bir fıkra paylaş
+    - hey olly bana bir fıkra anlat
+    - [inek](joke_type) şakası istiyorum
+    - bana [güzel](joke_type) bir fıkra anlatır mısın
+    - bazı [havalı](joke_type) fıkralar aç
+    - bana fıkra anlat
+    - bir fıkra anlat
+    - benim için komik ol
+    - [kinayeli](joke_type) espriler
+    - espriler
+    - günün şakası
+- intent: general_quirky
+  examples: |
+    - benim uygun anılarımda durum sağla
+    - hangi şeyleri yapamazsın
+    - gece vakti
+    - fotoğraflar için ayşeye teşekkürler
+    - belli bir kelimenin anlamı
+    - [bugün](date) metro çok yoğundu
+    - bana günümden bahset
+    - ayşe dünyanda tuhaf bir şey fark ettin mi
+    - [bugün](date) ne olduğunu duymak ister misin
+    - beni nasıl tanıyorsun
+    - şehir [merkezinde](place_name) açılan bu yeni [restoran](business_type) da bir akşam yemeği yemek harika olurdu
+    - olly nasıl gidiyor
+    - [bugün](date) ödüller aldım olly
+    - [bugün](date) bir sürü [toplantım](event_name) vardı
+    - nerelisin
+    - hava [bugün](date) güneşli
+    - hey google bir milyon dolar piyango kazandım
+    - [bugün](date) gün nasıl
+    - sepet sepet yumurta sakın beni unutma
+    - neler oluyor
+    - [cumartesi](date) günü [bar](place_name) daveti aldım
+    - bana güzel bir [alkollü içecek](drink_type) söyle
+    - bana [türkiye](place_name) hakkında bir şeyler söyle
+    - spor
+    - hey yakında çıkacak güzel filmler hangileri
+    - kişisel verilerimle ne yapıyorsun
+    - not almasını istediğimde
+    - tırı vırı
+    - wikipedia konuları
+    - naber
+    - en hipoalerjenik olan köpek ırkları
+    - olly [bugün](date) bir enkaza girdim
+    - [bugün](date) [boynere](place_name) gittim
+    - cep telefonu
+    - yağmurda sırılsıklam oldum
+    - moda
+    - bana cevaplar bul
+    - [bugün](date) yorucu bir gündü
+    - kız [arkadaşımı](relation) beğendin mi
+    - bana [hadiseden](artist_name) bahset
+    - [bu defa](time) ne yaptım
+    - günün nasıldı
+    - kozmoz
+    - [apartmanda](place_name) ne zaman ısıtma seviyesi
+    - tahmini kurlar
+    - arabalar
+    - çok yoğun
+    - google arama motoru ile ilgili güncel tavsiyeler
+    - [süpermarkette](business_type) gerekli malzemeler
+    - nasıl gidiyor
+    - üç şey hakkında konuşabilseydin bunlar ne olurdu
+    - uzay araştırması
+    - kitaplar
+    - ünlüler hakkında dedikodu yapmak
+    - o ne zaman
+    - burası çok ağır
+    - [bugün](date) neler yapıyorum
+    - sizce zamanda yolculuk mümkün mü
+    - bana vahiy kitabında hangi farklı ülkelerin temsil edildiğini açıkla
+    - [bu gece](timeofday) ne pişirsem
+    - bana öldüğümüzde neler olacağını söyle
+    - sadece sen ve benim için bir gün ayarla
+    - yalan söyleyebilir misin
+    - ana dilin nedir
+    - kendimi daha mutlu etmek için bana yapabileceğim her şeyi özetle
+    - on kolay adımda zengin olabilseydim bunlar ne olurdu
+    - konumum neresi
+    - [karım](relation) için orijinal romantik mesajlar yazmak istiyorum
+    - şu soruyu cevapla süper mario kardeşlerde en baş olmak ne demek
+    - kelimeleri tanımlarken eş anlamlılar sözlüğü ver ve daha açık hale getirmek için bir cümle içinde kullan
+    - tüm zamanların en iyi beş n. h. l. golcüleri kimlerdir
+    - bunun cevabını nasıl alacağım söyler misin
+    - diğer gezegenlerde yaşam var mı
+    - en sevdiğin renk hangisi
+    - robotiklerin üç kanunu ile ilgili ne düşünüyorsun
+    - bana [bugünün](date) şanslı rengini söyle
+    - benim için bir şiir oku
+    - borsa ile [geçen hafta](date) [ankara](place_name) daki hava durumu arasında bir ilişki var mı
+    - inşallah bir [öğle yemeği](meal_type) yeriz beraber
+    - dünyanın sonu ne zaman gelecek
+    - manitam şu anda nerede
+    - bana bununla ilgili ilginç bir gerçek söyle
+    - bir sonraki tur ne zaman
+    - bana [bugün](date) dünyada gerçekleşen en garip olayları anlat
+    - [bulgaristana](place_name) bedava seyahat etmek istiyorum beni oraya götürür müsün
+    - hangi din en doğrudur
+    - iki çocuğu meşgul etmem lazım ne yapabilirim söyle
+    - kendini bir kelimeyle tanımla
+    - ipad air özellikleri
+    - bana bu kişinin ayrıntılarını al
+    - lütfen bu kişi hakkında birkaç ayrıntı söyle
+    - [bugün](date) [türkiye](place_name) deki en büyük kaygı ne ve bunu gidermek için yapılacak en etkili şey nedir
+    - bana uçaksız en düşük maliyetle baliye nasıl gideceğimi söyle seçenek süresi önemli değil iki yüz gün seyahat zamanım ve harcayacak sadece dolarım var
+    - robotum işimi benim için yapsa çok sevinirim
+    - erdoğanın seçimi kazanmasını sağlayan faktör nedir
+    - deprem tahmini
+    - ızgara ne tür bir alettir ve nasıl kullanırım
+    - yeni planlar getirdin
+    - bir tüketici malı ise müşteri geri bildirimi nedir
+    - kolayca envanter tutmak ve bir şeyler azaldığında bana haber vermeni istiyorum
+    - insanlar nasıl oluyor da her şeyi tanrıdan gizleyebileceklerini düşünüyorlar
+    - söyle bana dünya nasıl başladı
+    - bana yemlik lazım
+    - durumu ele al
+    - olly [zeynepin](person) [partisi](event_name) hakkında bilgi almak istiyorum
+- intent: iot_cleaning
+  examples: |
+    - [daireyi](house_place) temizle
+    - temizlik iyidir toz çok kötü şimdi sihrini yap [halımı](house_place) temizle
+    - [bugün](date) [öğleden sonra birde](time) [robot süpürgeyi](device_type) çalıştır
+    - olly [elektrikli süpürgeyi](device_type) çalıştır
+    - [robot süpürgeyi](device_type) çalıştırabilir misin
+    - [her gün](general_frequency) sabah [on](time) ile [onbir](time) arası [elektrikli süpürgemi](device_type) çalıştır
+    - [robot süpürgemi](device_type) çalıştır
+    - [ev](house_place) temizliğine başla
+    - [robot süpürgeyi](device_type) nasıl başlatabilirim
+    - lütfen [robot süpürgeyi](device_type) açmamda bana yardım et
+    - lütfen [elektrik süpürgesini](device_type) çalıştır
+    - [elektrik süpürgesini](device_type) çalıştır şimdi
+    - [elektrik süpürgesini](device_type) [bir saat](time) çalıştır
+    - [robot süpürgeyi](device_type) çalıştır
+    - süpürgeyi aç
+    - [mutfağı](house_place) temizlemek için [robot süpürgeyi](device_type) getir
+    - [ev temizliği](house_place) başlat
+    - [robot süpürgeyi](device_type) etkinleştir
+    - [elektrik süpürgesini](device_type) aç
+- intent: iot_coffee
+  examples: |
+    - kahve hazırla
+    - şimdi kahve yap
+    - bir [espresso](coffee_type) alabilir miyim lütfen
+    - şimdi kahve alabilirim
+    - benim için bir fincan kahve yap
+    - [kahve makinesini](device_type) başlat
+    - kahve demle
+    - lütfen kahveyi başlat
+    - lütfen bana kahve yap
+    - lütfen benim için bir kahve yap
+    - [kahve makinesini](device_type) çalışacak şekilde ayarlar mısın
+    - şimdi kahve istiyorum
+    - [sabah](coffee_type) kahvemi hazırla
+    - kahve zamanı
+- intent: iot_hue_lightchange
+  examples: |
+    - benim ışıklarımı değiştir böylece [iyi bir uyku](color_type) çekebileyim
+    - olly [oturma odasını](house_place) [mavi](color_type) yap
+    - [oturma odasını](house_place) [mavi](color_type) yap
+    - gece lambası ayarlarına geç
+    - modu ayarla lütfen
+    - ışıkları [maviye](color_type) çevir
+    - [oturma odası](house_place) ışıklarını [kırmızıya](color_type) çevir
+    - evimdeki bütün ışıkları [mavi](color_type) renge ayarla
+    - ışık renklerini [maviden beyaza](color_type) çevir
+    - [evdeki](house_place) ışıkları [kırmızı](color_type) yap
+    - [oturma odasındaki](house_place) ışıkları [kırmızı](color_type) ayarla
+    - ışık rengini [maviye](color_type) çevir
+    - hey siri mevcut ışık ayarlarını değiştir
+    - ışıklarımı [herhangi bir](color_type) renge çevir
+    - ışıkların rengini değiştir
+    - ışıklar [yeşile](color_type) değiştirilebilir mi
+    - bize [kırmızı](color_type) göster
+    - rengin opaklığını değiştir
+    - [rengi](color_type) açıktan [koyuya](color_type) döndür
+    - ışıkların rengini değiştir
+    - ışık rengini aktifleştir
+    - farklı bir ışık rengini etkinleştir
+- intent: iot_hue_lightdim
+  examples: |
+    - [koridordaki](house_place) ışıkları kıs
+    - [odayı](house_place) daha karanlık yap
+    - lütfen ışıkları [biraz daha](change_amount) kıs
+    - bana [mutfakta](house_place) loş ışık ver
+    - olly ışıkları [yediye](change_amount) indir
+    - ışıklar [yediye](change_amount) insin
+    - ışığın gücünü en aza indir
+    - tüm ışıkları kısacak mısın
+    - ışıkları kıs
+    - lütfen [yatak odasındaki](house_place) ışıkları kıs
+    - ışıkları kıs
+    - gece zamanı modu
+    - olly ışıkları azalt lütfen
+    - aydınlatmayı azalt
+    - çok parlak
+    - tüm [iç](house_place) mekan ışıklarını karart
+    - ışıkları iki seviye karart
+- intent: iot_hue_lightoff
+  examples: |
+    - ışıkları kapat lütfen
+    - ışığı kapat
+    - [yatak odamın](house_place) ışığını kapatabilir misin lütfen
+    - gardırop ışığını kapat
+    - olly ışıkları kapat
+    - [başucu lambamı](device_type) kapat lütfen
+    - akımı kapat
+    - ışığı kapat
+    - [masa lambamı](device_type) kapatır mısın
+    - [birinci masa lambası](device_type) kapansın
+    - [yatak odası](house_place) ışıklarını kapat lütfen
+    - [yatak odasındaki](house_place) ışıkları kapat
+    - ışıkları söndür
+    - burası çok aydınlık bir ışığı kapatabilir misin
+    - [salondaki](house_place) ışıkları kapat
+    - [banyodaki](house_place) ışıkları kapat lütfen
+    - [oda](house_place) ışığını kapat
+- intent: iot_hue_lighton
+  examples: |
+    - içerisi çok karanlık
+    - hey alexa [dairemde](house_place) [disko ışıklarını](device_type) aç ve parti başlasın
+    - ışıkları aç
+    - lütfen tüm dış ışıkları aç
+    - burası karanlık
+- intent: iot_hue_lightup
+  examples: |
+    - ışıkları biraz daha parlaklaştırır mısın lütfen
+    - ışıkları parlaklaştır
+    - biraz daha fazla ışık lazım
+    - [oturma odasındaki](house_place) ışıkların parlaklığını arttır
+    - ışıkları artır lütfen
+    - lütfen ışığı artırın
+    - ışık aç
+    - [lambanın ışığını](device_type) arttır
+    - buradaki ışıkları daha yükselt lütfen
+    - olly ışıkların parlaklığını arttır
+    - [odadaki](house_place) [her ışığın](device_type) şiddetini arttır
+    - alexa ışık parlaklık arttır aşağıda görmek zor
+- intent: iot_wemo_off
+  examples: |
+    - [akıllı prizi](device_type) kapat
+    - [wemo prizi](device_type) kapatabilir misin
+    - alexa [büyük yatak odasındaki](house_place) [klimayı](device_type) kapat
+    - güç kapama açık
+    - lütfen [akıllı prizi](device_type) kapat
+- intent: iot_wemo_on
+  examples: |
+    - ben eve gelince [t. v.](device_type) prizi aç
+    - lütfen [wemo prizi](device_type) aç
+    - [akıllı prizi](device_type) aç
+    - yeni [akıllı soketi](device_type) çalıştır
+    - [wemoyu](device_type) aç
+    - [wemo prizini](device_type) aç
+    - [akıllı soketimi](device_type) aç
+- intent: lists_createoradd
+  examples: |
+    - yeni bir liste oluşturabilir misin
+    - liste yap
+    - bu öğeyi listeye ekle
+    - benim için bir [numara](list_name) listesi yap
+    - benim için yeni bir liste oluştur lütfen
+    - [yarına](date) kadar yeni bir liste oluştur
+    - yeni bir liste yap
+    - yeni bir [market](list_name) listesine kalem ekle
+    - market listesine ekle
+    - lütfen bu öğeyi listeye ekleyin
+    - listeme bir şey ekle
+    - alışveriş listeme kahvaltılık gevrek ekle
+    - lütfen [bakkal](list_name) listesine süt ekle
+    - [bugün](date) yapılacaklar listeme yiyecek satın almayı ekle
+    - yeni bir liste oluştur
+    - [bekleyen faturalarımın](list_name) yeni bir listesini oluştur
+    - iş için bir liste yap
+    - [okul malzemeleri](list_name) için yeni bir liste oluştur
+    - bir listeye bir madde eklemek
+    - bana daha fazla sabun sipariş etmemi hatırlat
+    - [market](list_name) listeme süt ekle
+    - bunu bir listeye ekle
+    - satın alınacak [aylık](general_frequency) [alışverişlerin](list_name) bir listesini oluştur
+    - [yeni yıl](list_name) listesine hamur işleri ekle
+    - [eski çalma listesini](list_name) sil ve yenisini oluştur
+- intent: lists_query
+  examples: |
+    - benim [alışveriş](list_name) listemdeki öğeleri listele olly
+    - [bugün](date) [alışveriş](list_name) listemde ne var
+    - [parti alışveriş](list_name) listeme votka ekle
+    - hangi [marketler](list_name) için liste yaptım
+    - listelerim neler
+    - hangi listeler mevcut
+    - yaptığım son beş liste neydi
+    - bana en son yüklenen listeyi gönder
+    - [bugün](date) [yapılacaklar](list_name) listemde ne var
+    - [yapılacaklar](list_name) listemdeki beş numaralı maddeyi kontrol et
+    - lütfen benim listemi göster
+    - listede kaç tane yiyecek var
+    - listeyi oku
+    - listemi doldur
+    - hangi listelere sahip olduğumu söyle
+    - liste ne içeriyor
+    - mevcut listeleri göster
+    - lütfen bana listemde ne olduğunu söyler misin
+    - google çeviri
+    - [bu hafta](date) için yapılacaklar listeme ne eklediğimi oku
+    - [alışveriş](list_name) listesi öğelerini oku
+    - benim [alışveriş](list_name) listemde yumurta var mı
+    - planladığım [parti](event_name) için bir irtibat listem var mı
+    - lütfen bana listelerimi gösterir misin
+    - olly listemde sırada ne var
+    - lütfen ben hangi listeleri yaptım söyle
+    - olly listede başka neyim var
+    - listelerimi kontrol edebilir miyim
+    - ben [alışveriş](list_name) listesi yaptım mı
+    - bana listeyi anlat
+    - listemi bana oku
+    - bana listemi ver
+    - [yapılacaklar](list_name) listemde herhangi bir şey var mı
+    - şu anda hangi listeler mevcut
+    - [bugünkü](date) [alışveriş](list_name) listemi oku
+    - [bugün](date) için listede ne var
+    - listemi aç
+    - bana listelerimi okuyabilir misin
+    - hey listelerim neler
+    - hey olly benim listelerim neler
+    - [market](list_name) listemdeki eşyaların neler olduğunu söyler misin
+    - o listede ne var
+    - bana listemde ne olduğunu söyle
+    - bu belirli listede neler var
+    - iş listelerimi görebilir miyim
+    - mevcut olanları listele
+    - benim [sağlık planım](list_name)
+    - listeyi kontrol et
+    - [yapılacaklar](list_name) listemde kaç madde var
+    - listemi kontrol et
+- intent: lists_remove
+  examples: |
+    - önümüzdeki hafta olan kıbrıs gezisini iptal etmek istiyorum
+    - [alışveriş](list_name) listesinden ekmeği çıkar
+    - [alınacaklar](list_name) listesini kaldır
+    - [geçen hafta](date) satın alınan ürünleri [yiyecek](list_name) listesinden kaldır
+    - görünüşe göre
+    - listeyi temizle
+    - listeyi bul ve elmayı kaldır
+    - [osmanlıca](list_name) şarkı listemi sil
+    - lütfen bir listeyi kaldır
+    - excel dosyasını listeden kaldır
+    - liste ön eki kuru olan tüm gıda maddelerini içermemelidir
+    - lütfen bu öğeyi listeden kaldırın
+    - üçüncü öğeyi kaldır
+    - [market](list_name) listemden karabiberi çıkar
+    - şu öğeyi listemden kaldır
+    - [yapılacaklar](list_name) listemi sil
+    - kalemi listeden çıkart
+    - listeleri aç listeyi kaldır
+    - benim [bakkal](list_name) listemden sütü çıkar
+    - onu listeden yeniden düzenle
+    - onu listeden çıkar
+    - lütfen bana öğeyi nasıl kaldırabileceğimi söyle
+    - öğeyi listemden kaldır
+    - lütfen ilk listeyi kaldır
+    - lütfen [futbol](list_name) başlıklı listeyi sil
+    - bu listeyi artık istemiyorum
+    - son satırı sil
+    - [tatil listemden](list_name) gazeteyi aramayı sil
+    - market alışverişini listeden çıkar
+    - boyamız bitti o yüzden banyo badanasını listeden çıkar
+    - son çalınan şarkıyı kaldır
+    - bir liste kaldır
+    - sütü [alışveriş](list_name) listesinden çıkar
+    - [tarkan müzik](list_name) listesini kaldır
+    - lütfen [bugün](date) [yapılacaklar](list_name) listemi kaldır
+    - yumurta istemiyorum
+    - [yapılacak şeyler](list_name) listesini sil
+- intent: music_dislikeness
+  examples: |
+    - bana hiç [country](music_genre) müzik çalma
+    - o şarkıyı sevmiyorum kapat
+- intent: music_likeness
+  examples: |
+    - değerlendirme
+    - benim favori şarkıcım [shakira](artist_name)
+    - o şarkıyı en iyi on favori listeme ekle
+    - bu şarkı harikaydı tekrar çalabilir misin
+    - o şarkıyı ve benim fikrimi kaydet
+    - bu şarkıda [apple music](artist_name) tarafından sağlanan bilgiyi kaydet
+    - mahvettim [hip hop](music_genre)
+    - lütfen mevcut şarkıyı favorilerime ekle
+    - [hip hop'u](music_genre) seviyorum
+    - biliyorsun ki [caz](music_genre) seviyorum
+    - lütfen çalma listemi kontrol et
+    - bu şarkıların türünü benim için kaydet
+    - bu şarkıyı sevdiğimi hatırlamanı istiyorum
+    - [rb'u](music_genre) seviyorum
+    - lütfen bu şarkıyı benim çalma listesi favorilerime ekle
+    - bu müziği favori yap
+- intent: music_query
+  examples: |
+    - grup şimdi ne çalıyor
+    - şu hangi şarkı
+    - bana bu şarkının sözlerini mail at
+    - [gülşen](artist_name) 'den [ne kavgam bitti ne sevdam](song_name) şarkısının sözleri neler
+    - şu anda doksan dokuz çalıyor bu hangi müzik
+    - şu an çalan şarkının sanatçısı kim
+    - bana müziğimin like larını vermen mümkün mü
+    - şua nda hangi şarkı çalıyor
+    - şu anda çalan müziğin adını kontrol et
+    - çalan şarkının adı ne
+    - şu an çalan müziğin adı ne
+    - bu şarkı hangisi
+    - bana sanatçının adını söyle
+    - şarkının adı ne
+    - bu şarkıyı dinle
+    - şarkı hangi yılda yazılmış
+    - bu gruptaki solistin adı ne
+    - şarkı nasıl tekrar edilir
+    - o hangi müzik
+    - radyodaki şarkıyı kim yaptı
+    - bu riffi daha önce de duymuştum bu riffi hangi şarkı çalmıştı tıpatıp aynısı
+    - bu müzik grubunun adı ne
+    - bu şarkı sözlerinden haberin var mı
+    - bunu kim söyledi
+    - itunesda yeni neler var
+    - çalan şarkı hangisi
+    - bana [cevapsız çınlama](artist_name) ile ilgili bilgileri ver
+    - şu an çalmakta olan şarkı ile ilgili bilgi ver
+    - bana bir oynatma listesi söyle
+    - [duman](artist_name) şarkılarını duyuyor musun
+- intent: music_settings
+  examples: |
+    - bu şarkıyı [döngüye](player_setting) al
+    - [karıştırmayı devre dışı bırak](player_setting)
+    - şarkıyı [tekrarla](player_setting)
+    - mevcut şarkı albümlerini [karıştır](player_setting)
+    - [tekrarı](player_setting) aç
+    - [son şarkıyı](music_descriptor) yeniden [tekrar et](player_setting)
+    - [karıştırma](player_setting) çalma listesini googleda ara
+    - şu anki çalan şarkıyı [tekrar oynat](player_setting) lütfen
+- intent: news_query
+  examples: |
+    - [amerika'da](place_name) neler oluyor
+    - [bugünkü](date) [gazete](media_type) başlıklarını söyle
+    - [brexit](news_topic) hakkında daha fazla haber olur olmaz bana haber ver
+    - lütfen bana [uluslararası](place_name) haberleri var
+    - [hilary e-posta meselesi](news_topic) ile ilgili [gelecek](time) te haberleri takip et
+    - [formula bir](news_topic) yarışına şu an kim liderlik ediyor
+    - [cumhuriyet](media_type) gazetesinden başlıkları oku
+    - [c. n. n.](media_type) türkten son dakika haberlerini öğrenmek istiyorum
+    - dünyada bir [deprem](news_topic) olursa bana haber ver
+    - [hollywood'daki](news_topic) son dedikodu ne
+    - [c. n. n.](media_type) için mevcut haberler
+    - manşetleri çıkar lütfen
+    - [new york times'ın](media_type) manşetleri neler
+    - iyi asistanlar
+    - bana gün için mevcut haberleri gönder
+    - [bugün](date) dünyada neler oluyor
+    - [akademi ödülleri](news_topic) hakkındaki haberleri istiyorum
+    - bana [politikadaki](news_topic) herhangi yeni bir konu hakkında bildirim gönder
+    - son [yahoo haber](media_type) makaleleri nedir
+    - bana [son altı saat](time) ten [çok temiz](media_type) bir haber bul
+    - [suriye'den](place_name) son haberler neler
+    - [samsun'da](place_name) neler oluyor
+    - bana en son [teknoloji](news_topic) haberlerini getir
+    - [seçim](news_topic) sonuçları ile ilgili beni güncel tut
+    - analistler yeni [göçmen politikaları](news_topic) hakkında ne dyor
+    - haber siteleri nden hiç haberin var mı
+    - [haber bülteni](media_type) den hangi haber güncellemeleri var
+    - [news express](media_type) de yeni ne var
+    - [news express](media_type) de neler oluyor
+    - [erdoğan](news_topic) hakkındaki son dakika haberlerini almanın bir yolu var mı
+    - bana haberleri ver
+    - [bugün](date) [dünya](place_name) haberlerinde neler oluyor
+    - en son [uluslararası](place_name) haberler nelerdir
+    - [yeni sağlayıcı](media_type) dan herhangi güncel bir şey aldık mı
+    - [blank](news_topic) hakkında yeni ne var
+    - [istanbul](place_name) [il konseyi evsizlik ile ilgili ne yapıyor](news_topic)
+    - [b. b. c. news](media_type) den haberleri getir
+    - [siyasette](news_topic) son haberler
+    - yankees [geçen gece](date) kazandı mı
+    - lütfen [sabah haberlerinde](media_type) oturan [köpekle](news_topic) ilgili makaleyi aç
+    - [hürriyet](media_type) için [youtube](media_type) da hiç yeni video var mı
+    - trend [teknoloji](news_topic) haberleri
+    - günümüz [teknoloji](news_topic) haberleri
+    - olly [trend olmuş](news_topic) popüler başlıklar
+    - [bugün](date) [siyaset](news_topic) için haberler nelerdir [erdoğan](person) haberlerini filtreler misin
+    - o konuda hiç yeni haber var mı söyle
+    - [resmi kapanma](news_topic) ile ilgili mevcut haberleri getir
+    - [türkiyede seçim](news_topic) hakkında en son haberler nelerdir
+    - en son [koşu yarışı](news_topic) haberi nedir
+    - şu anki [iki adet şampiyonlar ligi maçı](news_topic) için skorlar nedir
+    - [yeni asır](media_type) başlığı nedir
+    - bana [avrupa siyasetinde](news_topic) neler olduğunu anlat bana
+    - şu anda [ingiltere premiyer ligin](news_topic) zirvesinde kimin olduğunu öğrenmek istiyorum
+    - alexa bölgemdeki haberler neler
+    - bana en yeni [cumhuriyet](media_type) gazetesini aç
+    - [hayvanlarla](date) [ilgili](news_topic) güncel [haberler](news_topic)
+    - trump'ın [bir sonraki basın toplantısı](news_topic) ne zaman
+    - bana son dakika haberlerinin neler olduğunu söyle
+    - bana [hürriyet](media_type) haberlerini göster
+    - hiç haber var mı
+    - son güncel [kasırga](news_topic) haberlerini ver bana
+    - [dün gece](date) [kazanan powerball numaraları](news_topic) nelerdi
+    - lütfen bana [eyalet](place_name) teki [seçim senaryosu](news_topic) hakkında en son haberleri söyleyin
+    - yerel haberlerimden yeni haber geldiğinde söyle
+    - [u.m.d guam uyuşturucu kullanımının artışta olduğunu bildirdi](news_topic)
+    - olly bana [donald trump](person) ile ilgili haberleri ver
+    - olly [başkanlık seçimi](news_topic) hakkında mevcut haber var mı
+    - beni en sonki haberlere götür
+    - [cheteshwar pujara](person) [dün](date) kaç koşu attı
+    - [b. b. c.](media_type) den mevcut haberleri göster
+    - [fox t. v. haberleri](media_type) göster
+    - [wayne ilçe şerifleri](news_topic) için yerel haberleri verebilir misin
+    - [irlanda'da](place_name) haberler nasıl
+    - [trt haberlerini](media_type) okumak istiyorum
+    - [kamuoyunun başkan trump'a bakışı hakkındaki son anket](news_topic) nedir
+    - bana günün haberlerini oku
+    - [bedri](person) ile [jale](person) tekrar barıştı mı
+    - [uluslar arası ticaret ve iş piyasası](news_topic)
+    - bana [bugünün](date) önemli haberlerini söyle
+    - [bugün](date) haberlerde ilginç herhangi bir şey var mı
+    - [eğlence](news_topic) haberleri
+    - [ikisi ile on beşi arasında](date) meler oldu
+- intent: play_audiobook
+  examples: |
+    - [harry potter'ın](audiobook_name) benim favori sesli kitabımı çalar mısın
+    - [burak soyer](audiobook_name) sesli kitabını [açabilir misin](player_setting)
+    - [unutkan aşk](audiobook_name) bölüm yediyi [başlat](player_setting)
+    - [osmanlıyı yeniden keşfetmek](audiobook_name) sesli kitabına [devam et](player_setting)
+    - [sesi](media_type) [durdurur musun](player_setting)
+    - benim [sesli kitabımı](media_type) çalmaya devam et
+    - [sesli kitabı](media_type) [durdur](player_setting)
+    - [vatan yahut silistre](audiobook_name) yi kaldığım yerden aç
+    - [can](audiobook_name) [sesli kitabını](media_type) başlat
+    - en son eklenen [sesli kitap](media_type) ı çal
+    - [audio](media_type) çal
+    - en son ara verdiğimiz yerden benim [sesli kitap](media_type) a [devam et](player_setting)
+    - en son çaldığın [sesli kitap](media_type) la [devam et](player_setting)
+    - son zamanlarda durdurulmuş [audio](media_type) yu çal
+    - [sesli kitabıma](media_type) benim başladığım son bölümün başından [devam et](player_setting)
+    - [kiralık konak](audiobook_name) çal
+    - [beş dakika](time) [mola](player_setting) verelim
+    - kitap [okumaya başla](player_setting)
+    - benim için [kuran](audiobook_name) a [devam et](player_setting)
+    - [mai ve siyah](audiobook_name) [sesli kitabını](media_type) aç ve en son çalınan yerden çal
+    - bu playbacki [sesli kitapta](media_type) ara ve benim için çal
+    - bu [sesli kitabı](media_type) [kaldığı yerden devam ettir](player_setting)
+    - [downpourdan](app_name) [kara kitabı](audiobook_name) dinle
+    - bölüm dörtten [kuran](audiobook_name) [okumaya başla](player_setting)
+    - [yıldız tilbe](artist_name) den [sesli kitap](media_type) tan bir şarkı ile [devam et](player_setting)
+    - [sesli kitap](media_type) [kuran](audiobook_name) çal
+    - [kuyucaklı yusuf](audiobook_name) adlı [sesli kitaba](media_type) [devam edebilir misin](player_setting)
+    - [sesli kitap](media_type) ta [greya](song_name) yı çal
+    - [fransızca dersinde](audiobook_name) okuma kısmına [devam et](player_setting)
+    - lütfen dağılmak istiyorum u çal
+    - o [sabahattin ali](audiobook_author) [kitap](media_type) ını [okumaya başla](player_setting)
+    - benim [sesli kitabımla](media_type) [devam et](player_setting)
+    - benim [sinekli bakkal](audiobook_name) kitabımı [oynatmaya devam et](player_setting)
+    - [kürk mantolu madonna'yı](audiobook_name) [kaldığı yerden devam ettir](player_setting)
+    - bu [sesli kitap](media_type) ta bu nokta dan çal
+- intent: play_game
+  examples: |
+    - alexa benimle [satranç](game_name) oyna
+    - [satranç](game_name) oynamak istiyorum oynatabilir misin
+    - güzel bir [satranç](game_name) oyununa ne dersin
+    - [solitaire](game_name) aç
+    - [yarış](game_type) oyunu oyna
+    - hadi [langırt](game_name) oynayalım
+    - [örümcek](game_name) oyununu başlat
+    - benle oyun oynamak ister misin
+    - benim [futbol](game_name) oyunumu beşinci levelden oynatmanı istiyorum
+    - [trivia](game_name) oyununu oynamak istiyorum
+    - oyun bul
+    - [yılan](game_name) koynumda oyna
+    - [bulmaca](game_name) çözelim
+    - [papa pear saga](game_name) 'yı aç
+    - hadi [tavla](game_name) oynayalım
+    - oyun aç
+    - [clash of clans](game_name) oyununda düşman rolünü alabilir misin
+    - lütfen benimle [satranç](game_name) oyna
+    - [bu şarkıya isim verebilir misin](game_name)
+    - benimle [poker](game_name) oynayabilir misin
+    - [millionaires](game_name) oynayalım
+    - [tic tac toe](game_name) oynayalım
+- intent: play_music
+  examples: |
+    - [büyük ev ablukada'dan](artist_name) [arayan bulur](song_name) dinlemek istiyorum
+    - bana [metin arolat'tan](artist_name) [dert değil](song_name) çal
+    - [direniyorum](song_name) u çal
+    - [güle güle şekerim](song_name) i çal
+    - biraz [zeki müren](artist_name) çal
+    - [caz](music_genre) dinlemek istiyorum
+    - olly [caz](music_genre) dinlemek istiyorum
+    - olly şimdi de death [metal](music_genre)
+    - [harun kolçak](artist_name) çal
+    - benim favorilerimden bir şarkı çal
+    - [pop](music_genre) müzik dinlemek istiyorum lütfen
+    - benim en sevdiğim şarkıyı çal
+    - şarkıyı [hemen](song_name) aç
+    - [sezen aksu](artist_name) 'dan [sen ağlama](song_name) dinlemek istiyorum lütfen
+    - olly benim çalma listemden şarkılar çal
+    - lütfen bana [pırlantayı](song_name) dinlet
+    - şimdi [fazıl say](artist_name) dinlemek istiyorum
+    - [rb](artist_name) ve [soul](music_genre) türü parçalar çal
+    - [reynmen](artist_name) 'den [hevesim yok](song_name) 'u çal
+    - ok google biraz müzik çal
+    - benim favori sanatçılarımdan müzik aç
+    - şimdi [sefo](artist_name) 'dan [bonita](song_name) 'yı çal
+    - [ayna](artist_name) 'dan [gittiğin yağmurla gel](song_name) dinlemek istiyorum şimdi
+    - lütfen [arsız gönül](song_name) 'ü çal
+    - [tarkan](artist_name) ın tüm sıradaki şarkılarını bul ve [karıştırma olmadan](player_setting) çal
+    - [kibariye](artist_name) 'nin tüm şarkılarından bir çalma listesi yap ve [karmada](player_setting) çal
+    - müzik aç
+    - [hafif rock](music_genre) dinlemek istiyorum
+    - [neşeli](music_descriptor) bir müzik dinlemek istiyorum
+    - sezen aksu dan sen ağlama çal
+    - [pop](music_genre) bir şeyler çal bana
+    - playlist ten müzik çal
+    - [enrique](artist_name) çal
+    - [tarkan](artist_name) çal
+    - benim en çok dinlediğim şarkıları çal
+    - [youtube](media_type) a git ve [en güzel dans şarkıları](playlist_name) kolleksiyonunu çal
+    - müzik çal
+    - lütfen [rap](music_genre) çal
+    - bana [son aranjmanların](song_name) [hepsini](artist_name) çal
+    - amerikadan olmayan [batıya ait amerikan folk müziği](music_genre) dinleyelim
+    - benim en son kullanılmış playlistimi aç
+    - [pop](music_genre) çal
+    - [barikat](artist_name) 'ı aç
+    - [en iyi değerlendirilmiş](music_descriptor) [pop](music_genre) şarkılarımı çal lütfen
+    - [iltimas](song_name) ı dinlemek istiyorum
+    - biraz [modern rock](music_genre) dinlemek istiyorum
+    - biraz müzik istiyorum [antrenman çalma listemi](playlist_name) çalmaya ne dersin
+    - [adele](artist_name) çal
+    - çalma listesini aç
+    - [rock](music_genre) dinlemek istiyorum
+    - ok google [rock](music_genre) müzik çal
+    - [jazz](music_genre) türü bir müzik çal
+    - ardından [yalan](song_name) 'ı çal
+    - benim [country](music_genre) çalma listesi ni çal
+    - [ikinci çalma listesi](playlist_name) ni çal
+    - lütfen [bruno mars](artist_name) 'dan benim en sevdiğim şarkıyı çal
+    - bir sonraki şarkıyı çal
+    - bir şarkı çal
+    - bana biraz müzik çal
+    - [classical chamber](music_genre) müzik playlisti çal
+    - bu şarkıyı bir dahakine koy
+    - siri benim [pop](music_genre) oynatma listemi çal
+    - [romantik playlist](playlist_name) aç
+    - [bandista](artist_name) müziğini aç
+    - [romantik](music_genre) bir şeyler çal
+    - [sezen aksu nun](artist_name) dördüncü albümünü çal
+    - playlist imi dinlemek istiyorum onu benim için çalar mısın
+    - olly [tarkan](artist_name) dan [ölürüm sana](song_name) çal
+    - biraz [irem derici](artist_name) dinleyebilir miyim
+    - benim mevcut top çalma listemi çal
+    - benim en sevdiğim [country](music_genre) şarkılarını çal
+    - lütfen [tarkanın](artist_name) ölürüm sana sını çal
+    - bundan sonra [sevdanın son vuruşunu](song_name) çal
+    - biraz [jazz](music_genre) dinlemek istiyorum
+    - bu şarkıdan sonra [yarınım yok](song_name) u çal
+    - [athena](music_genre)
+    - biraz [tarkan](artist_name) dinlemek istiyorum
+    - çalma listesine [fikret kızılok barış manço](artist_name) ve [tarkan](artist_name) ekle
+    - bana biraz [dans müziği](music_genre) çalabilir misin
+    - çalma listesinden şarkılar çal
+    - [spotify](app_name) yükle
+    - [geçen yıldan](date) benim favori şarkımı çal
+    - [teoman](artist_name) dan müzik çal
+    - [sezen aksu](artist_name) 'nun en yeni albümünü çal
+    - [emre aydın](artist_name) 'dan [afilli yalnızlık](song_name) çal
+    - bana biraz müzik dinlet
+    - harika müzik dinlemek istiyorum
+    - [erkin koray](playlist_name) 'dan çal
+    - benim müziğimi aç
+    - [mustafa sandal](artist_name) 'dan [araba](song_name) şarkısını çal
+    - biraz müzik çal
+    - bu playlist ten müzik aç
+    - sonraki [ölürüm sana](song_name) 'yı çal
+    - yine bu şarkıyı çal lütfen
+    - [egzersiz çalma listemi](playlist_name) çal
+    - en son eklenen çalma listesini çalmaya başla
+    - benim çalma listemi çal
+    - [türk halk](music_genre) müziği çal
+    - biraz [eski okul rapi](music_genre) çal
+    - benim müziğimi aç lütfen
+    - asistan [bütün kitaplığı](music_descriptor) [karıştır](player_setting)
+    - mavi [çalma listesini](playlist_name) [karıştır](player_setting) ve çal
+    - [tarkanın](artist_name) [tüm](music_descriptor) şarkılarını [karıştır](player_setting) ve çal
+    - [parti şarkıları](music_descriptor) oynat
+    - [sezen aksu](artist_name)
+    - bana bir [ajda pekkan](artist_name) şarkısı çal yine
+    - orevana ses kaydedicisi bana şarkı kaydetmek için sistem sayfasını bul
+    - sanatçı çal
+    - bu şarkıdan sonra aynı albümden dördüncü şarkıyı çal
+    - alexa [classic rock](music_genre) aç
+    - müzik dinlet
+    - bir sonraki seçili şarkı
+    - [mor ve ötesi](artist_name) den şarkı çal
+    - [can bonomo](artist_name) 'dan [ben yağmurum](song_name) 'u çal
+    - benim yeni çalma listemden [bir şeyler](music_descriptor) çal
+    - olly en güncel çalma listemden bana [herhangi bir şey](music_descriptor) çal
+    - beni gülümsetecek bir şarkı çal
+    - en iyi [amerikan folk müziği](music_genre) aç lütfen
+    - güncel çalma listesini çal
+    - en son dans parçalarını bul ve bir çalma listesi yap
+    - [ceza](artist_name) 'dan tüm şarkıları düzenle ve çal
+    - benim müzik klasörümü çalabilir misin
+    - [klasik](music_genre) parçalar çal
+- intent: play_podcasts
+  examples: |
+    - podcastteki bir bölümü [iletebilir](player_setting) misin
+    - [sonraki bölümü](podcast_descriptor) çal
+    - benim podcast ımı yerleştir
+    - [sonraki bölüme](podcast_descriptor) geç
+    - en yeni [rabarba](podcast_name) yı çal
+    - [sıradaki bölüm](podcast_descriptor) e git
+    - [rabarba](podcast_name) nın yedinci bölümünü çal
+    - podcasti en baştan çalar
+    - hey benim [geçen gece durdurduğum](podcast_descriptor) o podcast ı çal
+    - [bir sonraki podcast](podcast_descriptor) a atla
+    - bir sonraki podcast ı yeniden çal
+    - [sıradaki podcast](podcast_descriptor) a atla
+    - [mesut süre](person) podcast ı dinlemek istiyorum
+    - favori
+    - [devam et](player_setting) lütfen
+    - podcast bul ve onu aç
+    - [sıradaki bölüme](podcast_descriptor) atla
+    - bu podcast i bitir ve yenisini başlat
+    - [tarkanın](person) en son podcastini dinle
+    - [gelecek bölümü](podcast_descriptor) çal
+    - [haber saati](podcast_name) podcastini başlat
+    - bana [en yüksek derecelendirilen](podcast_descriptor) podcastler i göster
+    - sıradaki bilmeniz gereken [şeyler](podcast_name) bölümünü oynat
+    - [berkcan güven](podcast_name) podcastini çal
+    - bölüm bire dön
+    - butonu [geri al](player_setting)
+    - bana en son bölümü göster
+    - olly [ağır sıklet](podcast_name) podcastini aç
+    - cihaza kayıtlı [beyaz](podcast_name) podcastini aç
+    - ağ podcast
+    - çok daha net ve kişiye yönelik
+    - yüksek sadakat
+    - [barış özcan](podcast_name) [son bölümü](podcast_descriptor) çal
+    - bu podcasti dinlemek istiyorum
+- intent: play_radio
+  examples: |
+    - biraz radyo çal
+    - vitrin radyoyu aç
+    - [pandora](app_name) yı aç [rock](music_genre) kanalı çal
+    - [iheartradio](app_name) rov [rock](music_genre) aç
+    - [güzel fıkralar](radio_name) için bir radyo kanalı aç
+    - radyoyu başlat
+    - [alemfm nokta com](radio_name)
+    - radyo aç
+    - radyo kanalını aç lütfen
+    - bu radyo kanalını dinlemek istiyorum
+    - radyo aç
+    - [kral f. m.](radio_name) radyo kanalını başlatabilir misin
+    - [tunes](media_type) çal
+    - [frekans dokuz yüz doksan yedi](radio_name) aç
+    - kanal [dokuz yüz elli bir'i](radio_name) aç
+    - lütfen radyo çal
+    - radyo açık
+    - benim favori radyo kanalıma git
+    - [number one turk](radio_name) çal
+    - [a. t. v. radyo](radio_name) 'yu aç
+    - [radyo d](radio_name) çal
+    - benim [fm radyomu](radio_name) aç ve [radyo d](radio_name) çal
+    - olly [rnb çalan istasyon](radio_name) dinlemek istiyorum
+    - radyoda futbol maçı çal
+    - spor podcastlerimin kaçının henüz dinlemediğim yeni bölümleri var
+    - [pandorayı](app_name) aç ve top hitleri çal
+    - lütfen [pandora'da](app_name) popüler müzik çal
+    - benim için radyo [d](radio_name) çal
+    - bana [trt fm](radio_name) 'den biraz radyo [müziği](media_type) çal
+    - radyoda müzik programları aç
+    - [sirius](app_name) 'da sezen aksu'nun bir parçasını bul
+    - [radyo d](radio_name) kanalını çal the buzz
+    - [f. m.](radio_name) de haberleri çal
+    - geveze 'li fularsız entellik de sezen aksu lu bölümü aç
+    - [doksan üç nokta beş f.m.](radio_name) çal
+    - [ntv radyo](radio_name) 'yu aç
+    - ok google [hasan dinç](person) 'i başlatabilir misin
+    - [akşam dokuzda](time) benim favori istasyonumu çal
+    - [power fm](radio_name)
+    - bu program için gerekli podcastleri çal
+    - bu [sabah](timeofday) hangi istasyonlar iyi müzik çalıyor
+    - [radyo d](radio_name) 'ye bağlan
+    - bir [country station](radio_name) aç
+    - radyo programı nihat ve sivrisinek'i aç
+    - [a. t. v. radyo](radio_name) çal
+    - bu programı aç
+- intent: qa_currency
+  examples: |
+    - [hırvatistan](place_name) hangi para birimini kullanır
+    - şu anda [dolar](currency_name) ve [avro](currency_name) arasındaki döviz kuru nedir
+    - [yen amerikan doları](currency_name) takas oranları
+    - [tl](currency_name) nin [frank](currency_name) karşılığı ne
+    - [kanada doları](currency_name) karşısında [birleşik devletler doları](currency_name) döviz takas oranı nedir
+    - [a. b. d.](place_name) ve [çin](place_name) arasındaki döviz kurları ne kadar
+    - [birleşik devletler](currency_name) ve [fransa](currency_name) arasındaki döviz kuru nedir
+    - siri bir [amerikan doları](currency_name) kaç [japon yeni](currency_name) eder
+    - [yen](currency_name) için döviz kurunu söyle
+    - [tl](currency_name) karşısında [abd doları](currency_name) takas oranı nedir
+    - lütfen bana [dolar](currency_name) ve [yen](currency_name) arasındaki kur farkıını göster
+    - [hint rupisi](currency_name) kuru ne kadar
+    - [filipin pesosu](currency_name) kuru nedir
+    - [avro'dan abd doları'na](currency_name)
+    - olly [doların](currency_name) değeri [brezilyada](place_name) daha mı fazla yoksa daha mı az
+    - [kanada doları](currency_name) karşısında [euro](currency_name) kuru ne kadar
+    - [amerikan doları](currency_name) ve [avro](currency_name) arasındaki döviz kuru nedir
+    - bir [avro](currency_name) kaç [dolara](currency_name) eşittir bana söyle
+    - [amerikan doları](currency_name) ve [hint rupisi](currency_name) arasındaki döviz kuru nedir
+    - dövizle alacağım döviz kuru
+    - [dolar](currency_name) ile [euro](currency_name) arasında döviz takas oranları
+    - [dolar](currency_name) ı [tl](currency_name) kuruna çevir
+    - [dolar rupi](currency_name) döviz takas kuru
+    - bir [sterlini abd dolarına](currency_name) çevir
+    - eğer beş [amerikan dolarım](currency_name) varsa bu kaç [avustralya doları](currency_name) eder
+    - [hint rupisi](currency_name) nin [abd doları](currency_name) karşısında döviz takas fiyatı ne
+    - [bugün](date) [amerikan doları](currency_name) kuru ne kadar
+    - döviz kuru ücretleri
+    - bana on [dolar](currency_name) ın [euro](currency_name) karşılığını söyle
+    - olly [amerikan doları](currency_name) ile [avustralya doları](currency_name) arasındaki döviz kuru nedir
+    - bizimle meksika pezosu arasındaki kuru ara lütfen
+    - [vestel](business_name) için takas fiyatları nedir
+- intent: qa_definition
+  examples: |
+    - bir tanım bul
+    - [zahmet](definition_word) kelimesi hangi durumda kullanılır
+    - bana [tahliyenin](definition_word) kısaca tanımını söyle
+    - [zürafa](definition_word) kelimesi nasıl yazılır
+    - [tedavülden kaldırma](definition_word) kelimesini söyleyebilir misin
+    - rol yapan oyuncu
+    - [kasırga](definition_word) nedir
+    - kelimeyi googleda ara
+    - [ikiyüzlülük](definition_word) ne demektir
+    - [riyakarlık](definition_word) kelimesi ne anlama gelir
+    - cümle içinde kullan
+    - [sapmayı](definition_word) tanımla
+    - [kişisel dijital asistanın](definition_word) tanımı nedir
+    - lütfen bu kelime yi araştır
+    - [gergin](definition_word) ne demek
+    - [ambulansın](definition_word) tanımına bak
+    - [patates](definition_word) ne demek
+    - [çerçeveyi](definition_word) tanımla
+    - [patatesin](definition_word) tanımını yap
+    - [metinseli](definition_word) nasıl tanımlarsın
+    - [baz istasyonu](definition_word) nedir
+    - [anıtkabir](definition_word) hakkında ne biliyorsun
+    - bana bilgi ver
+    - bana [kültür mantarından](definition_word) bahset
+    - [golün](definition_word) tanımı ne
+    - bana [güneş enerjili bahçe](definition_word) kazıklarından bahset
+    - [sanal gerçeklik gözlüğünün](definition_word) tanımı nedir
+    - [muz](definition_word) neye benzer
+    - [tweet](definition_word) ne demek
+    - [zafer](definition_word) ne demek
+    - wikipediayı dene
+    - [gömlek](definition_word) neye benzer
+    - [hipotez](definition_word) ne demek
+    - [gelişmemiş](definition_word) tanımı nedir
+    - [yahninin](definition_word) neye benzediğini söyler misin
+    - [obje adı](definition_word) tanımı
+    - [volkswagen golf araba](definition_word) nasıl görünüyor
+    - sözlükte [dünya](definition_word) için tanımı bul
+    - bana [diz üstü bilgisayarın devresini](definition_word) tarif et
+    - açıkla
+    - [hipertrofinin](definition_word) ne anlama geldiğini söyler misin
+    - bana [laptop devresinin](definition_word) tanımını ver
+    - xyyi tanımla
+    - benim için [pilici](definition_word) tanımla
+    - bana [topun](definition_word) neye benzediğini tarif et
+    - benim için [ay](definition_word) tarifi yap
+    - şu nesneyi tarif eder misin lütfen
+    - lütfen bir [fili](definition_word) tarif et
+    - [makarna sosu](definition_word) tanımı nedir
+    - by nedir
+    - [bilgisayar](definition_word) nedir
+    - olly [sorun](definition_word) kelimesinin tanımı nedir
+    - hey olly [pasifin](definition_word) anlamı nedir
+    - olly [vestel televizyon](definition_word) ile ilgili tanım bul
+    - bu şey ne
+- intent: qa_factoid
+  examples: |
+    - gün batımı ne zaman
+    - [kongre merkezi](place_name) nerede
+    - [polonyanın](place_name) cumhurbaşkanı kimdir
+    - zürafa ne kadar uzundur
+    - bu direncin rezistansını hesapla
+    - [sertap erenerin](person) yaşı ne
+    - [nuri bilge ceylan](person) hangi ilden
+    - söyle bana neden [cem yılmaz gülse birselden](person) daha iyi bir komedyen
+    - bana [şener şenin](person) göbek adını söyle
+    - [dünyanın](place_name) en uzun binaları hangileriydi
+    - lütfen bana [cüneyt arkının](person) bir sonraki filmi hakkında bilgi verin
+    - yok
+    - [ankaradan istanbula](place_name) olan mesafeyi hesapla
+    - [izmirin](place_name) nüfusu nedir
+    - [hülya avşar](person) kaç yaşında
+    - en büyük hayvan
+    - en yüksek bina
+    - [tarkanın](person) yaşadığı yer neresi
+    - internetten toplayabildiğin tüm bilgiler dahilinde başkan kennedyyi kimin öldürdüğüne dair en iyi açıklamayı bana verebilir misin
+    - bana [cahit arf](person) ve onun matematiksel macerası ile ilgili hikaye yi anlat
+    - aşağıdaki soru öğretmenin amaçlarını ve eylemlerini analiz etmenizi istiyor
+    - en büyük [hip hop](music_genre) sanatçıları kimlerdir
+    - [ismet inönü](person) ne zaman doğdu
+    - [ankara](place_name) valisi kim
+    - [erdoğanın](person) kamuoyu desteği nedir
+    - [mehmet ali alabora](person) tek çocuk mu
+    - gökyüzü neden mavidir
+    - bir dünya günü ne kadardır
+    - [beyaz kelebekler](artist_name) kimlerdi
+    - votkalı jöle kalorisiz mi
+    - adel kaç kere elmas oldu
+    - [aslı enver](person) kaç yaşında
+    - [tarsus içel](place_name) nerede
+    - [recep tayyip erdoğan](person) şu anda ne yapıyor
+    - [aydın izmir](place_name) arası kaç kilometre
+    - amerika birleşik devletlerinin ortalama rakımı nedir
+    - [istanbulda](place_name) ne kadar insan yaşıyor
+    - [mehmet günsür](person) kaç yılında doğdu
+    - [hatay](place_name) ve [içel](place_name) arasında kaç mil var
+    - [şener şen](person) kaç yaşında
+    - [demet akbağ](person) hiç akademi ödülü kazandı mı
+    - [binali yıldırım](person) kaç yaşında
+    - doların rupi cinsinden döviz kurunu bana verebilir misin
+    - [adananın en büyük ilçesi](place_name) hangisi
+    - [ali ağaoğlu](person) kimdir
+    - [danimarka](place_name) nerededir
+    - [fiyort](place_name) ne demek
+    - [bülent ersoy](person) ne zaman doğmuştur
+    - [sakarya](place_name) nerede
+    - hangi abd eyaleti en kuzeydedir
+    - stonehenge nerede
+    - bermuda şeytan üçgeni nedir
+    - [hadisenin](artist_name) biyografisini göster
+    - lütfen bana [atatürkün](person) [doğum gününü](event_name) verir misin
+    - külot ne tür bir don
+    - [tarkan](person) hangi yılda doğdu
+    - [meltem cumbulun](person) en iyi beş filmini listele
+    - [ingiltere](place_name) ne kadar büyük
+    - bana [izmirden](place_name) bahset
+    - dünyadaki çeşitli bitkileri göster
+    - [ecevitin](person) karısı kim
+    - özgürlük heykeli ne zaman yapıldı
+    - [mete gazoz](person) kaç yaşında evlendi
+    - [cüneyt arkın](person) kimdir
+    - empire state binasının yüksekliği ne kadar
+    - siyasetin şu anki halini anlat
+    - [edis](person) ne zaman doğdu
+    - hande yener yeni bir albüm kaydediyor mu
+    - bana güneş ve ay arasındaki mesafeyi söyle
+    - iki bin on yedinin en iyi akıllı telefonu hangisi
+    - [türkiye cumhuriyetinin](place_name) yirmi beşinci başkanı kimdir
+    - bana yerçekiminin nasıl çalıştığını açıkla
+    - [ajda pekkan](person) ve [mirkelam](person) ne zaman evlendi
+    - [anıtkabir](place_name) nerede
+    - alexa [kamer gençle](person) ilgili bildiğin her şeyi bana göster
+    - canonun açıklamasında kaç mega piksel yazıyor
+    - [paris hilton](person) nasıl ünlü oldu
+    - [beren saatin](person) doğal saç rengi nedir
+    - [dünyada](place_name) kaç tane nehir var
+    - oğlak burcu olan ünlüleri bul
+    - nasanın fırlattığı ilk uydu nedir
+    - [hürrem sultan](person) ne kadar zamandır hamile
+    - [ali ağaoğlu](person) [bu hafta](date) neler yaptı
+    - [merve ildeniz](person) kaç yaşında
+    - [dünyanın](place_name) en küçük adası hangisidir
+    - [japonya](place_name) ne kadar büyük
+    - [albert einstein](person) görelilik teorisini bulduğunda kaç yaşındaydı
+    - sıfırdan beşe üstel fonksiyonun yakın bir integralini hesapla
+    - brexitin a. b. vatandaşlarını uzun ve orta vadede nasıl etkileyeceğini söyle
+    - ne kadar uzakta
+- intent: qa_maths
+  examples: |
+    - google
+    - tarama merkezleri
+    - üç kere yedi ne eder
+    - kırk ikinin karekökü kaç
+    - hesabı çöz
+    - iki artı ikinin cevabı ne
+    - matematik problemini çöz
+    - yirmi dört kere yirmi dört nedir
+    - beş kilometrede kaç mil var
+    - bir fit kaç inç eder
+    - altı eksi dört nedir
+    - iki kere üçün cevabı ne
+    - on iki bölü dört kaç eder
+- intent: qa_stock
+  examples: |
+    - [turkcell](business_name) için güncel [hisse senedi fiyatları](news_topic) nelerdir
+    - [borsadaki](news_topic) tüm haberler için bildirim aç
+    - beni [borsadaki](news_topic) en son gelişmelerden haberdar et
+    - [bugünün](date) [borsa](news_topic) güncellemelerini gönder
+    - [migros](business_name) hisse senedi fiyatları
+    - [bizim toptan](business_name) için hisse fiyatına ihtiyacım var
+    - [turkcellin](business_name) güncel hisse senedi oranı nedir
+    - danışmanıma sor
+    - dow jones [bugün](date) kaçta
+    - lütfen bana bugün dow hisselerine yatırım yaparsam ne zaman zengin olabileceğimi ve beş yıl sonra getirisi ne olacağını söyle
+    - [coca-cola](business_name) hissesi [bugün](date) nasıl gidiyor
+    - [google](business_name) için bugünün kapanış fiyatı
+    - [akbank](business_name) hisse fiyatını söyle
+    - iphone hisseleri genellikle ne zaman düşer
+    - borsa şirket ismi
+    - [turkcell](business_name) hisse senedi açılış fiyatını bana ver
+    - hisseler lütfen
+    - bana [vestelin](business_name) hisse senedi fiyatlarını söyle
+    - [aksa](business_name) hisse senedi fiyatları nedir
+    - [google](business_name) hissesinin değeri nedir
+    - yüksek hisse senedi fiyatı
+    - [kipa](business_name) hisse senedi fiyatı nedir
+    - [apple](business_name) kaçta işlem görüyor
+    - [vestel](business_name) hisseleri ne kadar
+- intent: recommendation_events
+  examples: |
+    - [istanbul'da](place_name) neler oluyor
+    - [bu akşam](timeofday) [tiyatroda](place_name) kim ve neden var
+    - o etkinlikte neler oluyor
+    - benim lokasyonumda [tatil](event_name) araştır
+    - belirli tarihlerde son günlerdeki olayları aramak
+    - [eskişehir](place_name) yakınlarında devam eden [köpek gösterileri](event_name) var mı
+    - yakınlarda [gerçekleşecek](time) [konserler](event_name)
+    - [büyükşehir](place_name) tiyatrolarında hangi [gösteriler](event_name) veya [sergiler](event_name) programlanmış
+    - yakınımda hangi olaylar oluyor
+    - [bu gece](timeofday) [yemek festivali](event_name) nerede
+    - bana tüm yerel etkinlikleri söyle
+    - [gülhane parkını](place_name) gezerken bir yapılacaklar listesi hazırla
+    - [yellowstone milli parkını](place_name) ziyaret ettiğimde ne yapmalıyım
+    - çevremde neler oluyor
+    - [gelecek hafta](date) [ankarada](place_name) hangi [kitap fuarı](event_name) etkinlikleri düzenleniyor
+    - [istanbul'da](place_name) hangi etkinlikler oluyor
+    - civarımda hangi etkinlikler gerçekleşiyor
+    - hangi lunapark araçları en iyisi
+    - [bu haftasonu](date) bölgemde hangi aktiviteler var bildir
+    - [istanbulda](place_name) neler oluyor
+    - bana [milano'da](place_name) olan tüm etkinlikleri göster
+    - bana şehrimde neler olduğunu söyle
+    - [bugün](date) [istanbul](place_name) 'da neler var
+    - [bugünün](date) yerel etkinlikleri
+    - [mahallede](place_name) neler oluyor
+    - lütfen konumumdaki etkinlikleri ara
+- intent: recommendation_locations
+  examples: |
+    - [şehirdeki](place_name) en yakın [pub](business_type) nerede
+    - [meksika](food_type) yemeği yemek için yakınımda nereye gitmeliyim
+    - biraz [sushi](food_type) ihtiyacım var en yakını hangisi
+    - yakınlarda [çin](food_type) [restoranı](business_type) ara
+    - [butik mağazaları](business_type) arıyorum bana [bir kilometrelik uzaklıkta](place_name) giyim dükkanları bulabilir misin
+    - en yakın [restoran](business_type) nerede
+    - olly bana dükkanın yerini sapta
+    - [konumuma en yakın](place_name) [kebapçıları](business_type) göster
+    - [boğaziçindeki](place_name) iyi [bisikletçiler](business_type)
+    - mahalledeki en iyi [bar](business_type)
+    - [bakkalın](business_type) yanında
+    - [beşiktaşta](place_name) en ucuz dizüstü bilgisayarları kim satıyor
+    - buradaki en iyi [giysici](business_type) nedir
+    - [bira](drink_type) satan bir market bul
+    - benim muhite yakın ne tür [mağazalar](business_type) var
+    - bu bölgede ucuz [restoran](business_type) tavsiye edebilir misin
+    - olly yakınımdaki [restoranlar](business_type) neler
+    - bölgemdeki en yakın [irlanda barını](business_type) nerede bulabilirim
+    - olly çevremde hangi [barlar](business_type) var
+    - mahallemde kaç tane market var
+    - bölgemdeki bir [restoranı](business_type) sor
+    - çok açım [adanada](place_name) [ne yenir](business_type)
+    - olly [batı ataşehirde](place_name) nereden [içecek](business_type) alabilirim
+    - civardaki tüm [dükkanları](business_type) listele
+    - yavuz selim [caddesinde](place_name) bir [pub](business_type) önerebilir misin
+    - [tekirdağda](place_name) bana [pizza](food_type) getirecek bir yere ihtiyacım var
+    - [lara](place_name) 'da hangi [çin](food_type) lokantaları var
+    - kıyma almak için en ucuz yeri söyler misin
+    - mekanların tam yerini bul
+    - en yakın [italyan](food_type) [restoranı](business_type) nerede
+    - organik buğdayı nereden alabilirim
+- intent: recommendation_movies
+  examples: |
+    - [bu hafta](date) sinemalarda oynayan yeni filmler hangileri
+    - [cinemaximumda](place_name) vizyonda hangi filmler var
+    - [bugün](date) hangi yeni filmler var
+    - [adana](place_name) civarında sinemada hangi [komedi](movie_type) filmini izleyebilirim
+    - yakınımdaki [tiyatrolar](business_type)
+    - yeni [vin diesel](movie_name) filminin oynadığı en yakın tiyatro hangisi
+    - [düğün dernek](movie_name)
+    - bana yakın [sinemalarda](place_name) hangi filmler oynuyor
+    - yakınımda oynayan popüler filmler neler
+    - i. m. d. b. oylamaları iyi filmler
+    - ne izlemeye değer
+    - bana [bu gece](timeofday) sinemalarda hangi filmlerin oynadığını söyler misin
+- intent: social_post
+  examples: |
+    - beni [türk telekom](media_type) web sitesine götür
+    - kutlamak için [facebook'ta](media_type) yeni durum at
+    - onu [facebooka](media_type) koy
+    - bu makale çok iyi linki benim için [facebooktan](media_type) paylaşabilir misin
+    - [youtube'da](media_type) bir video yayınla
+    - [facebook](media_type) statüsü yoğun gün
+    - lütfen [cemil](person) ile gönderi paylaş
+    - lütfen durumu [facebooka](media_type) gönder
+    - güzel bunu [facebookuma](media_type) atarmısın
+    - yeni [tweet](media_type)
+    - [facebook](media_type) u aç ve [amerika birleşik devletlerine](place_name) [mutlu yıllar](event_name) dile
+    - [metrodan](business_name) memnun değilim lütfen bana yardım et
+    - [monitise](business_name) uygulamalarının çöktüğünü söyleyen bir [tweet](media_type) gönderebilir misin
+    - aşağıdakileri [facebookta](media_type) bir durum olarak yayınla
+    - lütfen [twitterda](media_type) bir durum paylaş ve
+    - lütfen bu resmi [facebook](media_type) hesabımda paylaş
+    - [lale emlağa](business_name) [tweet at](media_type) ve onlara uygulamamın bozuk olduğunu bildir
+    - [facebook](media_type) grubuma geldiğimi söyle
+    - lütfen [levise](business_name) şikayet et
+    - onlara sıralarının çok uzun olduğunu söyle
+    - bu mesajı twitter'da [microsoft'a](business_name) gönder
+    - benim [telefonumdaki](device_type) [facebook](media_type) a resim postala alexa
+    - [vestel elektroniğe](business_name) bir şikayet [tweeti at](media_type)
+    - [türk havayollarına](business_name) [tweet](media_type) gönder çantalarımı kaybettiğiniz için kızgınım
+    - [pizza hutda](business_name) korkunç bir hizmetim vardı bunu [tweetlemem](media_type) gerekiyor
+    - twitter [tüketici servisi](business_name) aracılığıyla şikayet gönder
+    - [nossa mobilya müşterine hizmetlerine](business_name) bir şikayet tweeti gönderebilir misin
+    - [superonline](business_name) a halen beklediğimi söyle
+    - [bugün](date) aldığım tablet için [vatana](business_name) şikayet yaz
+    - [ulusal şebeke](business_name) elektriğin tekrar kesildiğini bilsin
+    - [twitter](media_type) aracılığıyla [amazon müşteri hizmetleri](business_name)
+    - [samsung'a](business_name) şikayet [tweet'i at](media_type)
+    - lütfen dizüstü bilgisayarın hatalı servisi hakkında [dell firmasına](business_name) bir [tweet at](media_type)
+    - [şoka](business_name) [tweet at](media_type) ve müşteri hizmetlerinin çok kötü olduğunu söyle
+    - olly [makara](business_name) ya bir [tweet](media_type) gönder onlara en kötü müşteri hizmetlerine sahip olduklarını söyle
+    - [müşteri hizmetlerine](business_name) takip eden mesajın şikayet [tweetini oluştur](media_type)
+    - kötü teslimat hakkında [dominosa](business_name) bir [tweet](media_type) gönder
+    - [facebooka](media_type) off hastayım yaz
+    - [tumblra](media_type) gönderi paylaş ve eğlendiğimi söyle
+    - [burger kinge](business_name) şikayet [tweet at](media_type)
+    - olly şirkete bir [tweet](media_type) gönder
+    - [boscha](business_name) buzdolabımla ilgili bir şikayet [tweeti at](media_type)
+    - [galeri](media_type) yi aç video ismi postala
+    - [twittera](media_type) gönderi yoğun bir gün var önümde
+    - [twitter](media_type) hesabımda müşteri hizmetlerine litre başına gram hizmeti için iyi değil [tweet'i at](media_type)
+    - şikayeti [tweet at](media_type)
+    - ok google moenun lokantasındaki servis korkunç olduğunu [tweetle](media_type)
+    - drenaj tıkanmasıyla ilgili şikayeti benim için [tweet at](media_type)
+    - [tüketici servisine](business_name) en sonki iletişimimiz konusunda hayal kırıklığına uğradığımı belirten bir [tweet at](media_type)
+    - [twitterda](media_type) bir durum paylaşmak istiyorum
+- intent: social_query
+  examples: |
+    - [twitterda](media_type) hakkında en çok konuşulan konu ne
+    - [annemin](relation) söylediği son şey neydi
+    - bana [hafta sonundan](time) itibaren [kardelen'in](person) [facebook'undan](media_type) güncellemeleri al
+    - bana benim [facebook'umdan](media_type) yeni yorumlar bul
+    - son [instagram](media_type) fotoğrafım kaç beğeni aldı
+    - bana [sabah gazetesi](media_type) yazısındaki son tweeti oku
+    - benim [her üç saatte](general_frequency) bir olan [facebook](media_type) güncellememin çalışıyor olması lazım
+    - [akrabalarımın](relation) fotoğraflarına dayanarak gittikleri yerlerin bir listesini göster
+    - [facebooktaki](media_type) güncel haber akışı
+    - bana toplam takipçi sayısı da dahil olmak üzere [twitter](media_type) kullanıcı profilimin ayrıntılarını ver
+    - sosyal medyama ne olduğunu söyler misin
+    - benim akışıma en son gelen nedir
+    - lütfen beni yeni durum güncellemelerinden haberdar et
+    - trend olan sosyal medya
+    - lütfen beni benim sosyal medya hesaplarım hakkında bilgilendir
+    - [metin](person) [facebookta](media_type) yeni bir şey yayınladı mı
+    - [instagram](media_type) hesabımdaki en son fotoğraflar neler
+    - sosyal bilgi
+- intent: takeaway_order
+  examples: |
+    - hoş bir [restoran](business_type) dan yemek sipariş et
+    - [paket](order_type) yemek sipariş et
+    - [paket](order_type) iste
+    - siparişi onayla
+    - [salcılar dürüm](food_type) paket iste
+    - canım cidden çok [çin](food_type) yemeği istiyor şu anda lütfen bir paket siparişi oluştur
+    - iki [sucuklu pizza](food_type) ihtiyacım var
+    - en yakın nerelerden [paket servisi](order_type) yapabilirim ben
+    - bana [paket servisi](order_type) yemek al
+    - [dominoes](business_name) dan iki [pizza ve acılı kanat parçaları](food_type) sipariş et
+    - bana [çin](food_type) yemeği sipariş et
+    - [bu akşam](timeofday) adrese teslim [çin](food_type) yemeği sipariş etmek istiyorum
+    - bana yakın adrese [teslimat](order_type) göster
+    - interneti aç
+    - duble [pastırmalı çizburger pastırma](food_type) ve [amerikan peyniri](food_type) sipariş et
+    - [pf chang's](business_name) i ara ve [egg foo young](food_type) iste
+    - en yakın [altın kebap](business_name)
+    - yemek sipariş istiyorum
+    - hey olly [çin yemeği dükkanından](business_name) iki [tavuk kanadı ve patates kızartması](food_type) sipariş et
+    - hey olly [ekstra peynirli pizza](food_type) iste
+- intent: takeaway_query
+  examples: |
+    - [çin](food_type) yemeği için en fazla yıldızlı [teslimat](order_type) seçeneklerini listele
+    - [migrostan](place_name) benim [ıspanaklı börek](food_type) [paketimi](order_type) bul
+    - akşam yemeği siparişimde neler var
+    - [quick china](business_name) [paket servis](order_type) siparişi alıyor mu
+    - [birbiçer kebabın](business_name) [paket servisi almama](order_type) uygun olup olmadığını bul
+    - [banadura'dan](business_name) [teslim almak](order_type) üzere sipariş verebilir miyim
+    - [restoran](business_type) sipariş durumu
+    - [saklı bahçe](business_name) [teslimat](order_type) yapıyor mu
+    - son siparişimin durumu nedir
+    - bu [restoran](business_type) dan [paket sipariş](order_type) edebiliyor muyum
+    - benim favorim [lokanta](business_type) [teslimat](order_type) yapıyor mu
+    - [paket servis](order_type) hizmetleri var mı
+    - [restoranın](business_type) [teslimat](order_type) durumu nasıl gidiyor
+    - [tadım pizza](business_name) da [paket servis](order_type) var mı
+    - yemeğimi bul
+    - en yakın [çin](food_type) [lokantası](business_type) [teslimat](order_type) yapıyor mu
+    - bana hangi catering paket servislerinin uygun olduğunu söyle
+    - benim [pizza hut](business_name) siparişim yolda mı bir bakıver
+    - [taco bell](business_name) ne zaman gelecek
+    - [hosta](business_name) [restoran](business_type) [paket servis](order_type) yapıyor mu
+    - [tadım pizza](business_name) daki siparişim hazır mı
+    - [çin yemeği](food_type) mi ne zaman alabilirim
+    - siparişim şimdi almaya hazır mı
+    - buradan [teslimat](order_type) alabiliyor muyum
+- intent: transport_query
+  examples: |
+    - [kayseri](place_name) ye bir sonraki [tren](transport_type) ne zaman
+    - [yunanistan](place_name) 'a en iyi yol hangisi
+    - [tren istasyonu](place_name) nerede
+    - [mersin](place_name) istikametine programlı bir sonraki dört treni bana bildirebilir misin lütfen
+    - bana gelecek [perşembe](date) için has turizmden bir [antakya](place_name) bileti al daha ileri gün varsa daha iyi
+    - [ankara](place_name) 'dan [kastamonu](place_name) 'ya giden trenin saatleri ne
+    - [susam sokağı](place_name) na bir sonraki [tren](transport_type) saat kaçta
+    - beni en yakın [tren istasyonuna](place_name) yönlendir
+    - [feneryolu](place_name) 'ndan [bostancı](place_name) 'ya [tren](transport_type) zamanları
+    - [izmir'e](place_name) nasıl gidebilirim
+    - en yakın [apple mağazası](business_name) yol tarifi
+    - [nevşehir](place_name) 'den [yozgat](place_name) istikametine giden [tren](transport_type) zamanları nedir
+    - [istanbul'dan ankara'ya](place_name) nasıl giderim
+    - [yirmi üçünde](date) [kadıköy](place_name) 'e [tren](transport_type) zamanları nedir
+    - [aydın](place_name) istikameti için [tren](transport_type) kaçta alkıyor
+    - [tren](transport_type) [aydın](place_name) dan kaçta kalkıyor
+    - [istanbul](place_name) istikametine bir sonraki pegasus [treni](transport_type) ne zaman
+    - bana yerin tarifini ver
+    - [tatilya](place_name) için rota
+    - bu konum için tüm [tren](transport_type) bilet fiyatlarının bir listesini istiyorum lütfen
+    - [istanbul'dan eskişehir'e](place_name) [tren](transport_type) saatleri nedir
+    - bir [tren](transport_type) bileti ne kadar
+    - [istanbula](place_name) bir [tren](transport_type) bileti nasıl satın alınacağı ile ilgili bana bilgi gönder lütfen
+    - bana [samsun](place_name) için [tren](transport_type) saatlerini verebilir misin
+    - [akbanka](business_name) gitmek istiyorum bana yol tarifi ver
+    - [tren](transport_type) sefer saatleri ne zaman
+    - en yakın [mcdonaldsa](business_name) yol tarifi
+    - [şehir](place_name) merkezine gitmek için hangi caddeye girmeliyim
+    - [aydına](place_name) bir [tren](transport_type) bileti kaç para
+    - [ny](place_name) için tüm [tren](transport_type) saatlerini listele
+    - [aydın](place_name) için bütün [tren](transport_type) ve saatini de göster
+    - maçka parkı 'na en hızlı yol hangisi
+    - [ertesi gün](date) [ankara](place_name) istikametinde olan trenlerin listesini sayabilir misin
+    - lütfen bana [kuzey demiryolu](transport_name) [tren](transport_type) inin saatini bildir
+    - hey bana en yakın [trene](transport_type) saat kaçta yetişebilirim
+    - [istanbul almanya](place_name) arası mesafe ne
+- intent: transport_taxi
+  examples: |
+    - [yarım saat](time) içinde [çin mahallesine](place_name) gidiyorum bana bir [uber](transport_agency) ayarla
+    - bana şimdi bir [uber](transport_agency) çağır
+    - bana hemen bir [uber](transport_agency) gönder
+    - [uber'in](transport_agency) [on beş dakika](time) içinde [evimde](place_name) olmasını rica eder misin
+    - [havalimanına](place_name) gitmek için bir [taksi](transport_type) ihtiyacım var
+    - [eve](place_name) gitmek için [taksi](transport_type) ara
+    - [evimden](place_name) alacak [uber](transport_agency) çağır
+    - hadi bir [taksi](transport_type) tutalım
+    - [taksi](transport_type) ayırt
+    - [yarın](date) [sabah](timeofday) için [havalimanı](place_name) na gitmek için bir [taksi](transport_type) ayarla
+    - bana en yakın müsait [taksiyi](transport_type) çağır
+    - bana [uber](transport_agency) çağır
+    - [taksi](transport_type) çağır
+    - bir araç bul
+    - [yarın](date) [sabah](timeofday) [sekizde](time) bana bir [taksi](transport_type) lazım
+    - [bugün](timeofday) [ö. s. on](time) dan sonra uygun bir [uber](transport_agency) şoförü bul
+    - bana yerel [taksi servisinin](business_type) numarasını bul
+    - lokasyona gitmem lazım [taksi](transport_type) çağır
+    - beni işe götürmek için [yarın](date) [sabah](timeofday) [sekize](time) bir [taksiye](transport_type) ihtiyacım var
+    - [uber](transport_agency) ayarla
+    - [akmerkez'e](place_name) bir araba bul lütfen
+    - beni hemen alması için bir [taksi](transport_type) çağır
+    - [çiçek taksiden](business_name) bir [taksi](transport_type) iste
+    - [bir saatlik](time) bir süre içinde beni şu anki konumumdan alacak bir [taksi](transport_type) ayarla
+    - beni [cuma](date) günü [sabah beş otuz](time) da [havalimanı](place_name) na götürecek bir [taksi](transport_type) bul
+    - lütfen sonraki [taksiyi](transport_type) ayarla
+    - [uber](transport_agency) uygulama aç ve bana bir [araba](transport_type) çağır lütfen
+- intent: transport_ticket
+  examples: |
+    - hey olly [çarşamba](date) günü [muğla](place_name) ya giden trenleri öğrenmek istiyorum
+    - olly [bu cuma](date) [ö. s. beş](time) için [istanbul](place_name) a [eurostar](transport_name) da bilet ayarla
+    - [manhattan](place_name) 'dan [new york](place_name) 'a benim a. c. sınıf [tren](transport_type) koltuğumu ayırt
+    - bana bir uçak bileti ayırt
+    - [salı](date) günü [paris](place_name) 'e giden [tren](transport_type) için iki bilet al
+    - antrenör ve ücret
+    - [sirkeci](place_name) için son [trene](transport_type) yeniden bilet al
+    - bana [bugün](date) [i̇stanbul](place_name) a giden [tren](transport_type) biletini satın al
+    - [tren](transport_type) bileti satın al
+    - [sabah](timeofday) giden bir bilet ayırt
+    - gelecek [salı](date) için bana [ankaraya](place_name) bir [tren](transport_type) bileti ayarlayabilir misin
+    - [aydına](place_name) gitmem lazım bana bir [tren](transport_type) bileti ayarla
+    - olly lütfen bana [atlantaya](place_name) bir [tren](transport_type) bileti al
+    - [yarın](date) sabah [on](time) dan önce [aydın](place_name) için bir [tren](transport_type) bilet i ayarla
+    - lütfen bana bir [erzuruma](place_name) [tren](transport_type) bileti siparişi ver
+    - [ankara'ya](place_name) giden [trene](transport_type) binmek için bana bir bilet al
+    - bu sefer bi [tren](transport_type) bileti ayırt
+    - bir [tren](transport_type) bileti almam gerek
+    - bir [tren](transport_type) bileti ayırtın
+    - [bugün](date) bana [iskenderun'a](place_name) bir [tren](transport_type) bileti al
+    - [irctc](app_name) uygulamasını açın ve bilet rezervasyonuna gidin
+    - benim için [aydın](place_name) a bir [tren](transport_type) bileti ayırt
+    - [izmir'e](place_name) [tren](transport_type) biletimi ayırt
+    - [nj](place_name) 'den [ny](place_name) 'a banliyö [treninde](transport_type) bir yer al
+    - benim için yirmi bir [marta](date) bir [tren](transport_type) koltuğu rezerve et
+- intent: transport_traffic
+  examples: |
+    - [bağdat caddesi](place_name) 'nde trafik durumu nasıl
+    - [nilüfer sokakta](place_name) trafik daha mı sıkışık
+    - [kadife sokakta](place_name) şu anda ne kadar trafik var
+    - [mahmutbey gişelerde](place_name) trafik nasıl
+    - trafik nasıl
+    - işten [eve](place_name) trafik durumu nedir
+    - buradan [eve](place_name) olan trafik durumunu söyle
+    - [istanbul'da](place_name) trafik çok yoğundur
+    - trafik durumunu öğrenmek istiyorum
+    - bana mevcut trafik durumu hakkında fikir ver
+    - [evden](place_name) işe trafik nasıl
+    - anlık trafik
+    - bizim [eve](place_name) kadar olan trafiği kontrol edebilir misin
+    - trafik yoğun mu
+    - [aydın](place_name) da genellikle ne kadar trafik var
+    - trafikte herhangi bir problem var mı
+    - bu [sabah](timeofday) trafik nasıl
+    - şimdi trafik nasıl
+    - yakınımdaki trafik nasıl
+    - [orduda](place_name) şu anda trafik durumu nasıl
+    - [bugün](date) hangi rotada trafik daha az
+    - belli bir bölgede yollar dar mı geniş mi
+- intent: weather_query
+  examples: |
+    - [haftanın](time) hava tahmini nasıl
+    - dışarıda [yağmur](weather_descriptor) var mı
+    - [yarın](date) [yağmur](weather_descriptor) yağacak mı
+    - [yarın](date) dışarısı kaç [derece](weather_descriptor) olacak
+    - [yarınki](date) hava için tahminler ne
+    - [tekirdağ'da](place_name) hava nasıl
+    - şu an [gaziantep](place_name) [güneşli](weather_descriptor) mi
+    - [cuma günü](date) hava nasıl
+    - [bugün](date) [mont](weather_descriptor) giymeli miyim
+    - dışarısı [sıcak](weather_descriptor) mı
+    - doğru formül ile
+    - çok mu tehlikeli
+    - [yarın](date) [yağmur yağacak](weather_descriptor) mı
+    - anlık hava durumu nasıl
+    - [bu hafta](date) hava nasıl görünüyor
+    - [bu hafta](date) hava nasıl olacak
+    - benim için [gelecek hafta](date) için hava durumuna bak lütfen
+    - dışarısı ne kadar [sıcak](weather_descriptor)
+    - [bugün](date) hava durumu nasıl
+    - [yağmur](weather_descriptor) yağacak mı
+    - [salı](date) günü için güncel hava durumu nedir
+    - [pazartesi](date) [öğlen](timeofday) için en son hava durumu nasıl
+    - [bu hafta pazartesi](date) hava nasıl olacak
+    - [bugün](date) hava nasıl
+    - [bugün](date) [sıcak](weather_descriptor) değil mi
+    - [bugün](date) çok [sıcak](weather_descriptor) değil mi
+    - [bu hafta](date) hava nasıl olacak
+    - [bu hafta](date) [kar](weather_descriptor) yağacak mı
+    - kendi bölgem için [on günlük](time) hava durumunu alabilir miyim
+    - [bu haftanın](date) hava durumunu al lütfen
+    - [yarınki](date) [hava sıcak](weather_descriptor) olacak evet mi hayır mı
+    - [bu haftanın](date) hava tahmini nedir
+    - [önümüzdeki hafta](date) en yüksek [sıcaklık](weather_descriptor) kaç derece olacak
+    - [bu hafta](date) hava durumu ne olacak
+    - ne [güneşli](weather_descriptor) bir gün
+    - [bugün](date) [bulutlu](weather_descriptor)
+    - bana [antalya konyaaltı](place_name) havasını söyle olly
+    - siri dışarıda hava nasıl
+    - [pazartesi](date) hava durumu
+    - [salı](date) günü hava
+    - bana mevcut hava durumunu söyler misin
+    - [gülek yaylasında](place_name) hava nasıl
+    - [yedisinde](date) hava nasıl olacak
+    - [bu haftanın](date) hava durumu nasıl
+    - [bu hafta](date) için hava durumunu göster
+    - dışarıda hava nasıl
+    - [miami florida](place_name) hava durumunu söyle
+    - [izmir](place_name) için hava tahmini nasıl
+    - [gelecek hafta](date) [kar](weather_descriptor) yağacak mı
+    - burada hava nasıl
+    - olly [sivas](place_name) ta [kar](weather_descriptor) kalınlığı [tahminleri](weather_descriptor)
+    - güneyde [hava güneşli](weather_descriptor) mi
+    - [yarın](date) [mersin'de](place_name) [yağmur yağacak](weather_descriptor) mı
+    - [los angeles](place_name) de hava nasıl
+    - ok google hava nasıl
+    - [gelecek hafta](date) hava nasıl olacak
+    - [cuma](date) [plajda](place_name) hava [güzel](weather_descriptor) olacak mı
+    - [bu hafta](date) hangi gün [yağmurlu](weather_descriptor) olacak
+    - [bu hafta](date) hava nasıl
+    - [bugün](date) [güneşli](weather_descriptor) bir gün mü
+    - şu an [amasya'da](place_name) hava nasıl
+    - [antalya'da](place_name) hava ne kadar [sıcak](weather_descriptor)
+    - [pazar](date) günü hava elbise giymek için fazla mı [soğuk](weather_descriptor) olacak
+    - bana [bir haftalık](date) [ankara](place_name) hava durumunu göster
+    - [haftanın kalanında](date) hava nasıl görünüyor
+    - [ani hava değişikliği](weather_descriptor) bekleniyor mu
+    - şimdi hava nasıl
+    - [önümüzdeki hafta](date) [kar](weather_descriptor) olacak mı
+    - [bugün](date) itibariyle [maine](place_name) ne kadar [kar](weather_descriptor) aldı
+    - hava şu anda nasıl
+    - [bugün](date) nasıl bir hava beklemeliyim
+    - [bugün](date) [çeşme izmir](place_name) için [sıcaklık](weather_descriptor) kaç derece olacak
+    - [yarın](date) hava [otuz](weather_descriptor) derecenin [üzerinde](weather_descriptor) olacak mı
+    - ben [bugün](date) işe [şemsiye](weather_descriptor) getirmeli miyim
+    - [bugün](date) alışveriş yaparken [şort](weather_descriptor) giyebilir miyim
+    - [bu hafta](date) hiç [yağmur yağacak](weather_descriptor) mı
+    - ben [bugün](date) [şort](weather_descriptor) ile çıkabilir miyim
+    - [bugün](date) [kat kat](weather_descriptor) mı giyinmeliyim
+    - [bu hafta](date) kar yağacak mı
+    - ne kadar sonra [yağmur](weather_descriptor) beklemeliyiz
+    - bana verdiğin hava durumu tahminleri yanlış şehir için bulunduğum yerin sıcaklığını bilmek istiyorum
+    - [bu hafta](date) yakınlarımda hava nasıl
+    - hava bulutlu olacak mı
+    - [bu haftanın](date) hava durumu tahmini nedir
+    - golf maçımda [yağmurdan](weather_descriptor) dolayı [erteleme](weather_descriptor) olur mu
+    - [şikago'da](place_name) hava nasıl
+    - [yarın](date) hava nasıl olacak
+    - [yarın](date) hava [güzel](weather_descriptor) olacak mı
+    - bölgemde [bugün](date) hava nasıl
+    - [bugün](date) [şort](weather_descriptor) giymeli miyim
+    - [ısınmaya](weather_descriptor) ihtiyacım olacak mı
+    - [on günlük](time) hava tahmini
+    - anlık [sıcaklık](weather_descriptor) kaç derece
+    - [memleket](place_name) havası nasıl
+    - [sonraki gün](date) hava nasıl olacak
+    - bana [bu hafta](date) için hava tahminini söyler misin
+    - [bu hafta](date) hava nasıl olacak
+    - [perşembe](date) [rüzgarlı](weather_descriptor) mı olacak
+    - [bugün](date) benim buralarda havanın nasıl olma ihtimal i var
+    - olly [bugün](date) [eldiven](weather_descriptor) giymem gerekiyor mu
+    - dışarı çıkarken [şemsiye](weather_descriptor) almam gerekli mi
+    - dışarısı nasıl
+    - [bugün](date) [miami florida'da](place_name) hava nasıl
+    - lütfen [bir ocak iki bin yirmi iki](date) için hava durumunu göster bana
+    - [sabah saat ondan sonra](time) [monta](weather_descriptor) ihtiyacım var mı yok mu
+    - [bu gece](timeofday) [eldiven](weather_descriptor) getirmem gerekiyor mu
+    - [bugün](date) [cekete](weather_descriptor) ihtiyacım var mı
+    - anlık [sıcaklık](weather_descriptor)
+    - [bu hafta sonu](date) [güneş kremine](weather_descriptor) ihtiyacım olur mu
+    - [mağaza](business_type) dan [kar tuzu](food_type) almam gerekiyor mu
+    - anlık hava durumu ya meteoroloji genel müdürlüğü veya accuweather dan güncelleniyor her ikisi de benim sistemde zayıf
+    - işe giderken [ceket](weather_descriptor) giymeli miyim
+    - [iklim](weather_descriptor)
+    - [gün batımından sonra](time) [sis](weather_descriptor) olacak mı
+    - dışarısı [soğuk](weather_descriptor)
+    - [memlekette](place_name) hava durumu
+    - bu [aydın](place_name) için en sıcak gün mü
+    - bana bir [akşam yağmurluğu](weather_descriptor) lazım
+    - [bu öğleden sonra](timeofday) yanıma [şemsiye](weather_descriptor) almalı mıyım
+    - [bugün](date) [mersin pozcu'da](place_name) [yağmur yağacak mı](weather_descriptor)
+    - hey olly [bodrum muğla'da](place_name) hava nasıl
+    - olly [eldivenlerimi](weather_descriptor) giymeli mi giymemeli miyim
+    - [önümüzdeki ayın](time) hava durumunu söyle
+    - [bugün](date) bir ara üstüme bir kat daha giymem gerekecek mi
+    - [bu haftanın](date) hava raporunu bak
+    - bana [bir haftalık](time) hava tahmini göster

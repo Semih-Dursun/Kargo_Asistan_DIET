@@ -1,0 +1,9 @@
+{
+  "name": "default",
+  "overrides": {},
+  "seed": 42,
+  "dev": {
+    "macro_f1": 0.7971490427046289,
+    "accuracy": 0.8121003443187408
+  }
+}

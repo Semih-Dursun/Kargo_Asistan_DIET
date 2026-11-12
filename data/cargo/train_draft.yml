@@ -1,0 +1,305 @@
+version: "3.1"
+# TASLAK: bu cümleler Claude (Anthropic) ile üretildi, ekibin yazdığı veri DEĞİLDİR.
+# Proposal bölüm 3(b) cümleleri ekip üyelerinin yazacağını söylüyor. Bu dosya ancak ekip
+# okuyup düzelttikten sonra, ve raporda "yapay zekâ taslağı" diye belirtilerek kullanılmalı.
+# Onaylananlar data/cargo/train.yml'e taşınır. Test setine ASLA girmez.
+# Her intent için 20 cümle: 5 resmi, 5 günlük, 5 devrik, 5 yazım hatalı (bu sırayla).
+# Yazım hataları yapay olarak üretildi, gerçek kullanıcı hatalarını yansıtmayabilir.
+nlu:
+- intent: kargo_takip
+  examples: |
+    - [TR482915637](takip_no) numaralı gönderimin güncel durumunu öğrenmek istiyorum
+    - kargomun şu anda hangi şubede olduğunu öğrenebilir miyim
+    - [Yurtiçi Kargo](kargo_firmasi) ile gönderilen paketimin durumunu sorgulamak istiyorum
+    - sipariş ettiğim ürünün kargo hareketlerini görüntüleyebilir miyim
+    - [123456789012](takip_no) takip numaralı kargonun konumunu bildirir misiniz
+    - kargom nerede kaldı
+    - paketim şu an nerede
+    - [Aras](kargo_firmasi) kargom nerelerde dolaşıyor
+    - [Trendyol](eticaret_sitesi)'tan aldığım şey nerede acaba
+    - kargo yola çıktı mı
+    - nerede benim kargom
+    - durumu nedir [TR778120934](takip_no) numaralı paketin
+    - şu an hangi aşamada kargom
+    - yolda mı paketim
+    - [MNG](kargo_firmasi) kargomun konumu nedir şimdi
+    - kargom nerde
+    - kargoyu nerde kaldı bi bakarmısın
+    - paketim nerdee
+    - takip nomaram [TR204958113](takip_no) nerde bu
+    - kargo hangi asamada
+    - [Amazon](eticaret_sitesi) siparişimin kargosu nerede
+    - [Trendyol](eticaret_sitesi) paketim şu an hangi şubede
+- intent: teslimat_tarihi_sor
+  examples: |
+    - siparişimin hangi tarihte teslim edileceğini öğrenmek istiyorum
+    - [TR482915637](takip_no) numaralı kargonun tahmini teslim tarihini söyler misiniz
+    - paketim ne zaman elime ulaşır
+    - [Hepsiburada](eticaret_sitesi) siparişimin teslimat günü nedir
+    - kargomun yarın teslim edilip edilmeyeceğini öğrenebilir miyim
+    - kargom ne zaman gelir
+    - paket kaç güne gelir
+    - bu hafta gelir mi kargom
+    - [Yurtiçi Kargo](kargo_firmasi) ne zaman getirecek
+    - ne zaman elime geçer bu paket
+    - gelir mi bugün kargom
+    - hangi gün teslim edilecek paketim
+    - ne zaman gelecek siparişim [N11](eticaret_sitesi)'den verdiğim
+    - teslimat tarihi nedir bu kargonun
+    - kaç gün sürer [Ankara](konum)'ya gelmesi
+    - kargom ne zman gelir
+    - paket ne zaman gelcek
+    - tahmini teslimat tarihi nedir kargo gelicek mi yarın
+    - ne zamn teslim edilcek siparişim
+    - kaç güne gelir bu kargo
+- intent: kayip_kargo
+  examples: |
+    - kargom kayboldu, yardımcı olabilir misiniz
+    - [TR603814295](takip_no) numaralı gönderim kayıp görünüyor
+    - teslim edildi olarak görünen kargom bana ulaşmadı
+    - paketim kayıp, araştırma başlatmanızı talep ediyorum
+    - kargom üç haftadır hiçbir şubede görünmüyor
+    - kargom kayboldu galiba
+    - paketim yok oldu
+    - kargo teslim edilmiş diyor ama bende yok
+    - [Aras](kargo_firmasi) kargomu kaybetmiş
+    - takipte hiç hareket yok kargom kaybolmuş gibi
+    - kayboldu kargom
+    - bulunamıyor paketim hiçbir yerde
+    - ulaşmadı elime teslim edildi denen kargo
+    - kayıp olmuş [PTT](kargo_firmasi) ile gönderdiğim paket
+    - yok kargom, kaybolmuş
+    - kargom kayboldu yaa
+    - paketim kayip
+    - kargom kaybolmuş sanırm
+    - teslım edildi yazıyo ama gelmedi
+    - kargoyu kaybetmişler bulamıyoruz
+- intent: iade_talebi
+  examples: |
+    - satın aldığım ürünü iade etmek istiyorum
+    - [Trendyol](eticaret_sitesi) üzerinden aldığım siparişin iade sürecini başlatmak istiyorum
+    - ürünü geri göndermek için iade kodu alabilir miyim
+    - iade kargosu nasıl gönderilir
+    - aldığım ürün beklentimi karşılamadı, iade talep ediyorum
+    - ürünü iade edecem
+    - aldığım şeyi geri göndermek istiyorum
+    - iade nasıl yapılıyor
+    - [Hepsiburada](eticaret_sitesi)'dan aldığımı iade etmek istiyorum
+    - beğenmedim, geri yollayacağım
+    - iade etmek istiyorum ürünü
+    - geri göndermem lazım aldığım paketi
+    - nasıl yaparım iadeyi
+    - iade paketini nereye göndereceğim
+    - istiyorum iadeyi, uymadı bedeni
+    - ürünü iade etmek istiyom
+    - iade nasıl yapılır bilmiyorum
+    - aldıgım ürünü geri gondermek istiyorum
+    - iyade talebi oluşturmak istiyom
+    - ürün olmamis iade edecem
+    - [N11](eticaret_sitesi)'den aldığım ürünü iade etmek istiyorum
+    - [Amazon](eticaret_sitesi) siparişimi nasıl geri gönderebilirim
+- intent: adres_degistir
+  examples: |
+    - teslimat adresimi değiştirmek istiyorum
+    - [TR482915637](takip_no) numaralı kargonun adresini güncelleyebilir miyim
+    - kargomun teslim adresini [Kadıköy](konum) ilçesindeki adresime çevirmek istiyorum
+    - yanlış adres girdim, düzeltmek için ne yapmam gerekir
+    - gönderinin adres bilgisini güncellemek istiyorum
+    - adresi yanlış yazmışım değiştirebilir miyim
+    - kargoyu başka bir adrese yollayın
+    - adres değişikliği yapabilir miyim
+    - paketi iş yerime gönderir misiniz
+    - kargo adresimi değiştirmem lazım
+    - değiştirmek istiyorum teslimat adresini
+    - başka adrese yönlendirilebilir mi kargom
+    - [Ankara](konum)'ya yönlendirin paketi, adres değişti
+    - adres yanlış kargoda
+    - güncellenebilir mi adresim
+    - adresi yanlış yazmışım düzeltebilirmiyiz
+    - kargo adresimi degistirmek istiyom
+    - adres degisikligi yapcam kargoda
+    - paketi baska adrese yollayın lütfen
+    - adresim yanlış girilmiş kargonun
+- intent: hasarli_kargo
+  examples: |
+    - kargom hasarlı olarak elime ulaştı
+    - paketin dışı yırtılmış ve ürün zarar görmüş
+    - teslim aldığım ürün kırık geldi, ne yapabilirim
+    - kargo kutusu ezilmiş durumda, hasar tespit tutanağı istiyorum
+    - [Aras](kargo_firmasi) ile gelen paketim hasarlıydı
+    - paket ezik geldi
+    - ürün kırık çıktı kargodan
+    - kargo patlamış gelmiş
+    - içindeki şey kırılmış
+    - paketi açtım ürün çatlak
+    - hasarlı geldi kargom
+    - kırılmış ürün, kutusu ezik
+    - zarar görmüş paketim, ne yapacağım
+    - yırtık gelmiş kargo paketi
+    - ezilmiş kutu, bozuk ürün
+    - kargom hasarli geldi
+    - urun kırık gelmiş paketten
+    - paket ezilmiş gelmiş ne yapcaz
+    - kargo yırtılmıs gelmiş
+    - ürün kirik cikti
+- intent: kargo_ucreti_sor
+  examples: |
+    - [3 desi](desi) bir paketi göndermenin ücreti nedir
+    - [İstanbul](konum)'dan [Ankara](konum)'ya kargo fiyatı ne kadar
+    - kargo gönderim ücretlerini öğrenmek istiyorum
+    - [10 desi](desi) ağırlığındaki koli için fiyat bilgisi alabilir miyim
+    - [Yurtiçi Kargo](kargo_firmasi) gönderim ücreti ne kadar
+    - kargo ne kadar tutar
+    - paket yollamak kaç para
+    - [5 desi](desi) kargo kaç lira
+    - [Aras](kargo_firmasi) ile [İzmir](konum)'e göndermek ne kadar
+    - ücret ne kadar olur kargonun
+    - ne kadar kargo ücreti
+    - kaç lira [2 desi](desi) paket
+    - fiyatı nedir göndermenin [Bursa](konum)'ya
+    - tutar ne kadar [40x30x20](desi) bir koli için
+    - hesaplayın kargo ücretini
+    - kargo ne kadr
+    - paket gondermek kaç para
+    - [7 desi](desi) kargo kac lira
+    - ücreti ne kadar olcak [Antalya](konum)'ya
+    - kargo fiyatlari nedir
+    - [15 desi](desi) paketin gönderim ücreti kaç lira
+    - [1 desi](desi) küçük bir paket ne kadar tutar
+- intent: sube_bul
+  examples: |
+    - en yakın kargo şubesinin adresini öğrenmek istiyorum
+    - [Kadıköy](konum)'de bulunan [Yurtiçi Kargo](kargo_firmasi) şubesi nerede
+    - [Mersin](konum) şehrindeki [PTT](kargo_firmasi) şubelerinin listesini alabilir miyim
+    - kargo teslim noktası nerede bulunuyor
+    - şubenin çalışma saatleri ve adresi nedir
+    - en yakın kargo şubesi nerede
+    - [Aras](kargo_firmasi) şubesi nerede burada
+    - [Çankaya](konum)'da kargo şubesi var mı
+    - paketi nereye bırakabilirim
+    - yakınlarda [MNG](kargo_firmasi) şubesi var mı
+    - nerede en yakın şube
+    - var mı [Beşiktaş](konum)'ta kargo şubesi
+    - nerede bu [Sürat Kargo](kargo_firmasi) şubesi
+    - şube adresi nedir [Konya](konum)'daki
+    - hangi şubeye gitmem gerek paketimi almak için
+    - en yakin kargo subesi nerde
+    - sube nerde bu
+    - [Aras](kargo_firmasi) şubesi nerde acaba
+    - yakında kargo ofisi varmı
+    - [Kadıköy](konum)'de sube varmi
+- intent: teslimat_randevu
+  examples: |
+    - teslimat saatini değiştirmek istiyorum
+    - kargomun cumartesi günü teslim edilmesini rica ediyorum
+    - hafta içi evde olamayacağım, teslimat gününü değiştirebilir miyiz
+    - kurye gelmeden önce beni arayabilir mi
+    - [TR482915637](takip_no) numaralı kargo için yeni bir teslimat randevusu almak istiyorum
+    - kargoyu yarın getirin
+    - bugün evde değilim başka gün gelsin
+    - akşam saatinde teslim eder misiniz
+    - kurye öğleden sonra gelsin
+    - teslimat gününü kaydırabilir miyiz
+    - cumartesi getirin kargoyu
+    - gelsin pazartesi paketim
+    - evde olmayacağım bugün, ertelenebilir mi teslimat
+    - akşam teslim edilsin kargo
+    - değiştirilebilir mi teslimat günü
+    - kargoyu yarına alabilirmiyiz
+    - bugun evde olmicam teslimat ertelensin
+    - teslımat saatini degistirmek istiyom
+    - kurye aksam gelsin lütfen
+    - cumartesi getirirmisiniz kargoyu
+- intent: kargo_iptal
+  examples: |
+    - gönderdiğim kargoyu iptal etmek istiyorum
+    - henüz teslim edilmeyen siparişimin gönderimini iptal edebilir miyim
+    - [TR603814295](takip_no) numaralı gönderiyi iptal etmek istiyorum
+    - kargom şubeye ulaşmadan iptal talebinde bulunmak istiyorum
+    - kargo kaydımı silmek istiyorum
+    - kargoyu iptal edin
+    - gönderiyi vazgeçtim iptal edebilir miyiz
+    - kargo çıkmadan iptal etmek istiyorum
+    - paketi göndermekten vazgeçtim
+    - iptal etmek istiyorum bu kargoyu
+    - iptal edin kargomu
+    - vazgeçtim kargodan, iptal
+    - edilebilir mi iptali gönderinin
+    - silin bu gönderiyi
+    - iptal olsun kargo
+    - kargoyu iptal etmek istiyom
+    - gönderiyi iptal edebilirmiyiz
+    - vazgectim kargoyu iptal edin
+    - kargo iptali nasıl yapılır
+    - iptal etmek istiyom paketi
+    - [Hepsiburada](eticaret_sitesi) siparişimin kargosunu iptal etmek istiyorum
+- intent: gonderi_olustur
+  examples: |
+    - bir kargo göndermek istiyorum
+    - adresimden kurye çağırmak istiyorum
+    - [İzmir](konum)'deki alıcıya paket göndermek için gönderi oluşturabilir miyim
+    - yeni bir gönderi kaydı açmak istiyorum
+    - [Aras Kargo](kargo_firmasi) ile paket göndermek istiyorum
+    - paket yollayacağım
+    - kurye gönderir misiniz adrese
+    - kargo göndermek için ne yapmam lazım
+    - [5 desi](desi) bir koli yollamak istiyorum
+    - evden paket aldırabilir miyim
+    - göndermek istiyorum bir paket
+    - gelsin kurye evime
+    - yollamak istiyorum [Ankara](konum)'ya bir koli
+    - nasıl gönderirim kargoyu
+    - çağırmak istiyorum kurye
+    - kargo gondermek istiyom
+    - kurye cagirmak istiyorum adrese
+    - paket yollıcam nasıl yapıcam
+    - gönderi olusturmak istiyom
+    - kuryeyi eve gönderirmisiniz
+    - [12 desi](desi) bir koli göndereceğim
+    - [4 desi](desi) paket için kurye çağırmak istiyorum
+- intent: kargo_gecikme_sikayet
+  examples: |
+    - kargom belirtilen sürede teslim edilmedi, şikayetçiyim
+    - teslimat tarihi geçti ancak paketim hâlâ gelmedi
+    - [Yurtiçi Kargo](kargo_firmasi) gecikmesi nedeniyle şikayette bulunmak istiyorum
+    - siparişim beş gündür şubede bekliyor
+    - [TR482915637](takip_no) numaralı gönderi çok geciktirildi
+    - kargom çok gecikti
+    - paket hâlâ gelmedi artık sıkıldım
+    - üç gündür kargo getirmediler
+    - [MNG](kargo_firmasi) kargom bir haftadır yolda
+    - neden bu kadar geç geliyor kargom
+    - gecikti kargom çok
+    - gelmedi hâlâ paketim, söz verilen gün geçti
+    - bekliyorum günlerdir kargoyu
+    - geç kalmış [Aras](kargo_firmasi) teslimatı
+    - şikayetim var, geç geliyor kargo
+    - kargom cok gecikti yaa
+    - paket hala gelmedi sikayetciyim
+    - ucgündür kargo gelmedi
+    - kargo neden bu kadar gec geliyo
+    - teslimat gecikmiş sikayet etmek istiyom
+    - [Trendyol](eticaret_sitesi) siparişim hâlâ gelmedi, çok gecikti
+    - [N11](eticaret_sitesi)'den verdiğim sipariş günlerdir yolda
+- intent: temsilci_talep
+  examples: |
+    - müşteri temsilcisiyle görüşmek istiyorum
+    - bir yetkiliye bağlanabilir miyim
+    - canlı destek hattına nasıl ulaşırım
+    - [Yurtiçi Kargo](kargo_firmasi) müşteri hizmetleri numarasını öğrenmek istiyorum
+    - sorunumu bir temsilciye iletmek istiyorum
+    - temsilciye bağlayın
+    - biriyle konuşmak istiyorum
+    - gerçek biri var mı orada
+    - müşteri hizmetleri telefonu nedir
+    - beni bir insana aktarır mısınız
+    - bağlayın beni temsilciye
+    - konuşabilir miyim yetkili biriyle
+    - görüşmek istiyorum bir yetkiliyle
+    - nasıl ulaşırım müşteri hizmetlerine
+    - istiyorum canlı destek
+    - musteri temsilcisine baglanmak istiyom
+    - yetkili biriyle konusabilirmiyim
+    - canli destege baglayin
+    - temsilci ile gorusmek istiyorum
+    - müsteri hizmetleri numarası nedir
