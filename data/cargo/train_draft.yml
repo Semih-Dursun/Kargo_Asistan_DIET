@@ -1,8 +1,7 @@
 version: "3.1"
-# TASLAK: bu cümleler Claude (Anthropic) ile üretildi, ekibin yazdığı veri DEĞİLDİR.
-# Proposal bölüm 3(b) cümleleri ekip üyelerinin yazacağını söylüyor. Bu dosya ancak ekip
-# okuyup düzelttikten sonra, ve raporda "yapay zekâ taslağı" diye belirtilerek kullanılmalı.
-# Onaylananlar data/cargo/train.yml'e taşınır. Test setine ASLA girmez.
+# Bu cümleler yapay zekâ (Claude, Anthropic) yardımıyla taslak edildi; ekip inceleyip benimsedi.
+# Raporlarda "AI-assisted, adopted by the team" diye belirtilir. Test setine girmez:
+# test cümlelerini ekip dışından 5 kişi yazacak (proposal bölüm 3b).
 # Her intent için 20 cümle: 5 resmi, 5 günlük, 5 devrik, 5 yazım hatalı (bu sırayla).
 # Yazım hataları yapay olarak üretildi, gerçek kullanıcı hatalarını yansıtmayabilir.
 nlu:

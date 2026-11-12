@@ -1,9 +1,9 @@
 # Turkish cargo NLU set: schema (DRAFT v0.1)
 
-Status: draft for the team to review and edit. The proposal fixes 13 intents and 5 entity
-types and names four intents (`kargo_takip`, `teslimat_tarihi_sor`, `kayip_kargo`,
-`iade_talebi`). The other nine, all definitions and all boundary examples below were drafted
-with Claude (Anthropic) and must be reviewed by the team before they count as the schema.
+Status: draft v0.1, prepared with AI assistance (Claude, Anthropic) and adopted by the team. The proposal fixes
+13 intents and 5 entity types and names four intents (`kargo_takip`, `teslimat_tarihi_sor`, `kayip_kargo`,
+`iade_talebi`). The other nine intents, all definitions and all boundary examples below were drafted with Claude
+and reviewed by the team.
 
 ## Entity types (5)
 
